@@ -325,24 +325,30 @@ def render_annual():
             )
 
         st.subheader("Alleged Violations")
-        articles_set = set()
-        arguments = []
         for desc, info in annual_checkbox_descriptions.items():
             checked = st.checkbox(desc, key=f"checkbox_{desc}")
             if checked:
                 articles_set.update(info["articles"])
-                arguments.append(info["argument"])
-
+                selected_reasons.append(desc)
+                selected_arguments.append(info["argument"])
+    
+        # Show additional checkboxes based on Measured/Unmeasured selection
         if meas_indentify == "Measured":
-            for desc, argument in measured_checkboxes.items():
-                if st.checkbox(desc, key=f"measured_{desc}"):
+            st.markdown("**Additional Measured Issues:**")
+            for desc, info in measured_checkboxes.items():
+                checked = st.checkbox(desc, key=f"measured_{desc}")
+                if checked:
+                    articles_set.update(info["articles"])
                     selected_reasons.append(desc)
-                    selected_arguments.append(argument)
+                    selected_arguments.append(info["argument"])
         elif meas_indentify == "Unmeasured":
-                    for desc, argument in unmeasured_checkboxes.items():
-                        if st.checkbox(desc, key=f"unmeasured_{desc}"):
-                            selected_reasons.append(desc)
-                            selected_arguments.append(argument)
+            st.markdown("**Additional Unmeasured Issues:**")
+            for desc, info in unmeasured_checkboxes.items():
+                checked = st.checkbox(desc, key=f"unmeasured_{desc}")
+                if checked:
+                    articles_set.update(info["articles"])
+                    selected_reasons.append(desc)
+                    selected_arguments.append(info["argument"])
 
         submitted = st.form_submit_button("Generate Grievance PDF")
 
