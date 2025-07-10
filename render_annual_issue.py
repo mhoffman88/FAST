@@ -290,6 +290,8 @@ def render_annual():
         fbd = calculate_fbd(st.session_state["date_received"])
         st.info(f"🗕️ File By Date (15 business days): {fbd}")
 
+    meas_identify = st.selectbox("Measured or Unmeasured?", options=["Measured","Unmeasured"], key="meas_status")
+
     # --- FORM UI ---
     with st.form("grievance_form"):
         steward = st.text_input("Steward’s Name", key="Steward")
@@ -310,8 +312,6 @@ def render_annual():
         position = st.text_input("Title/Position")
         issue_description = st.text_area("Summary of Grievance", key="issue_description")
         desired_outcome = st.text_area("Requested Resolution", key="desired_outcome")
-
-        meas_identify = st.selectbox("Measured or Unmeasured?", options=["Measured","Unmeasured"], key="meas_status")
 
         uploaded_files = []
         MAX_UPLOADS = 10
