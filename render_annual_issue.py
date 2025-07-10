@@ -324,6 +324,10 @@ def render_annual():
                 )
             )
 
+        selected_reasons = []
+        selected_articles = []
+        selected_arguments = []
+
         st.subheader("Alleged Violations")
         for desc, info in annual_checkbox_descriptions.items():
             checked = st.checkbox(desc, key=f"checkbox_{desc}")
