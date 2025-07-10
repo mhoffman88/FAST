@@ -338,11 +338,11 @@ def render_annual():
                 if st.checkbox(desc, key=f"measured_{desc}"):
                     selected_reasons.append(desc)
                     selected_arguments.append(argument)
-            elif meas_indentify == "Unmeasured":
-                        for desc, argument in unmeasured_checkboxes.items():
-                            if st.checkbox(desc, key=f"unmeasured_{desc}"):
-                                selected_reasons.append(desc)
-                                selected_arguments.append(argument)
+        elif meas_indentify == "Unmeasured":
+                    for desc, argument in unmeasured_checkboxes.items():
+                        if st.checkbox(desc, key=f"unmeasured_{desc}"):
+                            selected_reasons.append(desc)
+                            selected_arguments.append(argument)
 
         submitted = st.form_submit_button("Generate Grievance PDF")
 
