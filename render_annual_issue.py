@@ -311,7 +311,7 @@ def render_annual():
         issue_description = st.text_area("Summary of Grievance", key="issue_description")
         desired_outcome = st.text_area("Requested Resolution", key="desired_outcome")
 
-        meas_indentify = st.selectbox("Measured or Unmeasured?", options=["Measured","Unmeasured"], key="meas_status")
+        meas_identify = st.selectbox("Measured or Unmeasured?", options=["Measured","Unmeasured"], key="meas_status")
 
         uploaded_files = []
         MAX_UPLOADS = 10
@@ -333,7 +333,7 @@ def render_annual():
                 selected_arguments.append(info["argument"])
     
         # Show additional checkboxes based on Measured/Unmeasured selection
-        if meas_indentify == "Measured":
+        if meas_identify == "Measured":
             st.markdown("**Additional Measured Issues:**")
             for desc, info in measured_checkboxes.items():
                 checked = st.checkbox(desc, key=f"measured_{desc}")
@@ -341,7 +341,7 @@ def render_annual():
                     articles_set.update(info["articles"])
                     selected_reasons.append(desc)
                     selected_arguments.append(info["argument"])
-        elif meas_indentify == "Unmeasured":
+        elif meas_identify == "Unmeasured":
             st.markdown("**Additional Unmeasured Issues:**")
             for desc, info in unmeasured_checkboxes.items():
                 checked = st.checkbox(desc, key=f"unmeasured_{desc}")
