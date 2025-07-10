@@ -313,17 +313,6 @@ def render_annual():
 
         meas_indentify = st.selectbox("Measured or Unmeasured?", options=["Measured","Unmeasured"], key="meas_status")
 
-        if meas_indentify == "Measured":
-            for desc, argument in measured_checkboxes.items():
-                if st.checkbox(desc, key=f"measured_{desc}"):
-                    selected_reasons.append(desc)
-                    selected_arguments.append(argument)
-        elif meas_indentify == "Unmeasured":
-                    for desc, argument in unmeasured_checkboxes.items():
-                        if st.checkbox(desc, key=f"unmeasured_{desc}"):
-                            selected_reasons.append(desc)
-                            selected_arguments.append(argument)
-
         uploaded_files = []
         MAX_UPLOADS = 10
         for i in range(MAX_UPLOADS):
@@ -343,6 +332,17 @@ def render_annual():
             if checked:
                 articles_set.update(info["articles"])
                 arguments.append(info["argument"])
+
+        if meas_indentify == "Measured":
+            for desc, argument in measured_checkboxes.items():
+                if st.checkbox(desc, key=f"measured_{desc}"):
+                    selected_reasons.append(desc)
+                    selected_arguments.append(argument)
+            elif meas_indentify == "Unmeasured":
+                        for desc, argument in unmeasured_checkboxes.items():
+                            if st.checkbox(desc, key=f"unmeasured_{desc}"):
+                                selected_reasons.append(desc)
+                                selected_arguments.append(argument)
 
         submitted = st.form_submit_button("Generate Grievance PDF")
 
