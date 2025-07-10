@@ -237,7 +237,42 @@ def render_annual():
             "argument": "The employee was not given the opportunity to improve, violating Article 12, Section 7."
         }
     }
-    
+    measured_checkboxes = {
+        "MRating is inconsistent with prior feedback": {
+            "articles": ["Article 21, Section 4"],
+            "argument": "The rating is inconsistent with prior feedback, violating Article 21, Section 4."
+        },
+        "MRating is inconsistent with peer comparisons": {
+            "articles": ["Article 21, Section 5"],
+            "argument": "The rating is inconsistent with peer comparisons, violating Article 21, Section 5."
+        },
+        "MPerformance elements were not clearly defined": {
+            "articles": ["Article 12 Section 3"],
+            "argument": "Performance elements were not clearly defined, violating Article 21, Section 2."
+        },
+        "MEmployee was not given opportunity to improve": {
+            "articles": ["Article 12, Section 7"],
+            "argument": "The employee was not given the opportunity to improve, violating Article 12, Section 7."
+        }
+    }
+    unmeasured_checkboxes = {
+        "UMRating is inconsistent with prior feedback": {
+            "articles": ["Article 21, Section 4"],
+            "argument": "The rating is inconsistent with prior feedback, violating Article 21, Section 4."
+        },
+        "UMRating is inconsistent with peer comparisons": {
+            "articles": ["Article 21, Section 5"],
+            "argument": "The rating is inconsistent with peer comparisons, violating Article 21, Section 5."
+        },
+        "UMPerformance elements were not clearly defined": {
+            "articles": ["Article 12 Section 3"],
+            "argument": "Performance elements were not clearly defined, violating Article 21, Section 2."
+        },
+        "UMEmployee was not given opportunity to improve": {
+            "articles": ["Article 12, Section 7"],
+            "argument": "The employee was not given the opportunity to improve, violating Article 12, Section 7."
+        }
+    }
     # --- Date and FBD input/display together ---
     if "date_received" not in st.session_state:
         st.session_state["date_received"] = datetime.date.today()
@@ -275,6 +310,19 @@ def render_annual():
         position = st.text_input("Title/Position")
         issue_description = st.text_area("Summary of Grievance", key="issue_description")
         desired_outcome = st.text_area("Requested Resolution", key="desired_outcome")
+
+        meas_indentify = st.selectbox("Measured or Unmeasured?", options=["Measured","Unmeasured"], key="meas_status")
+
+        if meas_indentify == "Measured":
+            for desc, argument in measured_checkboxes.items():
+                if st.checkbox(desc, key=f"measured_{desc}"):
+                    selected_reasons.append(desc)
+                    selected_arguments.append(argument)
+        elif meas_indentify == "Unmeasured":
+                    for desc, argument in unmeasured_checkboxes.items():
+                        if st.checkbox(desc, key=f"unmeasured_{desc}"):
+                            selected_reasons.append(desc)
+                            selected_arguments.append(argument)
 
         uploaded_files = []
         MAX_UPLOADS = 10
