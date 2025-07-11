@@ -582,13 +582,12 @@ def render_annual():
         selected_reasons = []
         selected_articles = []
         selected_arguments = []
-        articles_set = set()
 
         st.subheader("Alleged Violations")
         for desc, info in annual_checkbox_descriptions.items():
             checked = st.checkbox(desc, key=f"checkbox_{desc}")
             if checked:
-                articles_set.update(info["articles"])
+                selected_articles.update(info["articles"])
                 selected_reasons.append(desc)
                 selected_arguments.append(info["argument"])
     
@@ -598,7 +597,7 @@ def render_annual():
             for desc, info in measured_checkboxes.items():
                 checked = st.checkbox(desc, key=f"measured_{desc}")
                 if checked:
-                    articles_set.update(info["articles"])
+                    selected_articles.update(info["articles"])
                     selected_reasons.append(desc)
                     selected_arguments.append(info["argument"])
         elif meas_identify == "Unmeasured":
@@ -606,7 +605,7 @@ def render_annual():
             for desc, info in unmeasured_checkboxes.items():
                 checked = st.checkbox(desc, key=f"unmeasured_{desc}")
                 if checked:
-                    articles_set.update(info["articles"])
+                    selected_articles.update(info["articles"])
                     selected_reasons.append(desc)
                     selected_arguments.append(info["argument"])
 
@@ -615,7 +614,7 @@ def render_annual():
     # --- PDF Generation / Download ---
     submitted = st.form_submit_button("Generate Report")
     if submitted:
-        article_list = ", ".join(sorted(articles_set))
+        article_list = ", ".join(sorted(selected_articles))
         full_argument = ""
         if arguments:
             full_argument = "\nThis grievance challenges the annual performance appraisal based on the following concerns:\n\n\n"
