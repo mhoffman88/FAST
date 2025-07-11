@@ -668,10 +668,6 @@ def render_annual():
         }
     }
 
-    selected_arguments = []
-    selected_articles = []
-    selected_reasons = []
-    
     # --- Date and FBD input/display together ---
     if "date_received" not in st.session_state:
         st.session_state["date_received"] = datetime.date.today()
@@ -757,8 +753,6 @@ def render_annual():
 
     # --- PDF Generation / Download ---
     if submitted:
-        for article in info["articles"]:
-            selected_articles.add(article.strip())
         article_list = ", ".join(sorted(set(selected_articles)))
         full_argument = ""
         if selected_arguments:
