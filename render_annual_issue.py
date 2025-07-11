@@ -613,7 +613,7 @@ def render_annual():
 
     # --- PDF Generation / Download ---
     if submitted:
-        article_list = ", ".join(sorted(selected_articles))
+        article_list = ", ".join(sorted(set(selected_articles)))
         full_argument = ""
         if selected_arguments:
             full_argument = "\nThis grievance challenges the annual performance appraisal based on the following concerns:\n\n\n"
