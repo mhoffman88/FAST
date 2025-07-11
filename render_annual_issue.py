@@ -10,7 +10,7 @@ from util import wrap_text_to_width, draw_wrapped_section, generate_pdf, convert
 def render_annual():
     annual_checkbox_descriptions = {
         "Performance standards did not permit the accurate evaluation of their job performance based on objective criteria related to their position.": {
-            "articles": ["Article 12 Section 3, 5 U.S.C §§ 9508, 5 U.S.C. §§ 4302, 5 C.F.R. Part 430"],
+            "articles": ["Article 12 Section 3", "5 U.S.C §§ 9508", "5 U.S.C. §§ 4302", "5 C.F.R. Part 430"],
             "argument": (
                 "     Management is supposed to, to the maximum extent feasible, provide an accurate evaluation of an employee’s job performance based on objective criteria related to the position. By"
                 " failing to do this, management has failed to follow the guidance provided through the National Agreement, Article 12 Section 3; 5 USC 4302; 5 USC 9508; 5 CFR Part 430. Each of these specify"
@@ -23,7 +23,7 @@ def render_annual():
             )
         },
         "Management was given specific distribution amounts per level of rating for employees.": {
-            "articles": ["Article 12, Section 3, 5 C.F.R. Part 430.208, IRM 6.430.2.5.7"],
+            "articles": ["Article 12, Section 3", "5 C.F.R. Part 430.208", "IRM 6.430.2.5.7"],
             "argument": (
                 "     It is highly inappropriate for management to establish and distribute annual appraisals based upon specific distribution amounts per level of rating of employees. By utilizing this system"
                 " of restricting the amount allowed per level of rating, management removes the ability for employees to be fairly and accurately rated upon their performance over the year the annual appraisal period"
