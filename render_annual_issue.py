@@ -499,170 +499,248 @@ def render_annual():
         },
         "Supervisor adds additional remarks in response to the employee’s rebuttal (which is prohibited). ": {
             "articles": ["Article 12 Section 4", "5 CFR § 430.208"],
-            "argument": "Supervisors are not permitted to add new remarks after an employee has submitted a rebuttal to their appraisal. Doing so gives the appearance of retaliation or undermines the employee’s opportunity to speak without being challenged in the record. Instead, the supervisor should have respected the rebuttal as a standalone employee response. To resolve this, any additional comments made in response must be removed from the official file. Management must train supervisors to refrain from commenting on or revising appraisals once a rebuttal is submitted. "
+            "argument": "Supervisors are not permitted to add new remarks after an employee has submitted a rebuttal to their appraisal. Doing so gives the appearance of retaliation or undermines the employee’s"
+            " opportunity to speak without being challenged in the record. Instead, the supervisor should have respected the rebuttal as a standalone employee response. To resolve this, any additional comments"
+            " made in response must be removed from the official file. Management must train supervisors to refrain from commenting on or revising appraisals once a rebuttal is submitted. "
         },
         "Employee is misled into believing their initials/signature indicate agreement, rather than just receipt. ": {
             "articles": ["Article 12 Section 4", "5 CFR § 430.208"],
-            "argument": "When employees are asked to initial or sign their appraisal, they must be clearly informed that this signifies only acknowledgment of receipt—not agreement with the content. Misleading employees into thinking they are agreeing with the rating violates trust and may prevent them from submitting rebuttals. The proper approach would have been to provide a clear explanation at the time of signing. To fix this, supervisors should reach out to clarify the meaning of prior signatures and offer employees the chance to submit comments if they misunderstood. In the future, clear written and verbal explanations should accompany every appraisal. "
+            "argument": "When employees are asked to initial or sign their appraisal, they must be clearly informed that this signifies only acknowledgment of receipt—not agreement with the content. Misleading"
+            " employees into thinking they are agreeing with the rating violates trust and may prevent them from submitting rebuttals. The proper approach would have been to provide a clear explanation at the"
+            " time of signing. To fix this, supervisors should reach out to clarify the meaning of prior signatures and offer employees the chance to submit comments if they misunderstood. In the future, clear"
+            " written and verbal explanations should accompany every appraisal. "
         },
         "Performance appraisal considers time not spent on critical job elements (e.g., union duties, LWOP, leave, collateral duties) as a negative factor. ": {
             "articles": ["Article 12 Section 4", "5 CFR § 430.208"],
-            "argument": "It is inappropriate to penalize an employee’s performance appraisal for time spent away from critical job elements due to approved union duties, authorized leave, or other collateral responsibilities. These periods are not performance failures and must be treated neutrally in the appraisal process. However, in many cases, union duties directly support and demonstrate competencies within the employee’s Critical Job Elements, particularly in areas such as Communication, Problem Solving, Customer Service, and Teamwork. Union stewards routinely engage in activities that mirror these elements—such as written and oral advocacy, negotiation, conflict resolution, and interpretation of workplace policy. Beyond individual performance, these duties also contribute to the overall efficiency and effectiveness of the Service by reducing formal disputes, resolving workplace tensions early, and fostering a more informed and engaged workforce. As such, performance appraisals should either exclude union duties from negative consideration or positively credit them when relevant to the employee’s evaluated elements. Moving forward, supervisors should receive clear guidance that union-related work, when applicable, may demonstrate excellence in CJEs and help fulfill the mission of the agency. "
+            "argument": "It is inappropriate to penalize an employee’s performance appraisal for time spent away from critical job elements due to approved union duties, authorized leave, or other collateral"
+            " responsibilities. These periods are not performance failures and must be treated neutrally in the appraisal process. However, in many cases, union duties directly support and demonstrate"
+            " competencies within the employee’s Critical Job Elements, particularly in areas such as Communication, Problem Solving, Customer Service, and Teamwork. Union stewards routinely engage in activities"
+            " that mirror these elements—such as written and oral advocacy, negotiation, conflict resolution, and interpretation of workplace policy. Beyond individual performance, these duties also contribute"
+            " to the overall efficiency and effectiveness of the Service by reducing formal disputes, resolving workplace tensions early, and fostering a more informed and engaged workforce. As such, performance"
+            " appraisals should either exclude union duties from negative consideration or positively credit them when relevant to the employee’s evaluated elements. Moving forward, supervisors should receive"
+            " clear guidance that union-related work, when applicable, may demonstrate excellence in CJEs and help fulfill the mission of the agency. "
         },
         "Appraisal fails to account for frequent interruptions due to union or collateral duties when evaluating performance. ": {
             "articles": ["Article 12 Section 4", "5 CFR § 430.208"],
-            "argument": "Employees who take on union or collateral responsibilities often experience frequent interruptions that impact workflow, but these interruptions are an expected and approved part of their role. Ignoring their effect creates an unfair evaluation. The supervisor should have accounted for these interruptions when judging productivity or timeliness. To address this, the appraisal should be reviewed to assess whether expectations were fairly adjusted for known duties. Moving forward, management must evaluate performance in light of all assigned responsibilities and not hold employees to unrealistic standards. "
+            "argument": "Employees who take on union or collateral responsibilities often experience frequent interruptions that impact workflow, but these interruptions are an expected and approved part of"
+            " their role. Ignoring their effect creates an unfair evaluation. The supervisor should have accounted for these interruptions when judging productivity or timeliness. To address this, the appraisal"
+            " should be reviewed to assess whether expectations were fairly adjusted for known duties. Moving forward, management must evaluate performance in light of all assigned responsibilities and not hold"
+            " employees to unrealistic standards. "
         },
         "Union representative who performed at least 120 hours of ratable work in the evaluation year is improperly denied an appraisal (annual, revalidated, or merit promotion). ": {
             "articles": ["Article 12 Section 4", "5 CFR § 430.208"],
-            "argument": "If a union representative completes 120 or more hours of ratable work in a year, they are entitled to receive an appraisal. Denying an evaluation despite meeting this threshold deprives the employee of fair consideration for career progression. Instead, the supervisor should have ensured an appropriate appraisal—either annual or merit promotion—was issued based on the completed work. To correct this, a retroactive appraisal should be completed. Supervisors must track hours and ensure timely ratings are provided when the 120-hour requirement is met. "
+            "argument": "If a union representative completes 120 or more hours of ratable work in a year, they are entitled to receive an appraisal. Denying an evaluation despite meeting this threshold deprives"
+            " the employee of fair consideration for career progression. Instead, the supervisor should have ensured an appropriate appraisal—either annual or merit promotion—was issued based on the completed"
+            " work. To correct this, a retroactive appraisal should be completed. Supervisors must track hours and ensure timely ratings are provided when the 120-hour requirement is met. "
         },
         'Union representative who performed fewer than 120 hours is given a rating instead of being marked “Not Ratable (NR).” ': {
             "articles": ["Article 12 Section 4", "5 CFR § 430.208"],
-            "argument": "Employees who did not perform the minimum 120 hours of ratable work should not be given a performance rating, as there is insufficient data to fairly evaluate them. Issuing a rating in this scenario misrepresents performance and can result in inaccurate personnel actions. The correct designation would have been “Not Ratable (NR)” to reflect the lack of sufficient information. To resolve this, the improper rating should be withdrawn and replaced with an NR notation. Supervisors must verify work hour totals before completing any appraisal."
+            "argument": "Employees who did not perform the minimum 120 hours of ratable work should not be given a performance rating, as there is insufficient data to fairly evaluate them. Issuing a rating in"
+            " this scenario misrepresents performance and can result in inaccurate personnel actions. The correct designation would have been “Not Ratable (NR)” to reflect the lack of sufficient information. To"
+            " resolve this, the improper rating should be withdrawn and replaced with an NR notation. Supervisors must verify work hour totals before completing any appraisal."
         },
         "Employer fails to meet annually with full-time union representatives to identify ratable work opportunities (e.g., at least 120 hours).": {
             "articles": ["Article 12 Section 4", "5 CFR § 430.208"],
-            "argument": "It is important for management to collaborate with full-time union representatives each year to identify and assign sufficient ratable work so that fair appraisals can be given when possible. Failing to hold these meetings results in missed opportunities for evaluation and advancement. Instead, management should have initiated this discussion well before the appraisal period closed. To correct the issue, a meeting should be scheduled as soon as possible to assess past and future ratable work opportunities. This should become a standard annual practice to support accurate and fair performance evaluations. "
+            "argument": "It is important for management to collaborate with full-time union representatives each year to identify and assign sufficient ratable work so that fair appraisals can be given when"
+            " possible. Failing to hold these meetings results in missed opportunities for evaluation and advancement. Instead, management should have initiated this discussion well before the appraisal period"
+            " closed. To correct the issue, a meeting should be scheduled as soon as possible to assess past and future ratable work opportunities. This should become a standard annual practice to support"
+            " accurate and fair performance evaluations. "
         },
         "Appraisal fails to consider work completed on direct time or tasks/projects listed in the position description as ratable. ": {
             "articles": ["Article 12 Section 4", "5 CFR § 430.208"],
-            "argument": "Ignoring tasks that fall under direct time or are specifically listed in the position description leads to incomplete or inaccurate evaluations. All ratable duties performed by the employee must be included in the appraisal, not just targeted or visible tasks. The supervisor should have reviewed the full range of assigned duties and credited the employee accordingly. To address this, the appraisal should be amended to reflect all relevant work completed. Moving forward, supervisors must compare evaluations against the full position description to ensure completeness."
+            "argument": "Ignoring tasks that fall under direct time or are specifically listed in the position description leads to incomplete or inaccurate evaluations. All ratable duties performed by the"
+            " employee must be included in the appraisal, not just targeted or visible tasks. The supervisor should have reviewed the full range of assigned duties and credited the employee accordingly. To"
+            " address this, the appraisal should be amended to reflect all relevant work completed. Moving forward, supervisors must compare evaluations against the full position description to ensure"
+            " completeness."
         },
         "Overtime work that is ratable is not counted toward the 120-hour requirement.": {
             "articles": ["Article 12 Section 4", "5 CFR § 430.208"],
-            "argument": "Overtime work that qualifies as ratable must be included when calculating the total hours of work used to determine appraisal eligibility. Excluding such hours unfairly denies employees an appraisal they rightfully earned. The correct approach would have been to count all ratable duties performed, regardless of whether they occurred during regular or overtime hours. To fix this, management should recalculate work totals including ratable overtime and issue the appropriate appraisal if the 120-hour threshold was met. Moving forward, supervisors must be reminded that time spent on ratable duties is valid regardless of when it occurs. "
+            "argument": "Overtime work that qualifies as ratable must be included when calculating the total hours of work used to determine appraisal eligibility. Excluding such hours unfairly denies employees"
+            " an appraisal they rightfully earned. The correct approach would have been to count all ratable duties performed, regardless of whether they occurred during regular or overtime hours. To fix this,"
+            " management should recalculate work totals including ratable overtime and issue the appropriate appraisal if the 120-hour threshold was met. Moving forward, supervisors must be reminded that time"
+            " spent on ratable duties is valid regardless of when it occurs. "
         },
         "Employer improperly denies rating of record to a steward who met the 60-day minimum appraisal period when no agreement on 120 ratable hours is reached. ": {
             "articles": ["Article 12 Section 4", "5 CFR § 430.208"],
-            "argument": "A union steward who has completed at least 60 days on an active performance plan should receive a rating of record, even if the total number of ratable hours is unclear or in dispute. Denying the rating based solely on the lack of consensus about hours worked overlooks the clear eligibility based on time in the plan. The correct course would have been to issue a valid appraisal using the available information from the 60-day period. To correct the error, an appropriate rating of record should be issued immediately. Management should also establish clearer procedures for verifying and documenting ratable work for stewards. "
+            "argument": "A union steward who has completed at least 60 days on an active performance plan should receive a rating of record, even if the total number of ratable hours is unclear or in dispute."
+            " Denying the rating based solely on the lack of consensus about hours worked overlooks the clear eligibility based on time in the plan. The correct course would have been to issue a valid appraisal"
+            " using the available information from the 60-day period. To correct the error, an appropriate rating of record should be issued immediately. Management should also establish clearer procedures for"
+            " verifying and documenting ratable work for stewards. "
         },
         "Performance appraisal does not take into account mitigating factors such as: Availability of resources * Lack of training * Mix of work * Collateral duties * Frequent authorized interruptions ": {
             "articles": ["Article 12 Section 4", "5 CFR § 430.208"],
-            "argument": "Appraisals must reflect the actual working conditions of the employee, including any challenges or obstacles outside their control. Failing to consider mitigating factors results in unfair evaluations and sets unrealistic performance expectations. The supervisor should have assessed the employee’s performance in light of the training provided, work complexity, support resources, and interruptions for authorized duties. To resolve this, the appraisal should be reevaluated with those mitigating circumstances factored in. In the future, managers must actively document and consider such conditions when determining performance ratings. "
+            "argument": "Appraisals must reflect the actual working conditions of the employee, including any challenges or obstacles outside their control. Failing to consider mitigating factors results in"
+            " unfair evaluations and sets unrealistic performance expectations. The supervisor should have assessed the employee’s performance in light of the training provided, work complexity, support"
+            " resources, and interruptions for authorized duties. To resolve this, the appraisal should be reevaluated with those mitigating circumstances factored in. In the future, managers must actively"
+            " document and consider such conditions when determining performance ratings. "
         },
         "Employer fails to provide counseling when there is a noticeable decrease in performance. ": {
             "articles": ["Article 12 Section 4", "5 CFR § 430.208"],
-            "argument": "When an employee’s performance declines, management has a responsibility to intervene early with timely counseling. Ignoring a downward trend denies the employee an opportunity to understand expectations and improve. The supervisor should have met with the employee to identify the issue and offer guidance. To address this, the employee should now receive a counseling session, and management should document it appropriately. Going forward, supervisors should regularly monitor performance and respond promptly to changes with supportive, constructive feedback. "
+            "argument": "When an employee’s performance declines, management has a responsibility to intervene early with timely counseling. Ignoring a downward trend denies the employee an opportunity to"
+            " understand expectations and improve. The supervisor should have met with the employee to identify the issue and offer guidance. To address this, the employee should now receive a counseling"
+            " session, and management should document it appropriately. Going forward, supervisors should regularly monitor performance and respond promptly to changes with supportive, constructive feedback. "
         },
         "Counseling omits advice or recommendations on how to improve (e.g., better communication, coaching, mentoring, etc.). ": {
             "articles": ["Article 12 Section 4", "5 CFR § 430.208"],
-            "argument": "Counseling that simply points out problems without offering meaningful ways to improve is incomplete and ineffective. Employees cannot correct issues if they are not told how to do so. Instead, the supervisor should have provided specific suggestions or referred the employee to resources like coaching, mentoring, or job aids. This omission should be corrected by providing a follow-up session with tailored improvement strategies. Moving forward, management should ensure every counseling session includes clear, actionable steps the employee can take to succeed. "
+            "argument": "Counseling that simply points out problems without offering meaningful ways to improve is incomplete and ineffective. Employees cannot correct issues if they are not told how to do so."
+            " Instead, the supervisor should have provided specific suggestions or referred the employee to resources like coaching, mentoring, or job aids. This omission should be corrected by providing a"
+            " follow-up session with tailored improvement strategies. Moving forward, management should ensure every counseling session includes clear, actionable steps the employee can take to succeed. "
         },
         "Written feedback is used as the sole method of counseling, without accompanying oral communication. ": {
             "articles": ["Article 12 Section 4", "5 CFR § 430.208"],
-            "argument": "Providing only written counseling without a follow-up discussion limits the employee’s ability to ask questions, clarify expectations, or respond in real time. Counseling is most effective when it includes a two-way conversation. Instead, the supervisor should have held an oral discussion alongside or prior to issuing written feedback. To correct this, management should offer the employee a retroactive opportunity to discuss the issue and expectations. Going forward, all counseling—especially when related to performance concerns—should include both written and verbal communication. "
+            "argument": "Providing only written counseling without a follow-up discussion limits the employee’s ability to ask questions, clarify expectations, or respond in real time. Counseling is most"
+            " effective when it includes a two-way conversation. Instead, the supervisor should have held an oral discussion alongside or prior to issuing written feedback. To correct this, management should"
+            " offer the employee a retroactive opportunity to discuss the issue and expectations. Going forward, all counseling—especially when related to performance concerns—should include both written and"
+            " verbal communication. "
         },
         "Counseling not provided when there is a drop in the overall rating (e.g., from Exceeds Fully Successful to Fully Successful). ": {
             "articles": ["Article 12 Section 4", "5 CFR § 430.208"],
-            "argument": "A significant drop in performance rating should trigger a counseling session to explain the change and provide guidance. Skipping this step leaves the employee confused and unable to improve or respond to the perceived decline. The supervisor should have met with the employee to discuss why the rating changed and what could be done to return to previous levels. To correct the situation, management should now offer that discussion, even post-rating. Moving forward, any decrease in rating must be accompanied by timely counseling to ensure transparency and support. "
+            "argument": "A significant drop in performance rating should trigger a counseling session to explain the change and provide guidance. Skipping this step leaves the employee confused and unable to"
+            " improve or respond to the perceived decline. The supervisor should have met with the employee to discuss why the rating changed and what could be done to return to previous levels. To correct the"
+            " situation, management should now offer that discussion, even post-rating. Moving forward, any decrease in rating must be accompanied by timely counseling to ensure transparency and support. "
         },
         "Employee is not allowed to challenge performance appraisals (when used in disciplinary actions) through the grievance procedure. ": {
             "articles": ["Article 12 Section 4", "5 CFR § 430.208"],
-            "argument": "Performance appraisals used as part of a disciplinary action must be open to challenge through the appropriate grievance process. Denying this right prevents employees from defending themselves against unfair assessments. Instead, the employee should have been permitted to file a grievance and have their concerns heard. To correct the issue, the employee’s right to grieve should be acknowledged and any denied grievance should be reopened. Management must ensure all supervisors understand that when an appraisal is tied to discipline, grievance rights apply. "
+            "argument": "Performance appraisals used as part of a disciplinary action must be open to challenge through the appropriate grievance process. Denying this right prevents employees from defending"
+            " themselves against unfair assessments. Instead, the employee should have been permitted to file a grievance and have their concerns heard. To correct the issue, the employee’s right to grieve"
+            " should be acknowledged and any denied grievance should be reopened. Management must ensure all supervisors understand that when an appraisal is tied to discipline, grievance rights apply. "
         },
         "Employee is not allowed to challenge performance appraisals (when used in adverse actions or actions for unacceptable performance) through either the grievance or statutory appeals process. ": {
             "articles": ["Article 12 Section 4", "5 CFR § 430.208"],
-            "argument": "Employees must be given a pathway to challenge appraisals that are used to justify serious actions like demotion, removal, or pay denial. Blocking both grievance and appeal options strips away basic due process and is procedurally incorrect. The proper step would have been to notify the employee of their rights and allow them to pursue the applicable challenge process. To remedy this, any actions based on the appraisal must be paused until the employee has been given access to their due process options. Moving forward, supervisors and HR staff must be trained on when and how performance-related actions trigger appeal rights. "
+            "argument": "Employees must be given a pathway to challenge appraisals that are used to justify serious actions like demotion, removal, or pay denial. Blocking both grievance and appeal options"
+            " strips away basic due process and is procedurally incorrect. The proper step would have been to notify the employee of their rights and allow them to pursue the applicable challenge process. To"
+            " remedy this, any actions based on the appraisal must be paused until the employee has been given access to their due process options. Moving forward, supervisors and HR staff must be trained on"
+            " when and how performance-related actions trigger appeal rights. "
         },
-        "Scored appraisal lacks a written narrative justification for each score, beyond simply stating performance standards were met. (Exception: if the same or lower score was given the prior year for that element.) ": {
+        "Scored appraisal lacks a written narrative justification for each score, beyond simply stating performance standards were met. (Exception: if the same or lower score was given the prior year for"
+        " that element.) ": {
             "articles": ["Article 12 Section 4", "5 CFR § 430.208"],
-            "argument": "An appraisal score without a narrative fails to demonstrate how the employee's actual performance met the standards required for that rating. Simply stating that the standard was met is insufficient because it does not show the reasoning or evidence behind the score. Instead, the supervisor should have written a brief narrative justifying each score, unless it matched or was lower than the prior year's score for the same element. This narrative serves as documentation and transparency for the rating process. To correct this, the supervisor should be directed to provide the missing narratives. Moving forward, all raters must ensure each new or increased score is supported by a written explanation of observed performance. "
+            "argument": "An appraisal score without a narrative fails to demonstrate how the employee's actual performance met the standards required for that rating. Simply stating that the standard was met is"
+            " insufficient because it does not show the reasoning or evidence behind the score. Instead, the supervisor should have written a brief narrative justifying each score, unless it matched or was lower"
+            " than the prior year's score for the same element. This narrative serves as documentation and transparency for the rating process. To correct this, the supervisor should be directed to provide the"
+            " missing narratives. Moving forward, all raters must ensure each new or increased score is supported by a written explanation of observed performance. "
         },
         "Narrative justification exceeds two single-spaced pages unnecessarily.": {
             "articles": ["Article 12 Section 4", "5 CFR § 430.208"],
-            "argument": "Narrative justifications should be concise and focused on summarizing performance in support of the rating. A justification that exceeds two single-spaced pages creates unnecessary complexity and may include irrelevant or redundant details. The supervisor should have summarized each element clearly, efficiently, and within the expected page limit. This helps maintain uniformity and allows appraisals to be easily reviewed. To resolve this, supervisors should be instructed to revise excessive narratives for clarity and brevity. In the future, training should reinforce best practices for concise performance writing. "
+            "argument": "Narrative justifications should be concise and focused on summarizing performance in support of the rating. A justification that exceeds two single-spaced pages creates unnecessary"
+            " complexity and may include irrelevant or redundant details. The supervisor should have summarized each element clearly, efficiently, and within the expected page limit. This helps maintain"
+            " uniformity and allows appraisals to be easily reviewed. To resolve this, supervisors should be instructed to revise excessive narratives for clarity and brevity. In the future, training should"
+            " reinforce best practices for concise performance writing. "
         },
         "Supervisor fails to award “Not Applicable (NA)” when no opportunity or observation occurred in a critical element, and still gives a numerical score. ": {
             "articles": ["Article 12 Section 4", "5 CFR § 430.208"],
-            "argument": "Assigning a numerical score for a critical element when the employee had no opportunity to perform or the work was not observed is inaccurate and misleading. In such cases, the element should have been marked “Not Applicable (NA)” to ensure the rating reflects only observed and ratable performance. By assigning a score anyway, the appraisal misrepresents actual performance and can unfairly influence personnel decisions. The error should be corrected by reissuing the appraisal with “NA” applied where appropriate. Going forward, supervisors must verify that each critical element scored was based on observable, completed work. "
+            "argument": "Assigning a numerical score for a critical element when the employee had no opportunity to perform or the work was not observed is inaccurate and misleading. In such cases, the element"
+            " should have been marked “Not Applicable (NA)” to ensure the rating reflects only observed and ratable performance. By assigning a score anyway, the appraisal misrepresents actual performance and"
+            " can unfairly influence personnel decisions. The error should be corrected by reissuing the appraisal with “NA” applied where appropriate. Going forward, supervisors must verify that each critical"
+            " element scored was based on observable, completed work. "
         },
         "Supervisor requires a narrative when awarding a “4” or “5” in an element that received the same or lower score the prior year. ": {
             "articles": ["Article 12 Section 4", "5 CFR § 430.208"],
-            "argument": "Requiring a narrative in cases where the score has not increased from the prior year contradicts established appraisal practices and adds unnecessary burden. When a rating remains consistent or is lower, no new justification is required unless the rating is contested or there is significant change. The supervisor should have accepted the score without demanding an additional narrative. To address this, any improperly requested narratives should be removed from the process and the employee informed. Future appraisals should adhere to established documentation requirements and avoid overreach. "
+            "argument": "Requiring a narrative in cases where the score has not increased from the prior year contradicts established appraisal practices and adds unnecessary burden. When a rating remains"
+            " consistent or is lower, no new justification is required unless the rating is contested or there is significant change. The supervisor should have accepted the score without demanding an"
+            " additional narrative. To address this, any improperly requested narratives should be removed from the process and the employee informed. Future appraisals should adhere to established"
+            " documentation requirements and avoid overreach. "
         },
         "Supervisor refuses to attach the employee’s self-prepared narrative summary (when permitted under subsection 4B6) to the scored appraisal or revalidation.": {
             "articles": ["Article 12 Section 4", "5 CFR § 430.208"],
-            "argument": "Employees have the right to submit a self-prepared summary as part of their appraisal, and denying its attachment violates that right and undermines transparency. This summary offers valuable context and helps ensure the employee’s voice is part of the formal record. The supervisor should have attached the narrative to the appraisal and acknowledged its inclusion. To correct this, the employee’s summary should be immediately added to the performance record. Supervisors should also be instructed on employees' rights regarding self-submissions."
+            "argument": "Employees have the right to submit a self-prepared summary as part of their appraisal, and denying its attachment violates that right and undermines transparency. This summary offers"
+            " valuable context and helps ensure the employee’s voice is part of the formal record. The supervisor should have attached the narrative to the appraisal and acknowledged its inclusion. To correct"
+            " this, the employee’s summary should be immediately added to the performance record. Supervisors should also be instructed on employees' rights regarding self-submissions."
         },
         "Employee not notified at least five (5) workdays prior to revalidation of an identical rating of record.": {
             "articles": ["Article 12 Section 4", "5 CFR § 430.208"],
-            "argument": "Employees must be given advance notice of a revalidation so they can prepare and respond if needed. Failing to provide at least five workdays' notice prevents the employee from submitting feedback, updates, or corrections. The supervisor should have issued timely notification prior to finalizing the revalidation. To correct the oversight, the rating should be temporarily withdrawn, proper notice issued, and then revalidated. Moving forward, all supervisors must track appraisal deadlines carefully and communicate proactively. "
+            "argument": "Employees must be given advance notice of a revalidation so they can prepare and respond if needed. Failing to provide at least five workdays' notice prevents the employee from"
+            " submitting feedback, updates, or corrections. The supervisor should have issued timely notification prior to finalizing the revalidation. To correct the oversight, the rating should be"
+            " temporarily withdrawn, proper notice issued, and then revalidated. Moving forward, all supervisors must track appraisal deadlines carefully and communicate proactively. "
         },
         "Supervisor fails to conduct a performance discussion at the time of revalidation. ": {
             "articles": ["Article 12 Section 4", "5 CFR § 430.208"],
-            "argument": "Revalidating an appraisal without holding a discussion deprives the employee of the opportunity to understand their performance and ask questions. This lack of communication can lead to misunderstandings and missed improvement opportunities. The supervisor should have scheduled a performance discussion to explain the revalidated rating and confirm it reflected current performance. To correct the situation, a follow-up discussion should be scheduled promptly. Future revalidations must include a clear performance meeting, even if the rating remains unchanged. "
+            "argument": "Revalidating an appraisal without holding a discussion deprives the employee of the opportunity to understand their performance and ask questions. This lack of communication can lead"
+            " to misunderstandings and missed improvement opportunities. The supervisor should have scheduled a performance discussion to explain the revalidated rating and confirm it reflected current"
+            " performance. To correct the situation, a follow-up discussion should be scheduled promptly. Future revalidations must include a clear performance meeting, even if the rating remains unchanged. "
         },
         "Supervisor adds explanations or notes to a revalidated appraisal, except as permitted under 4N4 - the revalidated appraisal is to be used for merit promotion, the supervisor or designee must prepare"
         " a narrative for each critical job element that does not have a narrative describing the performance in the appraisal period covered by the rating. ": {
             "articles": ["Article 12 Section 4", "5 CFR § 430.208"],
-            "argument": "Revalidated appraisals are not meant to be modified except under specific, limited conditions. Adding explanations outside of those rules alters the original context and can misrepresent the employee’s performance history. Instead, the supervisor should have either issued a new appraisal or strictly followed the revalidation rules. Any unauthorized notes should be removed from the record. Supervisors should be retrained on the appropriate use of revalidation and when new documentation is necessary. "
+            "argument": "Revalidated appraisals are not meant to be modified except under specific, limited conditions. Adding explanations outside of those rules alters the original context and can misrepresent"
+            " the employee’s performance history. Instead, the supervisor should have either issued a new appraisal or strictly followed the revalidation rules. Any unauthorized notes should be removed from the"
+            " record. Supervisors should be retrained on the appropriate use of revalidation and when new documentation is necessary. "
         },
         "Supervisor changes the narrative of a revalidated appraisal without preparing a new appraisal.": {
             "articles": ["Article 12 Section 4", "5 CFR § 430.208"],
-            "argument": "Changing the narrative of a revalidated rating is improper and can distort the official record of past performance. Any update or change to the explanation of a score requires a new appraisal to ensure accuracy and fairness. The supervisor should have created a new, dated appraisal reflecting any performance updates. To resolve this, the altered revalidated narrative should be withdrawn and replaced with a new, properly documented rating. Supervisors must be reminded that revalidations are meant to preserve—not revise—past ratings."
+            "argument": "Changing the narrative of a revalidated rating is improper and can distort the official record of past performance. Any update or change to the explanation of a score requires a new"
+            " appraisal to ensure accuracy and fairness. The supervisor should have created a new, dated appraisal reflecting any performance updates. To resolve this, the altered revalidated narrative should"
+            " be withdrawn and replaced with a new, properly documented rating. Supervisors must be reminded that revalidations are meant to preserve—not revise—past ratings."
         },
         "Revalidated appraisal is used for merit promotion without adding required narratives for each critical job element lacking one from the current period. ": {
             "articles": ["Article 12 Section 4", "5 CFR § 430.208"],
-            "argument": "Using a revalidated appraisal for merit promotion requires current performance documentation. If any element lacks a narrative describing the employee’s performance during the applicable period, that omission must be corrected. The supervisor should have prepared a brief narrative for each such element before using the rating for promotion purposes. To correct this, the missing narratives should be added and the appraisal resubmitted for proper consideration. In the future, all revalidated appraisals used for competitive actions must include complete performance descriptions. "
+            "argument": "Using a revalidated appraisal for merit promotion requires current performance documentation. If any element lacks a narrative describing the employee’s performance during the"
+            " applicable period, that omission must be corrected. The supervisor should have prepared a brief narrative for each such element before using the rating for promotion purposes. To correct this, the"
+            " missing narratives should be added and the appraisal resubmitted for proper consideration. In the future, all revalidated appraisals used for competitive actions must include complete performance"
+            " descriptions. "
         },
         'Employee automatically rated “Fully Successful” solely because they: Assumed new tasks * Received new CJEs * Changed positions * Are a trainee * Were promoted ': {
             "articles": ["Article 12 Section 4", "5 CFR § 430.208"],
-            "argument": "Assigning a “Fully Successful” rating automatically without assessing actual performance undermines the credibility and fairness of the appraisal process. Each rating must be earned based on observed work and achievement against established standards. In this case, the supervisor should have evaluated the employee’s contributions in their new role, even if limited, and issued a rating supported by available performance data. If sufficient information was unavailable, “Not Ratable” should have been used instead. To correct this, the rating should be reviewed and adjusted if necessary. Going forward, ratings must reflect real, measurable work performance."
+            "argument": "Assigning a “Fully Successful” rating automatically without assessing actual performance undermines the credibility and fairness of the appraisal process. Each rating must be earned based"
+            " on observed work and achievement against established standards. In this case, the supervisor should have evaluated the employee’s contributions in their new role, even if limited, and issued a"
+            " rating supported by available performance data. If sufficient information was unavailable, “Not Ratable” should have been used instead. To correct this, the rating should be reviewed and adjusted"
+            " if necessary. Going forward, ratings must reflect real, measurable work performance."
         },
         "Performance rating not based strictly on actual performance against applicable CJEs for the performance period. ": {
             "articles": ["Article 12 Section 4", "5 CFR § 430.208"],
-            "argument": "A performance rating must reflect how well the employee met the critical job elements (CJEs) during the appraisal period. If the rating was based on assumptions, unrelated activities, or factors outside of the CJEs, it is not valid or fair. The supervisor should have evaluated performance only against the defined elements applicable to the employee’s position and duties. To address this, the appraisal should be reassessed and revised to align with the correct CJEs. Future ratings must be grounded solely in the measurable performance tied to the assigned job elements."
+            "argument": "A performance rating must reflect how well the employee met the critical job elements (CJEs) during the appraisal period. If the rating was based on assumptions, unrelated activities,"
+            " or factors outside of the CJEs, it is not valid or fair. The supervisor should have evaluated performance only against the defined elements applicable to the employee’s position and duties. To"
+            " address this, the appraisal should be reassessed and revised to align with the correct CJEs. Future ratings must be grounded solely in the measurable performance tied to the assigned job elements."
         },
-        "Rating is inconsistent with peer comparisons": {
+        "DO NOT USE - Rating is inconsistent with peer comparisons": {
             "articles": ["Article 12 Section 4", "5 CFR § 430.208"],
             "argument": "The rating is inconsistent with peer comparisons, violating Article 21, Section 5."
         },
-        "Performance elements were not clearly defined": {
+        "DO NOT USE - Performance elements were not clearly defined": {
             "articles": ["Article 12 Section 4", "5 CFR § 430.208"],
             "argument": "Performance elements were not clearly defined, violating Article 21, Section 2."
         },
-        "Employee was not given opportunity to improve": {
+        "DO NOT USE - Employee was not given opportunity to improve": {
             "articles": ["Article 12 Section 4", "5 CFR § 430.208"],
             "argument": "The employee was not given the opportunity to improve, violating Article 12, Section 7."
         },
-        "Rating is inconsistent with prior feedback": {
+        "DO NOT USE - Rating is inconsistent with prior feedback": {
             "articles": ["Article 12 Section 4", "5 CFR § 430.208"],
             "argument": "The rating is inconsistent with prior feedback, violating Article 21, Section 4."
         }
     }
     measured_checkboxes = {
-        "MRating is inconsistent with prior feedback": {
+        "DO NOT USE - MRating is inconsistent with prior feedback": {
             "articles": ["Article 21 Section 4"],
             "argument": "The rating is inconsistent with prior feedback, violating Article 21, Section 4."
         },
-        "MRating is inconsistent with peer comparisons": {
+        "DO NOT USE - MRating is inconsistent with peer comparisons": {
             "articles": ["Article 21 Section 5"],
             "argument": "The rating is inconsistent with peer comparisons, violating Article 21, Section 5."
         },
-        "MPerformance elements were not clearly defined": {
+        "DO NOT USE - MPerformance elements were not clearly defined": {
             "articles": ["Article 12 Section 3"],
             "argument": "Performance elements were not clearly defined, violating Article 21, Section 2."
         },
-        "MEmployee was not given opportunity to improve": {
+        "DO NOT USE - MEmployee was not given opportunity to improve": {
             "articles": ["Article 12 Section 7"],
             "argument": "The employee was not given the opportunity to improve, violating Article 12, Section 7."
         }
     }
     unmeasured_checkboxes = {
-        "UMRating is inconsistent with prior feedback": {
+        "DO NOT USE - UMRating is inconsistent with prior feedback": {
             "articles": ["Article 21 Section 4"],
             "argument": "The rating is inconsistent with prior feedback, violating Article 21, Section 4."
         },
-        "UMRating is inconsistent with peer comparisons": {
+        "DO NOT USE - UMRating is inconsistent with peer comparisons": {
             "articles": ["Article 21 Section 5"],
             "argument": "The rating is inconsistent with peer comparisons, violating Article 21, Section 5."
         },
-        "UMPerformance elements were not clearly defined": {
+        "DO NOT USE - UMPerformance elements were not clearly defined": {
             "articles": ["Article 12 Section 3"],
             "argument": "Performance elements were not clearly defined, violating Article 21, Section 2."
         },
-        "UMEmployee was not given opportunity to improve": {
+        "DO NOT USE - UMEmployee was not given opportunity to improve": {
             "articles": ["Article 12 Section 7"],
             "argument": "The employee was not given the opportunity to improve, violating Article 12, Section 7."
         }
