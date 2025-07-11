@@ -613,6 +613,8 @@ def render_annual():
 
     # --- PDF Generation / Download ---
     if submitted:
+        for article in info["articles"]:
+            selected_articles.add(article.strip())
         article_list = ", ".join(sorted(set(selected_articles)))
         full_argument = ""
         if selected_arguments:
