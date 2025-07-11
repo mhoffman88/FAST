@@ -580,7 +580,7 @@ def render_annual():
             )
 
         selected_reasons = []
-        selected_articles = []
+        selected_articles = set()
         selected_arguments = []
 
         st.subheader("Alleged Violations")
