@@ -667,6 +667,11 @@ def render_annual():
             "argument": "The employee was not given the opportunity to improve, violating Article 12, Section 7."
         }
     }
+
+    selected_arguments = []
+    selected_articles = []
+    selected_reasons = []
+    
     # --- Date and FBD input/display together ---
     if "date_received" not in st.session_state:
         st.session_state["date_received"] = datetime.date.today()
