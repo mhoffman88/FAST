@@ -10,7 +10,7 @@ from util import wrap_text_to_width, draw_wrapped_section, generate_pdf, convert
 def render_annual():
     annual_checkbox_descriptions = {
         "Performance standards did not permit the accurate evaluation of their job performance based on objective criteria related to their position.": {
-            "articles": ["Article 12 Section 3", "5 U.S.C §§ 9508", "5 U.S.C. §§ 4302", "5 C.F.R. Part 430"],
+            "articles": ["Article 12 Section 3", "5 U.S.C §§ 9508", "5 U.S.C. §§ 4302", "5 CFR § 430.208"],
             "argument": (
                 "     Management is supposed to, to the maximum extent feasible, provide an accurate evaluation of an employee’s job performance based on objective criteria related to the position. By"
                 " failing to do this, management has failed to follow the guidance provided through the National Agreement, Article 12 Section 3; 5 USC 4302; 5 USC 9508; 5 CFR Part 430. Each of these specify"
@@ -23,7 +23,7 @@ def render_annual():
             )
         },
         "Management was given specific distribution amounts per level of rating for employees.": {
-            "articles": ["Article 12, Section 3", "5 C.F.R. Part 430.208", "IRM 6.430.2.5.7"],
+            "articles": ["Article 12 Section 3", "5 CFR § 430.208", "IRM 6.430.2.5.7"],
             "argument": (
                 "     It is highly inappropriate for management to establish and distribute annual appraisals based upon specific distribution amounts per level of rating of employees. By utilizing this system"
                 " of restricting the amount allowed per level of rating, management removes the ability for employees to be fairly and accurately rated upon their performance over the year the annual appraisal period"
@@ -39,7 +39,7 @@ def render_annual():
             )
         },
         "Employee was not given their annual appraisal on the 6850-BU.": {
-            "articles": ["Article 12 Section 4, 5 C.F.R § 430.208"],
+            "articles": ["Article 12 Section 4", "5 CFR § 430.208"],
             "argument": "Management is meant to keep annual appraisals fair across the Agency. This helps to ensure that employees are treated fairly during the review process. This begins with the"
             " utilization of the form 6850-BU, which allows for the same information to be applied in a strategic way to showcase the employee’s accomplishments and areas of concern over the annual appraisal"
             " year being evaluated. By management choosing to perform the annual appraisal on anything other than the 6850-BU form, it is highly inappropriate and creates unfair and unjust representation for"
@@ -47,7 +47,7 @@ def render_annual():
             " reevaluate the employee utilizing the correct form to ensure that the appraisal is a fair appraisal for the employee’s appraisal year being evaluated. "
         },
         "Rating was given outside of rating period based on the ending of my social security number. ": {
-            "articles": ["Article 12, Section 4, Exhibit 12-2, 5 USC Chapter 43, 5307(d), 5 CFR 430.208 (a) (1), (h), IRM 6.430.3.5.1.1, IRM 6.430.2.4.2, IRM 6.430.2.4.2.1, Document 11678"],
+            "articles": ["Article 12 Section 4", "Exhibit 12-2", "5 USC Chapter 43", "5 CFR 430", "IRM 6.430.3.5.1.1", "IRM 6.430.2.4.2", "IRM 6.430.2.4.2.1", "Document 11678"],
             "argument": "This grievance concerns the current policy of determining the annual performance appraisal period based on the last digit of an employee’s Social Security Number (SSN). Under this"
             " policy, employees receive their annual performance appraisals in different months throughout the fiscal year, resulting in varying evaluation periods. This practice creates inconsistencies in"
             " performance assessment and may lead to inequities in how employees are rated and rewarded. Specifically, employees in similar positions are subject to different performance periods"
@@ -56,7 +56,7 @@ def render_annual():
             " needs to reevaluate this annual appraisal and use the guidance given to ensure that a consistent and fair performance evaluation is issued to the employee."
         },
         "Employee changed from one permanent position to another within the last 60 days of the appraisal year and the departure appraisal was not used for the rating of record.": {
-            "articles": ["Article 12, Section 4, IRM 6.430.2.4.2, IRM 6.430.2.4.2.1, 5 C.F.R § 430.208"],
+            "articles": ["Article 12 Section 4", "IRM 6.430.2.4.2", "IRM 6.430.2.4.2.1", "5 C.F.R § 430.208"],
             "argument": "When an employee permanently changes positions within the last 60 days of the appraisal year, the departing supervisor is required to complete a departure appraisal, which must then be"
             " used as the basis for the employee's rating of record. In this case, the failure to use the departure appraisal violates 5 C.F.R. § 430.208(a), which mandates that performance be appraised by the"
             " supervisor who had oversight during the relevant appraisal period. Ignoring the departure appraisal removes accountability from the supervisor who observed the employee’s performance for the"
@@ -65,7 +65,7 @@ def render_annual():
             " such transitions to ensure compliance. A system-level alert or checklist should be implemented to prevent oversight when an employee changes positions near the end of an appraisal period. "
         },
         "Departing supervisor did not comply by performing a departure appraisal.": {
-            "articles": ["Article 12, Section 4, 5 C.F.R § 430.208"],
+            "articles": ["Article 12 Section 4", "5 C.F.R § 430.208"],
             "argument": "When a supervisor leaves their position—regardless of whether the departure is permanent or temporary—they are required to complete a departure appraisal for any employee they"
             " supervised for at least 60 days in the appraisal period. In this case, the supervisor failed to fulfill that obligation, which directly contradicts Article 12 of the National Agreement and 5"
             " C.F.R. § 430.208(b). This creates a gap in documentation and can lead to an inaccurate or incomplete appraisal of the employee’s performance, especially if the incoming supervisor has not"
@@ -74,7 +74,7 @@ def render_annual():
             " departure clearance process. Training sessions and reminders should be issued to all management personnel to ensure they understand their obligations under the performance management system. "
         },
         "Supervisor departed from their position during the last 60 days of the appraisal period, and the departure appraisal was not used.": {
-            "articles": ["Article 12, Section 4, 5 C.F.R § 430.208"],
+            "articles": ["Article 12 Section 4", "5 C.F.R § 430.208"],
             "argument": "When a supervisor leaves during the final 60 days of an appraisal period, their departure appraisal must be used as the employees' rating of record if the incoming supervisor has not"
             " observed the employee for the minimum 60-day requirement. In this situation, failing to use the departure appraisal violates both 5 C.F.R. § 430.207 and Article 12 of the National Agreement, as"
             " the appraisal must be based on observed performance by a qualified rater. Instead, relying on an incoming supervisor who lacks sufficient observation time results in an invalid and potentially"
@@ -83,7 +83,7 @@ def render_annual():
             " of recent supervisor departures should also be considered to identify and rectify any additional oversights."
         },
         "Supervisor temporarily departed their position during the last 60 days of the employee's appraisal period, but this supervisor did not perform the appraisal.": {
-            "articles": ["Article 12, Section 4, 5 C.F.R § 430.208"],
+            "articles": ["Article 12 Section 4", "5 C.F.R § 430.208"],
             "argument": "Even in cases of temporary departure, supervisors who have observed an employee’s performance for at least 60 days in the appraisal period are still responsible for completing a"
             " departure appraisal if they are unavailable during the close of the cycle. In this instance, the failure to conduct an appraisal results in a rating being issued by a manager who did not meet the"
             " observation requirement, violating 5 C.F.R. § 430.208 and the performance appraisal provisions of the National Agreement. An appraisal must be based on actual performance, and that requires"
@@ -92,7 +92,7 @@ def render_annual():
             " accountability measures should be communicated to all managers, especially during the final quarter of the appraisal period."
         },
         "Supervisor left their position between the 5th and 7th month of the appraisal period, the employees management chain did not utilize the departing appraisal for the employees mid-year review.": {
-            "articles": ["Article 12, Section 4, 5 C.F.R § 430.208"],
+            "articles": ["Article 12 Section 4", "5 C.F.R § 430.208"],
             "argument": "When a supervisor leaves midway through an appraisal year, particularly between the 5th and 7th month, a departure appraisal should be completed and used to inform the employee’s"
             " mid-year review. Failing to incorporate this appraisal results in the new supervisor issuing feedback or mid-year evaluations without sufficient observation, which violates the principle of fair"
             " and meaningful performance evaluation. The departing supervisor had the necessary observation period and context to provide accurate feedback, and that appraisal should have been used as the"
@@ -101,7 +101,7 @@ def render_annual():
             " mid-year reviews to any available departure appraisals to ensure continuity and accuracy. "
         },
         "Departure appraisal used to disadvantage the employee (e.g., denial of overtime, Telework, or AWS).": {
-            "articles": ["Article 12, Section 4, 5 C.F.R § 430.208"],
+            "articles": ["Article 12 Section 4", "5 C.F.R § 430.208"],
             "argument": "A departure appraisal, while important, is not a final rating of record and should not be used to take adverse actions against employees, such as denying overtime, Telework, or"
             " Alternative Work Schedules (AWS). When this occurs, it violates the National Agreement and OPM guidance, which clarify that departure appraisals are not final and are subject to further"
             " evaluation. Using them as the basis for punitive actions bypasses procedural safeguards and the opportunity for employee rebuttal, creating an unfair and potentially grievable situation. Instead,"
@@ -110,7 +110,7 @@ def render_annual():
             " if improperly applied. "
         },
         "Departure appraisal improperly becoming a de facto rating of record.": {
-            "articles": ["Article 12, Section 4, 5 C.F.R § 430.208 "],
+            "articles": ["Article 12 Section 4", "5 C.F.R § 430.208"],
             "argument": "Departure appraisals are meant to document observed performance when a supervisor leaves, but they are not intended to serve as the final rating of record unless the departing"
             " supervisor has observed the employee for the full appraisal period or no other qualified supervisor is available. Improperly treating a departure appraisal as the rating of record undermines the"
             " integrity of the appraisal process, especially if there are months of performance not captured or reviewed. This mistake removes the chance for subsequent supervisors to observe, document, and"
@@ -119,7 +119,7 @@ def render_annual():
             " timelines and rater assignments should be monitored to ensure proper sequencing and compliance. "
         },
         "Departure appraisal not held until used in an annual rating.": {
-            "articles": ["Article 12, Section 4, 5 C.F.R § 430.208"],
+            "articles": ["Article 12 Section 4", "5 C.F.R § 430.208"],
             "argument": "Departure appraisals must be retained and not discarded until the employee's final annual rating of record is completed and any related grievance or appeal rights have expired. When"
             " a departure appraisal is not held for this purpose, it violates federal regulations and the National Agreement, which require all supporting documentation for appraisals to be maintained until"
             " no longer needed. Discarding the appraisal prematurely denies both the employee and future rating officials access to important documentation that may affect the employee’s final rating. Instead,"
@@ -127,7 +127,7 @@ def render_annual():
             " aligned with the performance management system and require electronic retention of all departure appraisals until the final rating of record and any related proceedings are complete. "
         },
         "Improper use of a recordation before a rating of record. ": {
-            "articles": ["Article 12, Section 4, 5 C.F.R § 430.208"],
+            "articles": ["Article 12 Section 4", "5 C.F.R § 430.208"],
             "argument": "Evaluative recordations, such as written feedback or monitored contact summaries, may only be used in a rating of record if shared with the employee within 15 workdays of the event and"
             " if the employee was given a chance to respond. Using a recordation that wasn’t disclosed or shared violates Article 12, Section 9 of the National Agreement and basic principles of due process. This"
             " undermines employee rights by denying them the opportunity to rebut or clarify performance events, which could unjustly influence the final rating. Instead, management should only use recordations"
@@ -135,7 +135,7 @@ def render_annual():
             " Additionally, employees should be notified immediately of any recordation that may be used in a future rating to ensure transparency and fairness. "
         },
         "Appraisal period not extended when 60-day minimum not met.": {
-            "articles": ["Article 12, Section 4, 5 C.F.R § 430.208"],
+            "articles": ["Article 12 Section 4", "5 C.F.R § 430.208"],
             "argument": "Employees must be under the supervision of a rating official for a minimum of 60 days before a valid performance appraisal can be issued. If no supervisor meets that requirement during"
             " the appraisal period, the Employer must extend the appraisal period until an observing official has supervised the employee for at least 60 days, per 5 C.F.R. § 430.207. Failure to do so results in"
             " an invalid rating of record, as the rater lacks sufficient direct knowledge to fairly evaluate the employee’s performance. Instead of rushing to complete an appraisal without the required"
@@ -143,7 +143,7 @@ def render_annual():
             " whenever a rater does not meet the 60-day threshold, automatically triggering an appraisal extension until a valid rating can be issued. "
         },
         "Management did not have the minimum 60 calendar days needed to perform an appraisal for an employee.": {
-            "articles": ["Article 12, Section 4, 5 C.F.R § 430.208, 5 C.F.R. § 430.207 "],
+            "articles": ["Article 12 Section 4", "5 C.F.R § 430.208", "5 C.F.R. § 430.207"],
             "argument": "A rating of record cannot be issued unless the employee has been under the supervision of the rating official for at least 60 calendar days. When a rating is issued without meeting this"
             " threshold, it undermines the legitimacy of the performance evaluation, as the rater lacks sufficient observation to make an informed and fair assessment. This premature rating violates both"
             " regulatory guidance and contractual obligations, and can negatively impact employee rights and opportunities. Instead, the Employer should have either extended the appraisal period or reassigned"
@@ -151,14 +151,14 @@ def render_annual():
             " fail the 60-day requirement. Training should also be provided to all rating officials on appraisal timing compliance."
         },
         "Failure to use the most recent rating of record during extension.": {
-            "articles": ["Article 12, Section 4, 5 C.F.R § 430.208"],
+            "articles": ["Article 12 Section 4", "5 C.F.R § 430.208"],
             "argument": "When an employee’s appraisal period is extended due to a lack of a qualified rater, the most recent valid rating of record must remain in effect for all personnel decisions until a new"
             " one is issued. Failing to apply the prior rating results in unjust gaps in evaluation history, potentially affecting pay increases, promotions, and awards. This misstep can disadvantage employees"
             " who earned a valid rating within the last appraisal cycle. Instead, the prior rating should be retained and used as the basis for performance-related decisions until a compliant rating is issued."
             " To resolve this, the Employer must audit records to identify instances where prior ratings were not used and retroactively apply the appropriate ratings where necessary. "
         },
         "Improper change to the established annual rating period. ": {
-            "articles": ["Article 12, Section 4, 5 C.F.R § 430.208"],
+            "articles": ["Article 12 Section 4", "5 C.F.R § 430.208"],
             "argument": "Annual appraisal periods are contractually defined and must not be altered without proper notice, agreement, and adherence to established procedures under Article 12. Arbitrarily changing"
             " the rating period undermines the fairness and consistency of the performance management system and can result in ratings being based on incomplete or inconsistent data. Instead, the established"
             " cycle must be maintained unless officially bargained and documented, with all stakeholders—including the Union—properly notified. To fix this, management should review any deviations from standard"
