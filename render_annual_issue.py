@@ -612,6 +612,7 @@ def render_annual():
         submitted = st.form_submit_button("Generate Grievance PDF")
 
     # --- PDF Generation / Download ---
+    submitted = st.form_submit_button("Generate Report")
     if submitted:
         article_list = ", ".join(sorted(articles_set))
         full_argument = ""
