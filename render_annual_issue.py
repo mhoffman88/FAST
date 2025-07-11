@@ -615,9 +615,9 @@ def render_annual():
     if submitted:
         article_list = ", ".join(sorted(selected_articles))
         full_argument = ""
-        if arguments:
+        if selected_arguments:
             full_argument = "\nThis grievance challenges the annual performance appraisal based on the following concerns:\n\n\n"
-            for a in arguments:
+            for a in selected_arguments:
                 full_argument += f"{a}\n\n"
 
         filing_step = "Step Two - Streamlined Grievance"
