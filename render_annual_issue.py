@@ -6,7 +6,7 @@ import os
 from io import BytesIO
 from PyPDF2 import PdfMerger
 from util import wrap_text_to_width, draw_wrapped_section, generate_pdf, convert_to_pdf, calculate_fbd, create_cover_sheet
-from render_annual_issue import measured_checkboxes, unmeasured_checkboxes
+from meas_unmeas_arguments import measured_checkboxes, unmeasured_checkboxes
 
 def render_annual():
     annual_checkbox_descriptions = {
