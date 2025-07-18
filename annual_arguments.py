@@ -692,7 +692,7 @@ annual_checkboxes = {
 'Appraisals use scoring definitions or values other than “5”, “4”, “3”, “2”, “1”, or N/A for each critical job element (CJE).': {
     "articles": ["Article 12, Section 5 "],
     "argument": "Using unauthorized or non-standard scoring values undermines the reliability of the appraisal system and creates confusion about performance expectations. Only the defined scores of"
-    ' “5,” “4,” “3,” “2,” “1,” or “N/A” are permitted for rating each CJE, and any deviation from this format constitutes a violation of the appraisal system's integrity. These standardized values align with'
+    str("“5,” “4,” “3,” “2,” “1,” or “N/A” are permitted for rating each CJE, and any deviation from this format constitutes a violation of the appraisal system's integrity. These standardized values align with")
     " clearly defined performance descriptions and ensure fair treatment across the workforce. Supervisors must adhere strictly to these values and correct any appraisals that used alternate scoring formats."
     " Management should reinforce this requirement during training and auditing of performance documents. "
 },
