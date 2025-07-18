@@ -683,14 +683,14 @@ annual_checkboxes = {
     " address this, the appraisal should be reassessed and revised to align with the correct CJEs. Future ratings must be grounded solely in the measurable performance tied to the assigned job elements."
 },
 "Annual appraisals not completed on Form 6850-BU. ": {
-    "articles": ["Article 12, Section 5 "],
+    "articles": ["Article 12 Section 5"],
     "argument": "The annual appraisal must be completed on the designated Form 6850-BU to ensure consistency, transparency, and contractual compliance. Using any other form undermines the integrity of the"
     " appraisal process and may result in the omission of essential components, such as critical job elements and accurate scoring methodology. Instead, all annual appraisals must be documented using the"
     " standardized 6850-BU, which was developed specifically for bargaining unit employees. This form ensures that both employees and supervisors understand the expectations and structure of the performance"
     " evaluation. To correct this issue, any improperly completed appraisals must be redone using the correct form, and supervisors must be retrained to ensure consistent use of Form 6850-BU moving forward. "
 },
 'Appraisals use scoring definitions or values other than “5”, “4”, “3”, “2”, “1”, or N/A for each critical job element (CJE).': {
-    "articles": ["Article 12, Section 5 "],
+    "articles": ["Article 12 Section 5"],
     "argument": "Using unauthorized or non-standard scoring values undermines the reliability of the appraisal system and creates confusion about performance expectations. Only the defined scores of"
     """ “5,” “4,” “3,” “2,” “1,” or “N/A” are permitted for rating each CJE, and any deviation from this format constitutes a violation of the appraisal system's integrity. These standardized values align with"""
     " clearly defined performance descriptions and ensure fair treatment across the workforce. Supervisors must adhere strictly to these values and correct any appraisals that used alternate scoring formats."
@@ -698,14 +698,14 @@ annual_checkboxes = {
 },
 'Incorrect use of CJE rating definitions, such as: Rating “5” without evidence of exceeding all performance standards * Rating “4” without exceeding more than half and meeting the rest * Rating “2” without'
     ' identifying failure in exactly one aspect * Rating “1” without identifying failure in two or more aspects * Rating N/A when the CJE has been observed ': {
-    "articles": ["Article 12, Section 5"],
+    "articles": ["Article 12 Section 5"],
     "argument": 'Assigning CJE ratings without following the established definitions—such as giving a “5” without exceeding all standards, or a “2” without a single specific failure—results in inaccurate and'
     " misleading evaluations. The rating system is designed to reflect specific thresholds for each score, and failure to apply these standards equally erodes employee trust and opens the door to grievances."
     " Instead, supervisors must match performance to the precise definitions for each level, ensuring that numerical scores are backed by observable behaviors and outcomes. To address this, supervisors should"
     " review each score against the criteria and make adjustments if standards were applied incorrectly. Consistent training and use of rating guides can help prevent future misapplications. "
 },
 "CJE is scored despite the employee’s performance on that element not being observed or reviewed.": {
-    "articles": ["Article 12, Section 5"],
+    "articles": ["Article 12 Section 5"],
     "argument": "Scoring a critical job element without firsthand observation or documented review violates the core principle that appraisals must reflect actual, verifiable performance. Doing so introduces"
     ' subjectivity and weakens the accuracy of the evaluation. When a CJE has not been observed, it must be marked as “Not Applicable (N/A),” and no score should be assigned. Supervisors must be instructed to'
     " refrain from guessing or estimating performance and instead clearly document when elements were unobservable. Management should reinforce this through reminders at mid-year and year-end appraisal"
@@ -714,61 +714,115 @@ annual_checkboxes = {
 'Summary rating not determined according to the required mix of CJE ratings, such as: “Outstanding” given without more than half of CJEs rated as “5” and the remainder as “4” * “Exceeds Fully Successful” given'
     ' without more than half rated “4” or above and the rest as “3” * “Fully Successful” given when any CJE is below “3” * “Minimally Successful” given when any CJE is rated “1” * “Unacceptable” not given when'
     ' any CJE is rated “1” ': {
-    "articles": ["Article 12, Section 5"],
+    "articles": ["Article 12 Section 5"],
     "argument": 'Summary ratings must follow the clearly defined formulas based on the distribution of individual CJE scores. For example, an “Outstanding” rating requires more than half of CJEs to be scored as'
     ' “5” and the remainder as “4,” while a “Fully Successful” rating is not appropriate if any element is below a “3.” Deviating from this framework leads to inaccurate ratings that do not reflect actual'
     " performance. Supervisors must calculate summary ratings strictly using the contractual formulas. Appraisals that do not meet these requirements should be revised, and future rating discussions should"
     " include reference to the rating distribution rules to ensure proper outcomes. "
 },
 'Employee marked as “Not Ratable (NR)” despite having 60+ days of observation and an established performance plan.': {
-    "articles": ["Article 12, Section 5"],
+    "articles": ["Article 12 Section 5"],
     "argument": 'An employee who has been on a performance plan for at least 60 days and has performed work during that period is eligible for a rating. Marking them as “Not Ratable” when the conditions are met'
     " denies the employee appropriate recognition of their work and may improperly delay career progression. Instead, the supervisor must issue a rating based on observed performance in accordance with the"
     " scoring system. If an NR was issued in error, a corrected rating should be prepared immediately, and guidance should be issued to all rating officials to avoid future misapplications. "
 },
 "Not Ratable used as a rating of record, when the contract clearly states it is not a rating of record. ": {
-    "articles": ["Article 12, Section 5"],
+    "articles": ["Article 12 Section 5"],
     "argument": '“Not Ratable” is not considered a valid rating of record and should never be used in place of an actual rating during merit promotion, reassignment, or other personnel actions. Doing so'
     " circumvents protections built into the rating system and disadvantages the employee. In cases where no rating exists and a rating is needed, the supervisor must issue a merit promotion appraisal or"
     " appropriate revalidated appraisal based on available information. To prevent recurrence, rating officials must be reminded that NR designations are not a substitute for a required rating of record."
 },
 'Retention standards not rated using the terms: “Met,” “Not Met,” or “Not Applicable.” ': {
-    "articles": ["Article 12, Section 5"],
+    "articles": ["Article 12 Section 5"],
     "argument": 'Retention standards must be evaluated separately from CJEs and rated using the terms “Met,” “Not Met,” or “Not Applicable” to ensure clarity and consistency. Using alternate language or scoring'
     " values leads to confusion and may misrepresent whether an employee satisfies the essential conditions for retention. Instead, supervisors must provide a clear and simple designation for each standard,"
     " based on documented evidence. Training and performance documentation checklists should include these requirements to ensure compliance and prevent misapplication. "
 },
-"DO NOT USE - Rating is inconsistent with peer comparisons": {
-    "articles": ["Article 12 Section 4", "5 CFR § 430.208"],
-    "argument": "The rating is inconsistent with peer comparisons, violating Article 21, Section 5."
+'Employer fails to mark “Not Applicable” when retention standard duties were not observed.': {
+    "articles": ["Article 12 Section 5"],
+    "argument": "Supervisors are required to assess only those duties they have actually observed. When retention standards are applied to unobserved duties, it introduces bias and speculation into the appraisal"
+    " process. This practice erodes the integrity of performance evaluations and may result in unjust outcomes that do not reflect actual employee performance."
 },
-"DO NOT USE - Performance elements were not clearly defined": {
-    "articles": ["Article 12 Section 4", "5 CFR § 430.208"],
-    "argument": "Performance elements were not clearly defined, violating Article 21, Section 2."
+"Employer fails to provide required annual reports to the Union at the national level by October 1, including: Report comparing average CJE scores for the 20 largest occupations over two years * Report of"
+    " average CJE score by group * Report by Division showing rating distributions by RNOGAD category and number of employees ": {
+    "articles": ["Article 12 Section 5"],
+    "argument": "These reports are essential for the Union to monitor trends, assess fairness in ratings, and identify any systemic disparities that may exist within the agency. Failing to provide them by the"
+    " required deadline impairs the Union’s ability to fulfill its representational responsibilities. This lack of transparency directly affects accountability and weakens collaborative efforts to maintain a fair"
+    " appraisal system. "
 },
-"DO NOT USE - Employee was not given opportunity to improve": {
-    "articles": ["Article 12 Section 4", "5 CFR § 430.208"],
-    "argument": "The employee was not given the opportunity to improve, violating Article 12, Section 7."
+"Supervisor fails to meet with employees annually when CJEs or standards have changed. ": {
+    "articles": ["Article 12 Section 6"],
+    "argument": "When expectations change, it is essential that employees are given the opportunity to understand how these changes will affect their performance evaluation. Without a meeting to communicate"
+    " these changes, employees may unknowingly continue to operate under outdated standards. This creates a disconnect between employee efforts and management expectations, which can result in unfair or"
+    " inaccurate ratings."
 },
-"DO NOT USE - Rating is inconsistent with prior feedback": {
-    "articles": ["Article 12 Section 4", "5 CFR § 430.208"],
-    "argument": "The rating is inconsistent with prior feedback, violating Article 21, Section 4."
+"Supervisor fails to notify employees that CJEs remain unchanged for the rating period (when required). ": {
+    "articles": ["Article 12 Section 6"],
+    "argument": "Employees deserve clear communication about whether their performance standards have remained the same or have changed. Failing to notify them—even when there are no changes—leaves room for"
+    " uncertainty and misunderstanding. Without that clarity, employees may second-guess expectations or fail to align their performance with what is being evaluated. "
 },
-"DO NOT USE - Rating is inconsistent with peer comparisons": {
-    "articles": ["Article 12 Section 4", "5 CFR § 430.208"],
-    "argument": "The rating is inconsistent with peer comparisons, violating Article 21, Section 5."
+"Supervisor denies group or one-on-one meeting without valid justification.": {
+    "articles": ["Article 12 Section 6"],
+    "argument": "The right to engage in meetings about CJEs and standards ensures that employees are properly informed and supported. Denying those meetings without a valid reason obstructs communication and"
+    " prevents employees from seeking clarification that could be critical to their success. This denial ultimately undermines transparency and accountability in the performance appraisal process. "
 },
-"DO NOT USE - Performance elements were not clearly defined": {
-    "articles": ["Article 12 Section 4", "5 CFR § 430.208"],
-    "argument": "Performance elements were not clearly defined, violating Article 21, Section 2."
+"Union Chapter is not provided reasonable notification or an opportunity to attend meetings about CJEs, violating Article 9 provisions. ": {
+    "articles": ["Article 12 Section 6"],
+    "argument": "Union participation in these meetings is a key part of protecting employee rights and ensuring consistency across the workforce. Failing to involve the Union diminishes its ability to advocate"
+    " for employees and to ensure that CJE implementation is fair and contractually compliant. This exclusion reduces checks and balances and opens the door to inconsistent or improper application of standards. "
 },
-"DO NOT USE - Employee was not given opportunity to improve": {
-    "articles": ["Article 12 Section 4", "5 CFR § 430.208"],
-    "argument": "The employee was not given the opportunity to improve, violating Article 12, Section 7."
+"""Supervisor fails to clarify expectations or answer questions during meetings about performing above “Fully Successful.”""": {
+    "articles": ["Article 12 Section 6"],
+    "argument": "Employees must be given clear, actionable examples of what it means to exceed expectations in their CJEs. When supervisors avoid or refuse to clarify this, employees are left without the"
+    " necessary guidance to improve or strive for higher ratings. This leads to stagnation and can discourage initiative, growth, and excellence in performance."
 },
-"DO NOT USE - Rating is inconsistent with prior feedback": {
-    "articles": ["Article 12 Section 4", "5 CFR § 430.208"],
-    "argument": "The rating is inconsistent with prior feedback, violating Article 21, Section 4."
+"Employee held accountable for CJEs or standards not yet received. ": {
+    "articles": ["Article 12 Section 6"],
+    "argument": "Employees have the right to know what they are being evaluated on from the outset of the rating period. Holding them accountable to expectations they were never given is inherently unjust and"
+    " creates a performance system based on surprise rather than transparency. Such a practice undermines employee trust in management and invites disputes over ratings. "
+},
+"Numerical standards, procedures, or requirements not communicated when the CJEs are issued. ": {
+    "articles": ["Article 12 Section 6"],
+    "argument": "If employees are not told the specific performance metrics, such as quantity or timeliness standards, they cannot effectively aim to meet or exceed expectations. Lack of this information fosters"
+    " confusion and creates an appraisal environment where expectations may be applied inconsistently or arbitrarily. Employees are then left vulnerable to poor ratings without fair warning or opportunity to"
+    " improve. "
+},
+"Changes to numerical standards (e.g., new targets or quotas) not communicated in writing.": {
+    "articles": ["Article 12 Section 6"],
+    "argument": "Written communication ensures that performance targets are clearly conveyed and consistently applied. When changes are delivered informally or not at all, employees may remain unaware of"
+    " shifting benchmarks. This lack of documentation increases the potential for disputes and undermines the fairness of any resulting performance evaluations. "
+},
+"Employer fails to obtain a signed receipt for substantive changes to CJEs or standards (e.g., OFP code changes, deadlines). ": {
+    "articles": ["Article 12 Section 6"],
+    "argument": "A signed acknowledgment ensures that employees are informed of changes and that there is proof of communication. Without it, disputes may arise over whether changes were actually made known to"
+    " the employee. This lack of documentation compromises both the employee’s ability to adjust and the employer’s ability to support the rating given. "
+},
+"Receipt does not include details of the change and the effective date. ": {
+    "articles": ["Article 12 Section 6"],
+    "argument": "A vague or incomplete receipt provides little value in protecting employee rights or management accountability. The specific nature of the change and when it becomes effective are both"
+    " essential for the employee to understand and adjust accordingly. Leaving these out can lead to retroactive enforcement and unnecessary grievances. "
+},
+"Employer fails to number or letter each CJE and its aspects for clear identification. ": {
+    "articles": ["Article 12 Section 6"],
+    "argument": "Clear labeling of CJEs and their components is necessary for mutual understanding between employee, supervisor, and any third party reviewing the rating. Without this clarity, it becomes"
+    " difficult to reference or discuss specific elements of performance. Ambiguity in structure can also make it easier for errors or inconsistencies to go unnoticed. "
+},
+"Employer fails to disclose whether certain aspects of CJEs carry different weights. ": {
+    "articles": ["Article 12 Section 6"],
+    "argument": "Knowing the weight of each aspect allows employees to prioritize their work effectively. Withholding this information misleads employees about what is most important and may result in misplaced"
+    " efforts. This lack of disclosure directly affects their ability to meet or exceed the most critical elements of their job performance. "
+},
+"Employee charged with errors based on uncommunicated changes in working procedures.": {
+    "articles": ["Article 12 Section 6"],
+    "argument": "Employees can only be held accountable for procedures they have been trained on or officially informed of. Applying new or changed procedures without informing employees sets them up for"
+    " failure and misrepresents the true cause of errors. This practice shifts the burden of poor communication onto the employee and results in unfair evaluations. "
+},
+"New written instructions not issued promptly when existing written instructions are changed. ": {
+    "articles": ["Article 12 Section 6"],
+    "argument": "When the employer makes changes to existing written instructions but fails to issue those changes in a timely manner, it creates confusion and increases the risk of employee error. Employees"
+    " rely on clear, up-to-date guidance to meet performance expectations. A delay in communication can result in misunderstandings about new procedures or metrics. This not only compromises the integrity of the"
+    " evaluation process but also may lead to unjust discipline or lower performance ratings. The agency’s obligation is to ensure staff receive prompt and clear notice of all procedural updates. This is"
+    " critical for maintaining both accountability and fairness. Timely issuance of updated instructions also helps ensure compliance with contractual and regulatory expectations."
 },
 "DO NOT USE - Rating is inconsistent with peer comparisons": {
     "articles": ["Article 12 Section 4", "5 CFR § 430.208"],
