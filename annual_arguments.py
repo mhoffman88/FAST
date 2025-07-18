@@ -682,6 +682,94 @@ annual_checkboxes = {
     " or factors outside of the CJEs, it is not valid or fair. The supervisor should have evaluated performance only against the defined elements applicable to the employee’s position and duties. To"
     " address this, the appraisal should be reassessed and revised to align with the correct CJEs. Future ratings must be grounded solely in the measurable performance tied to the assigned job elements."
 },
+"Annual appraisals not completed on Form 6850-BU. ": {
+    "articles": ["Article 12, Section 5 "],
+    "argument": "The annual appraisal must be completed on the designated Form 6850-BU to ensure consistency, transparency, and contractual compliance. Using any other form undermines the integrity of the"
+    " appraisal process and may result in the omission of essential components, such as critical job elements and accurate scoring methodology. Instead, all annual appraisals must be documented using the"
+    " standardized 6850-BU, which was developed specifically for bargaining unit employees. This form ensures that both employees and supervisors understand the expectations and structure of the performance"
+    " evaluation. To correct this issue, any improperly completed appraisals must be redone using the correct form, and supervisors must be retrained to ensure consistent use of Form 6850-BU moving forward. "
+},
+'Appraisals use scoring definitions or values other than “5”, “4”, “3”, “2”, “1”, or N/A for each critical job element (CJE).': {
+    "articles": ["Article 12, Section 5 "],
+    "argument": "Using unauthorized or non-standard scoring values undermines the reliability of the appraisal system and creates confusion about performance expectations. Only the defined scores of"
+    ' “5,” “4,” “3,” “2,” “1,” or “N/A” are permitted for rating each CJE, and any deviation from this format constitutes a violation of the appraisal system's integrity. These standardized values align with'
+    " clearly defined performance descriptions and ensure fair treatment across the workforce. Supervisors must adhere strictly to these values and correct any appraisals that used alternate scoring formats."
+    " Management should reinforce this requirement during training and auditing of performance documents. "
+},
+'Incorrect use of CJE rating definitions, such as: Rating “5” without evidence of exceeding all performance standards * Rating “4” without exceeding more than half and meeting the rest * Rating “2” without'
+    ' identifying failure in exactly one aspect * Rating “1” without identifying failure in two or more aspects * Rating N/A when the CJE has been observed ': {
+    "articles": ["Article 12, Section 5"],
+    "argument": 'Assigning CJE ratings without following the established definitions—such as giving a “5” without exceeding all standards, or a “2” without a single specific failure—results in inaccurate and'
+    " misleading evaluations. The rating system is designed to reflect specific thresholds for each score, and failure to apply these standards equally erodes employee trust and opens the door to grievances."
+    " Instead, supervisors must match performance to the precise definitions for each level, ensuring that numerical scores are backed by observable behaviors and outcomes. To address this, supervisors should"
+    " review each score against the criteria and make adjustments if standards were applied incorrectly. Consistent training and use of rating guides can help prevent future misapplications. "
+},
+"CJE is scored despite the employee’s performance on that element not being observed or reviewed.": {
+    "articles": ["Article 12, Section 5"],
+    "argument": "Scoring a critical job element without firsthand observation or documented review violates the core principle that appraisals must reflect actual, verifiable performance. Doing so introduces"
+    ' subjectivity and weakens the accuracy of the evaluation. When a CJE has not been observed, it must be marked as “Not Applicable (N/A),” and no score should be assigned. Supervisors must be instructed to'
+    " refrain from guessing or estimating performance and instead clearly document when elements were unobservable. Management should reinforce this through reminders at mid-year and year-end appraisal"
+    " checkpoints. "
+},
+'Summary rating not determined according to the required mix of CJE ratings, such as: “Outstanding” given without more than half of CJEs rated as “5” and the remainder as “4” * “Exceeds Fully Successful” given'
+    ' without more than half rated “4” or above and the rest as “3” * “Fully Successful” given when any CJE is below “3” * “Minimally Successful” given when any CJE is rated “1” * “Unacceptable” not given when'
+    ' any CJE is rated “1” ': {
+    "articles": ["Article 12, Section 5"],
+    "argument": 'Summary ratings must follow the clearly defined formulas based on the distribution of individual CJE scores. For example, an “Outstanding” rating requires more than half of CJEs to be scored as'
+    ' “5” and the remainder as “4,” while a “Fully Successful” rating is not appropriate if any element is below a “3.” Deviating from this framework leads to inaccurate ratings that do not reflect actual'
+    " performance. Supervisors must calculate summary ratings strictly using the contractual formulas. Appraisals that do not meet these requirements should be revised, and future rating discussions should"
+    " include reference to the rating distribution rules to ensure proper outcomes. "
+},
+'Employee marked as “Not Ratable (NR)” despite having 60+ days of observation and an established performance plan.': {
+    "articles": ["Article 12, Section 5"],
+    "argument": 'An employee who has been on a performance plan for at least 60 days and has performed work during that period is eligible for a rating. Marking them as “Not Ratable” when the conditions are met'
+    " denies the employee appropriate recognition of their work and may improperly delay career progression. Instead, the supervisor must issue a rating based on observed performance in accordance with the"
+    " scoring system. If an NR was issued in error, a corrected rating should be prepared immediately, and guidance should be issued to all rating officials to avoid future misapplications. "
+},
+"Not Ratable used as a rating of record, when the contract clearly states it is not a rating of record. ": {
+    "articles": ["Article 12, Section 5"],
+    "argument": '“Not Ratable” is not considered a valid rating of record and should never be used in place of an actual rating during merit promotion, reassignment, or other personnel actions. Doing so'
+    " circumvents protections built into the rating system and disadvantages the employee. In cases where no rating exists and a rating is needed, the supervisor must issue a merit promotion appraisal or"
+    " appropriate revalidated appraisal based on available information. To prevent recurrence, rating officials must be reminded that NR designations are not a substitute for a required rating of record."
+},
+'Retention standards not rated using the terms: “Met,” “Not Met,” or “Not Applicable.” ': {
+    "articles": ["Article 12, Section 5"],
+    "argument": 'Retention standards must be evaluated separately from CJEs and rated using the terms “Met,” “Not Met,” or “Not Applicable” to ensure clarity and consistency. Using alternate language or scoring'
+    " values leads to confusion and may misrepresent whether an employee satisfies the essential conditions for retention. Instead, supervisors must provide a clear and simple designation for each standard,"
+    " based on documented evidence. Training and performance documentation checklists should include these requirements to ensure compliance and prevent misapplication. "
+},
+"DO NOT USE - Rating is inconsistent with peer comparisons": {
+    "articles": ["Article 12 Section 4", "5 CFR § 430.208"],
+    "argument": "The rating is inconsistent with peer comparisons, violating Article 21, Section 5."
+},
+"DO NOT USE - Performance elements were not clearly defined": {
+    "articles": ["Article 12 Section 4", "5 CFR § 430.208"],
+    "argument": "Performance elements were not clearly defined, violating Article 21, Section 2."
+},
+"DO NOT USE - Employee was not given opportunity to improve": {
+    "articles": ["Article 12 Section 4", "5 CFR § 430.208"],
+    "argument": "The employee was not given the opportunity to improve, violating Article 12, Section 7."
+},
+"DO NOT USE - Rating is inconsistent with prior feedback": {
+    "articles": ["Article 12 Section 4", "5 CFR § 430.208"],
+    "argument": "The rating is inconsistent with prior feedback, violating Article 21, Section 4."
+},
+"DO NOT USE - Rating is inconsistent with peer comparisons": {
+    "articles": ["Article 12 Section 4", "5 CFR § 430.208"],
+    "argument": "The rating is inconsistent with peer comparisons, violating Article 21, Section 5."
+},
+"DO NOT USE - Performance elements were not clearly defined": {
+    "articles": ["Article 12 Section 4", "5 CFR § 430.208"],
+    "argument": "Performance elements were not clearly defined, violating Article 21, Section 2."
+},
+"DO NOT USE - Employee was not given opportunity to improve": {
+    "articles": ["Article 12 Section 4", "5 CFR § 430.208"],
+    "argument": "The employee was not given the opportunity to improve, violating Article 12, Section 7."
+},
+"DO NOT USE - Rating is inconsistent with prior feedback": {
+    "articles": ["Article 12 Section 4", "5 CFR § 430.208"],
+    "argument": "The rating is inconsistent with prior feedback, violating Article 21, Section 4."
+},
 "DO NOT USE - Rating is inconsistent with peer comparisons": {
     "articles": ["Article 12 Section 4", "5 CFR § 430.208"],
     "argument": "The rating is inconsistent with peer comparisons, violating Article 21, Section 5."
