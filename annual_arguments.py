@@ -1131,21 +1131,21 @@ annual_checkboxes = {
     " participatory performance evaluation procedures; and 5 CFR § 293.404, requiring that employee comments on records be preserved as part of the official file. "
 },
 "In other cases, evaluative recordation is shared more than 15 workdays after the call/contact was received. ": {
-    "articles": [""Article 12 Section 9""],
+    "articles": ["Article 12 Section 9"],
     "argument": "Evaluative recordings must be shared with employees within 15 workdays of receipt to ensure timeliness and relevancy. Delayed sharing undermines the employee’s ability to accurately recall"
     " the call and respond with meaningful context. Performance feedback loses value when it's untimely, especially when it may be used for appraisal purposes. It also prevents the employee from using recent"
     " feedback to make immediate improvements. The longer the delay, the greater the disconnect between performance and evaluation. Timely communication of evaluative material is not just procedural—it’s"
     " essential for effective and fair performance management. Failure to meet these timelines puts both the process and outcome into question. "
 },
 "Employee is denied a reasonable amount of administrative time to prepare a written rebuttal.": {
-    "articles": [""Article 12 Section 9""],
+    "articles": ["Article 12 Section 9"],
     "argument": "Employees have the right to administrative time to prepare responses to performance evaluations or disciplinary issues. Denying this time hampers their ability to engage in the process"
     " effectively and raises concerns about procedural fairness. Without sufficient time, rebuttals may lack completeness or necessary documentation. This puts employees at a disadvantage when trying to defend"
     " their work or clarify context. Proper engagement requires more than just opportunity—it requires adequate time and access. Management’s refusal to provide this time shows a disregard for the employee’s"
     " voice in their own evaluation. Fair performance systems must allow for equal participation from both sides. "
 },
 "Administrative time is not scheduled within 3 workdays of the request for rebuttal or review preparation. ": {
-    "articles": [""Article 12 Section 9""],
+    "articles": ["Article 12 Section 9"],
     "argument": "Per agreement, employees should receive scheduled administrative time within three workdays of their request for rebuttal or review preparation. Delays beyond this timeline can affect the"
     " employee’s ability to respond promptly and effectively. It can also push the rebuttal outside the allowed timeframe, through no fault of the employee. This undermines the rebuttal process and may"
     " discourage employees from participating in their own defense. Prompt scheduling of administrative time is crucial for fairness and accessibility. The timeline ensures that employees are not left waiting"
