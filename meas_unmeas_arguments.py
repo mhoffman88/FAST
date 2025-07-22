@@ -247,7 +247,7 @@ unmeasured_checkboxes = {
     " or unsupported by valid benchmarks. This not only jeopardizes individual appraisals but also disrupts trust in the performance management system. Employees must be rated using the standards defined"
     " through proper bargaining and codified in the agreement. "
 },
-"Not using random sampling on a continuous (generally weekly) basis - All completed work must have an equal chance of selection. : {
+"Not using random sampling on a continuous (generally weekly) basis - All completed work must have an equal chance of selection. ": {
     "articles": ["Article 12 Section 17"],
     "argument": "The use of random sampling on a continuous basis is critical for ensuring unbiased Quality evaluations. When the Employer fails to conduct weekly random samples, it increases the risk of"
     " cherry-picked work being used to evaluate employees. The contract mandates that each piece of completed work must have an equal chance of being selected, which ensures fairness and statistical integrity."
