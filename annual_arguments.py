@@ -824,20 +824,380 @@ annual_checkboxes = {
     " evaluation process but also may lead to unjust discipline or lower performance ratings. The agency’s obligation is to ensure staff receive prompt and clear notice of all procedural updates. This is"
     " critical for maintaining both accountability and fairness. Timely issuance of updated instructions also helps ensure compliance with contractual and regulatory expectations."
 },
-"DO NOT USE - Rating is inconsistent with peer comparisons": {
-    "articles": ["Article 12 Section 4", "5 CFR § 430.208"],
-    "argument": "The rating is inconsistent with peer comparisons, violating Article 21, Section 5."
+"Employer cannot prove that CJEs and standards were received by the employee.": {
+    "articles": ["Article 12 Section 6"],
+    "argument": "The inability of the employer to provide documentation confirming receipt of CJEs and performance standards creates a significant accountability gap. Without proof of receipt, the employee cannot"
+    " reasonably be held to those standards. This undermines the entire appraisal process, as employees may be judged on expectations they were never given. The contract and governing regulations require"
+    " transparent and traceable communication regarding expectations. If management cannot establish that the employee received this information, any resulting performance evaluation is inherently flawed. This"
+    " not only creates legal risk but also damages trust in the evaluation system. Proof of receipt protects both the employer and employee by ensuring mutual understanding of expectations."
 },
-"DO NOT USE - Performance elements were not clearly defined": {
-    "articles": ["Article 12 Section 4", "5 CFR § 430.208"],
-    "argument": "Performance elements were not clearly defined, violating Article 21, Section 2."
+"Employer fails to obtain initials and date from employee upon issuance/discussion of CJEs and standards. ": {
+    "articles": ["Article 12 Section 6"],
+    "argument": "When management fails to collect an employee’s initials and date at the time CJEs and performance standards are issued or discussed, it creates a void in the record of performance communication."
+    " This step serves as critical documentation confirming the employee was informed of the expectations. Without it, the employee may claim they were unaware of the standards by which they were evaluated. The"
+    " contract recognizes this as an important accountability mechanism and a safeguard against unfair evaluations. Failure to follow this process could invalidate portions of the appraisal. It also opens the"
+    " door to grievances and disputes that could have been prevented. This procedural oversight weakens the agency’s position in both performance and disciplinary matters. "
 },
-"DO NOT USE - Employee was not given opportunity to improve": {
-    "articles": ["Article 12 Section 4", "5 CFR § 430.208"],
-    "argument": "The employee was not given the opportunity to improve, violating Article 12, Section 7."
+"CJEs and standards not reissued annually (normally within 30 days of start of appraisal period), violating 5 C.F.R. § 430.204(b)(1). ": {
+    "articles": ["Article 12 Section 6", "5 C.F.R. § 430.204"],
+    "argument": "Performance standards must be reissued each year to ensure clarity and alignment with evolving duties and agency priorities. When the agency fails to reissue CJEs within the first 30 days of the"
+    " appraisal period, it violates federal regulation and weakens the validity of the appraisal. Employees are entitled to know, at the beginning of the period, what is expected of them. Late issuance leads"
+    " to ambiguity in performance expectations and jeopardizes the fairness of evaluations. The absence of current, reissued standards creates a situation where performance is being judged without an appropriate"
+    " foundation. This procedural failure undermines the legitimacy of any rating of record. It also deprives employees of a meaningful opportunity to understand and meet agency expectations."
 },
-"DO NOT USE - Rating is inconsistent with prior feedback": {
-    "articles": ["Article 12 Section 4", "5 CFR § 430.208"],
-    "argument": "The rating is inconsistent with prior feedback, violating Article 21, Section 4."
+"CJEs and standards not based on actual requirements of the employee’s position.": {
+    "articles": ["Article 12 Section 6"],
+    "argument": "Performance expectations must be tailored to the actual duties assigned to the employee's position. When CJEs and standards do not reflect the work an employee is expected to perform, it becomes"
+    " impossible to fairly evaluate their performance. Evaluating someone on duties they do not regularly perform is unjust and in direct conflict with both the contract and 5 C.F.R. standards. This misalignment"
+    " can lead to inappropriate ratings, loss of awards, or unwarranted corrective action. The agency must ensure that each CJE and performance standard accurately reflects the responsibilities of the position."
+    " Without this alignment, the evaluation system lacks integrity and exposes the agency to challenges. Properly structured CJEs also contribute to clearer guidance, better performance, and a more efficient"
+    " workplace. "
+},
+"Performance evaluated on standards not clearly established for the appraisal period. ": {
+    "articles": ["Article 12 Section 6"],
+    "argument": "Employees are entitled to know the specific criteria by which their work will be measured during an appraisal cycle. If management evaluates performance based on vague, outdated, or unspecified"
+    " standards, the appraisal is fundamentally flawed. This violates both due process and contractual obligations. The standards must be clearly documented, communicated, and understood prior to the start of"
+    " the rating period. Otherwise, employees are being unfairly held accountable for expectations they could not reasonably meet. Ambiguity in performance standards erodes confidence in the evaluation system."
+    " It also reduces the employee’s ability to improve or succeed, which ultimately undermines service delivery. "
+},
+"Employee reassigned to new position but not given updated CJEs and standards for the new role. ": {
+    "articles": ["Article 12 Section 6"],
+    "argument": "When an employee transitions into a new role but does not receive updated CJEs and standards, they are effectively being asked to perform without guidance or clear expectations. This omission is"
+    " a serious procedural flaw, as performance evaluations must reflect the actual duties of the position currently held. Without updated documentation, any appraisal is misaligned and lacks legitimacy."
+    " Employees cannot be held accountable for standards that apply to a different role or are no longer relevant. The contract and federal regulations require timely issuance of new CJEs following a"
+    " reassignment. Delays or failures in this area unfairly expose employees to incorrect evaluations and hinder their ability to perform. Proper issuance also supports effective onboarding and productivity in"
+    " the new position. "
+},
+"Journey-level or above employee not required to initial even when no meeting occurs (violating Subsection 6A). ": {
+    "articles": ["Article 12 Section 6"],
+    "argument": "Even when a formal meeting is not held, journey-level employees are still required to initial the CJEs and standards to confirm receipt. When this step is skipped, it results in a lack of"
+    " documentation verifying the employee has been informed of their expectations. This violates established procedures in Subsection 6A of the contract and disrupts the accountability chain. Requiring initials"
+    " serves both as confirmation of communication and as a safeguard for the agency in potential disputes. Bypassing this process weakens the validity of any appraisal and may lead to grievances. It also"
+    " introduces inconsistency in how standards are delivered across the workforce. Adherence to the procedure ensures fairness and uniformity in performance management. "
+},
+"Employer misrepresents initialing as agreement with CJEs (when it only indicates receipt).": {
+    "articles": ["Article 12 Section 6"],
+    "argument": "Initialing a document indicates acknowledgment of receipt, not agreement with its contents. Misrepresenting this action as acceptance of the CJEs can undermine the employee’s ability to raise"
+    " concerns or challenge inaccuracies. This mischaracterization may discourage employees from exercising their rights to union representation or clarification. It also can be used improperly to suggest"
+    " consensus on CJEs that were never discussed. The purpose of the initialing process is transparency and accountability—not coercion. Ensuring all parties understand what the initials represent is essential"
+    " to preserving the integrity of the performance system. "
+},
+"Receipt not maintained or made available to employee upon request. ": {
+    "articles": ["Article 12 Section 6"],
+    "argument": "Employees have a right to access documentation relevant to their performance, including receipts showing when CJEs and standards were issued. Failing to maintain or produce this record"
+    " undermines transparency and accountability. It may also create doubt about whether performance expectations were ever communicated. This creates a procedural disadvantage for the employee when appealing"
+    " ratings or addressing disputes. Maintaining and providing documentation upon request is not only a best practice but essential to upholding fair treatment."
+},
+"Employer fails to provide CJEs and standards to employees assigned to a new position, position description, or unit. ": {
+    "articles": ["Article 12 Section 6"],
+    "argument": "When employees are reassigned or their roles change, updated CJEs and performance standards are necessary to reflect new duties. Without this guidance, employees may be unfairly evaluated on"
+    " irrelevant or outdated expectations. This failure creates confusion and opens the door to inconsistent or arbitrary appraisals. It also limits the employee's ability to set clear goals and prioritize"
+    " tasks effectively. Timely issuance of updated CJEs protects both the employee and the agency from miscommunication and mismanagement. "
+},
+"Employer does not allow time for the employee to review CJEs at the beginning of the meeting. ": {
+    "articles": ["Article 12 Section 6"],
+    "argument": "Employees must be given adequate time to review CJEs before they are discussed in meetings. Without this opportunity, employees are unable to formulate questions, seek union guidance, or assess"
+    " whether the standards align with their duties. Rushing the process undermines collaborative dialogue and may result in misunderstanding or improper implementation. It also creates a power imbalance that"
+    " works against the intent of a transparent performance system. Allowing time for review helps foster accountability, clarity, and employee confidence. "
+},
+"Union not invited to meetings involving new CJEs for employees.": {
+    "articles": ["Article 9 Section 2", "Article 12 Section 6"],
+    "argument": "The union has a right to attend meetings concerning new CJEs, particularly when they involve bargaining unit employees. Failing to invite union representatives to these meetings violates"
+    " Article 9 and denies employees the ability to receive guidance or representation. This exclusion reduces transparency and can lead to misunderstandings or coercive environments. Union involvement ensures"
+    " that CJEs are fairly introduced and that employees are fully informed of their rights. It is essential for maintaining trust and procedural fairness."
+},
+"Union representatives not provided copies of CJEs at least 2 workdays in advance of employees. ": {
+    "articles": ["Article 12 Section 6"],
+    "argument": "Union representatives must receive CJEs in advance to provide meaningful support during employee meetings. Without adequate time to review the materials, they are unable to assess potential"
+    " issues, consult applicable contract language, or advise employees effectively. This delay weakens the role of the union and hinders fair representation. It also violates timelines set forth in the"
+    " contract or past practices. Ensuring early access is a simple and necessary step toward a collaborative and informed workplace. "
+},
+"Unanswered questions from CJE meetings not addressed within one week. ": {
+    "articles": ["Article 12 Section 6"],
+    "argument": "When employees ask questions during CJE meetings, timely responses are essential to clarify expectations and avoid confusion. Failing to provide answers within one week delays the employee’s"
+    " understanding of their responsibilities. This can negatively impact performance and create a record of miscommunication. Prompt follow-up also signals that management values employee concerns and takes"
+    " performance planning seriously. Setting and respecting this deadline is fundamental to an effective appraisal system. "
+},
+"Answers to group-relevant questions not communicated to the entire group.": {
+    "articles": ["Article 12 Section 6"],
+    "argument": "When one employee raises a question that applies to others, it is the responsibility of management to communicate the answer to all affected parties. Failing to do so results in inconsistent"
+    " expectations and an uneven playing field. It also invites misinterpretation of performance requirements and can harm morale. Broad communication of relevant answers ensures fairness, reduces repeat"
+    " questions, and reflects professional management standards. Information equity is key to equitable performance evaluation. "
+},
+"Employer fails to issue CJEs and performance standards within 30 days of start of a detail or temporary promotion expected to last 60+ days. ": {
+    "articles": ["Article 12 Section 6"],
+    "argument": "For details or temporary promotions expected to exceed 60 days, performance standards must be issued within the first 30 days to comply with regulatory obligations. Without timely issuance,"
+    " employees are working without clear guidance and may be evaluated on unknown or unstated expectations. This undermines both performance planning and accountability. It also increases the risk of unfair or"
+    " arbitrary evaluations. Timely issuance ensures employees have a fair opportunity to meet expectations and protects the agency from grievances and challenges. "
+},
+"Employee not rated on the CJEs and standards associated with the temporary assignment. ": {
+    "articles": ["Article 12 Section 6"],
+    "argument": "When employees are temporarily assigned new duties, they must be evaluated based on the applicable standards for that assignment. Rating them based on unrelated or outdated CJEs is inaccurate"
+    " and unfair. This violates merit system principles and undermines the credibility of the performance appraisal process. Accurate appraisal requires alignment between duties and standards. Ensuring that the"
+    " rating reflects the actual work performed is a basic element of fair evaluation."
+},
+"Performance during detail/temporary promotion not factored into next rating of record. ": {
+    "articles": ["Article 12 Section 6"],
+    "argument": "When an employee completes a detail or temporary promotion, their work during that period must be considered in their next rating of record if applicable. Failing to include this performance"
+    " overlooks a substantial portion of their contributions, which may impact their overall appraisal unfairly. This violates fair appraisal principles and undermines trust in the system. Additionally, it can"
+    " demotivate employees from taking on temporary roles if their performance is not accurately acknowledged. The appraisal process is intended to reflect total performance, including during alternate"
+    " assignments. Excluding such work risks misrepresenting the employee’s actual effectiveness. It is also inconsistent with regulatory obligations to rate on observed and documented performance. "
+},
+"Employees held responsible for new/revised CJEs or standards before they are received. ": {
+    "articles": ["Article 12 Section 7"],
+    "argument": "Employees cannot reasonably meet expectations they have not been informed of. When new or revised CJEs or standards are issued but not communicated, yet still enforced, it violates the"
+    " principles of notice and due process. Holding an employee accountable under such circumstances is fundamentally unfair and opens the door to arbitrary performance evaluations. Contractual language and"
+    " regulations clearly require advance receipt and acknowledgment of CJEs and standards. Failure to comply with this erodes confidence in the appraisal process and can result in grievances or corrective"
+    " actions. This practice also diminishes managerial credibility and morale. Transparent and timely communication is essential to maintain a fair performance management system. "
+},
+"Employer makes deletions to CJEs, performance standards, or aspects without immediately notifying the affected employees and the Union.": {
+    "articles": ["Article 12 Section 7"],
+    "argument": "When the Employer alters the contents of CJEs or standards without immediate notification, it creates an imbalance of information and undermines the employee's ability to comply with"
+    " expectations. This practice violates both the intent and the letter of the parties’ agreement, which emphasizes transparency and communication in performance management. Additionally, failure to notify the"
+    " Union may violate collective bargaining rights and the duty to bargain over changes in conditions of employment. These deletions could materially impact how performance is assessed, and employees should"
+    " be given proper notice and opportunity to adjust. Without timely notification, employees are placed at risk of negative ratings for uncommunicated expectations. This undermines both procedural fairness"
+    " and service-wide performance consistency. "
+},
+"Employer uses statistics to rate CJEs in a manner inconsistent with 26 C.F.R. Part 801. ": {
+    "articles": ["Article 12 Section 8", "26 C.F.R. Part 801"],
+    "argument": "The use of statistical measures to evaluate employee performance must adhere to federal regulations, including 26 C.F.R. Part 801, which limits the use of such data in appraisals. When the"
+    " Employer applies statistics inappropriately—particularly as standalone performance indicators—it may result in a misrepresentation of actual performance. The regulation is designed to prevent pressure"
+    " for quotas or enforcement targets, which can interfere with the integrity of tax administration. Improper statistical usage places employees in positions where they may prioritize volume over accuracy"
+    " or proper judgment. This not only undermines the quality of service to taxpayers but also violates contractual protections. Employees deserve evaluations based on the quality and consistency of their work,"
+    " not on numbers alone. "
+},
+"Employer uses records of tax enforcement results to evaluate employee performance. ": {
+    "articles": ["Article 12 Section 8"],
+    "argument": "IRS policy and federal regulation prohibit using tax enforcement results to determine performance, as it can compromise impartiality and objectivity in tax administration. Such practices"
+    " incentivize outcomes rather than adherence to laws and procedures. Evaluating performance based on enforcement outcomes pressures employees to favor quantity over fair treatment. This misuse of data runs"
+    " counter to 26 C.F.R. Part 801 and risks public confidence in the agency. It also creates a hostile work environment where employees are evaluated on factors beyond their control. The Union has an interest"
+    " in ensuring that performance measures remain lawful, objective, and job-related. Violations in this area may warrant corrective action or reappraisal. "
+},
+"Employer imposes or suggests production quotas or goals based on tax enforcement statistics.": {
+    "articles": ["Article 12 Section 8"],
+    "argument": "Introducing production quotas, whether explicit or implied, based on enforcement data violates federal law and contractual safeguards. Such practices threaten the neutrality required in tax"
+    " administration and may coerce employees into prioritizing numbers over professional judgment. The use of quotas undermines service quality, employee morale, and compliance with 26 C.F.R. Part 801. It also"
+    " places employees in conflict between performance expectations and ethical standards. The Union has a right to protect against any metrics that drive behavior contrary to fair taxpayer treatment. Any"
+    " enforcement-related performance metric must be handled with extreme care and transparency. Failure to do so represents a serious breach of trust and policy."
+},
+"Employee evaluated on performance outside the scope of CJEs or established performance standards.": {
+    "articles": ["Article 12 Section 8"],
+    "argument": "Performance ratings must be based strictly on communicated and established CJEs and standards. Evaluating an employee on unrelated duties or tasks imposes arbitrary criteria and violates their"
+    " right to a fair appraisal. Such practices introduce subjectivity into the process and create confusion about performance expectations. It can also result in lower ratings for employees who never had the"
+    " opportunity to prepare or respond to unassigned criteria. This is a direct violation of regulatory and contractual requirements that performance standards be job-related and clearly communicated."
+    " Appraisals that extend beyond defined standards risk grievance filings and erode employee trust in management. Employees must know in advance how they will be measured. "
+},
+"Employees responsible for exercising judgment in tax enforcement cases are evaluated using quantity-based measures. ": {
+    "articles": ["Article 12 Section 8"],
+    "argument": "Employees whose duties involve complex decision-making and judgment should not be rated on volume-based metrics. The use of quantity measures in these roles undermines the quality of work and"
+    " discourages careful, case-specific analysis. Federal regulations and policy caution against using such metrics for judgment-based work. Evaluating judgment-driven tasks through numerical goals fails to"
+    " capture the nuance and legal precision these roles demand. It may lead to rushed decisions or neglect of thorough taxpayer service. The contract protects against unfair or non-representative evaluations,"
+    " especially in sensitive enforcement roles. Performance measures must reflect the nature of the work performed, not just the speed or volume of output."
+},
+"Employer uses performance measures based (wholly or partly) on quantity metrics to evaluate any employee who exercises judgment in tax enforcement work. ": {
+    "articles": ["Article 12 Section 8"],
+    "argument": "Incorporating quantity-driven measures into performance evaluations for employees who perform analytical or judgment-based work violates regulatory guidance. These employees require discretion"
+    " and critical thinking, and should not be penalized or rewarded based on raw counts alone. Such metrics can distort priorities and undermine the quality of service. Evaluating based on quantity shifts"
+    " focus away from case-specific analysis and risks incentivizing shortcuts. The contract and 26 C.F.R. Part 801 protect against the inappropriate application of enforcement statistics. The Union strongly"
+    " opposes using quantity as a primary basis for rating in roles where discretion is essential. Performance standards must align with the real nature of the work being done. "
+},
+"Evaluative recordation is given to the employee more than 15 workdays after the supervisor became (or should have become) aware of the event — and is still used in performance evaluation. ": {
+    "articles": ["Article 12 Section 9", "5 U.S.C. § 4302", "5 U.S.C. § 4303", "5 CFR Part 432"],
+    "argument": "If the recordation is provided after 15 workdays, it cannot be used to evaluate performance. Anything negative that could affect the appraisal, that’s not required to be kept by the IRM, and"
+    " that wasn’t shared with the employee, must be removed and destroyed. 5 U.S.C. § 4302 requires agencies to provide performance appraisals that assist employees in addressing unacceptable performance and"
+    " inform employees about possible consequences—including demotion or removal—if deficiencies persist. 5 U.S.C. § 4303 states agencies can initiate removal or demotion for performance issues but must provide"
+    " 30 days advance written notice specifying unacceptable performance and a defined opportunity for improvement. 5 CFR Part 432 requires that when performance is deemed unacceptable, the agency must notify"
+    " the employee, identify problematic elements, specify standards for improvement, and provide a ‘reasonable opportunity’ to improve. "
+},
+"Material with adverse effect on appraisal is maintained or used without being shared with the employee. ": {
+    "articles": ["Article 12 Section 9"],
+    "argument": "Employees have the right to be informed of all material used in their performance evaluations, especially if it negatively impacts their rating. Withholding this information denies the employee"
+    " a chance to respond or correct the record. It violates due process and transparency principles embedded in both regulation and the parties’ contract. Using hidden or undisclosed documents to support"
+    " ratings undermines fairness and opens the door to grievances. It also erodes trust in management and the performance system as a whole. Employees deserve a fair chance to address issues or mistakes in"
+    " their performance record. Failing to disclose adverse material is a breach of both contractual and ethical obligations. "
+},
+"Employer retains adverse material that is not required by the IRM and has not been shared — instead of removing and destroying it. ": {
+    "articles": ["Article 12 Section 9"],
+    "argument": "The agency is required to follow specific protocols when maintaining adverse material that could influence an employee’s appraisal. When material is not mandated by the Internal Revenue"
+    " Manual (IRM) and has not been provided to the employee for review, it cannot be retained. Retention of such material violates employee due process rights and undercuts the fairness of the appraisal system."
+    " It allows management to form evaluative judgments based on undisclosed or noncompliant content. The failure to destroy this material as required contributes to a workplace where transparency is"
+    " compromised. Employees are left unaware of information that may negatively impact their careers, without the opportunity to challenge or clarify it. This lack of accountability directly undermines employee"
+    " trust and performance integrity."
+},
+"Actual recording is used to evaluate the employee instead of the required written feedback version. ": {
+    "articles": ["Article 12 Section 9"],
+    "argument": "Performance evaluations must be based on the formally documented written versions of call or contact feedback, not directly from the audio recordings themselves. When managers use the actual"
+    " recordings instead, they are bypassing the procedural safeguards designed to ensure consistency and fairness. Written versions serve as the official record and allow employees to understand the rationale"
+    " behind any evaluative points. Using the raw recordings creates ambiguity, especially if tone or context is interpreted subjectively. Employees are placed in a position where they cannot verify or rebut"
+    " the basis of evaluation using the expected standard. This practice results in evaluations that are more vulnerable to personal bias and misinterpretation. Adherence to the proper format is essential to"
+    " maintaining contractual compliance and preserving employee rights. "
+},
+"Employee is not given the opportunity to listen to a recorded contact used to support a negative evaluation. ": {
+    "articles": ["Article 12 Section 9"],
+    "argument": "Employees have the right to review any recorded contact used to justify a negative performance rating or feedback. Denying them access to this evidence prevents them from defending themselves"
+    " or offering clarification on what occurred during the call. It also violates fundamental fairness, as employees must be able to understand and respond to the information being used against them. The"
+    " absence of this opportunity creates a lopsided evaluation process, where only management’s interpretation is considered. This not only increases the risk of unjust appraisals but also undermines morale"
+    " and confidence in the fairness of the system. Full transparency is necessary to uphold a credible and accountable performance process. Employees deserve equal footing in the evaluation of their work. "
+},
+"Manager stated the employee mishandled a customer call and gave negative feedback and the manager failed to retain the recording of the call. ": {
+    "articles": ["Article 12 Section 9", "5 CFR § 432.104", "5 U.S.C. § 4302", "5 U.S.C. § 552a"],
+    "argument": "According to Article 12 Section 9B(1), if a copy of the recorded contacts is not retained during a performance dispute, and a disagreement remains unresolved, the negative evaluative recordation"
+    " may not be used by the Employer. This failure also constitutes a violation of 5 U.S.C. § 4302 – which requires fair, accurate, and transparent performance evaluation systems, 5 U.S.C. § 552a (Privacy Act)"
+    " – which provides employees the right to access and correct records used against them, and 5 CFR § 432.104 – which mandates timely and accurate communication of performance issues, and a meaningful"
+    " opportunity to respond and improve."
+},
+"Management listened to five calls, but only wrote up the one with issues. ": {
+    "articles": ["Article 12 Section 9", "5 CFR § 432.104", "5 U.S.C. § 4302", "5 U.S.C. § 552a"],
+    "argument": "Article 12 Section 9B(1) states “In the event the evaluative recordation shows that the manager found fault with a recorded conversation, the manager will provide to the employee a screen shot"
+    " of all other calls that were reviewed (listened to) by the manager, but not evaluated, on that day.”  If management doesn’t provide the required screenshot or context for the other monitored contacts"
+    " reviewed that same day, this denies the employee a full and fair opportunity to assess the basis of the feedback, and the ability to challenge the objectivity and representativeness of the evaluation."
+    " This omission also violates 5 U.S.C. § 4302, which requires a fair and transparent performance appraisal system; 5 U.S.C. § 552a (Privacy Act), by omitting or selectively disclosing evaluative records used"
+    " in decision-making; and 5 CFR § 432.104, which requires agencies to use accurate and fair information when addressing performance. "
+},
+"Manager finds fault with a recorded contact but does not provide the required screenshot of other reviewed (but unevaluated) calls from that day. ": {
+    "articles": ["Article 12 Section 9"],
+    "argument": "When a manager evaluates a single call negatively, they are obligated to provide a screenshot or list of other reviewed calls from that same day to demonstrate the evaluation was not"
+    " cherry-picked. Failure to do so violates procedural safeguards and invites concerns about selective scrutiny. Without context, a single call may not accurately reflect overall performance. This omission"
+    " deprives the employee of the ability to challenge whether their work was reviewed fairly or whether the sample was biased. It also weakens the credibility of the evaluation itself by lacking supporting"
+    " documentation. The agency's procedures require transparency in how work is reviewed, particularly when it is used in appraisals. Disregarding this process undermines trust and compliance with appraisal"
+    " policies. "
+},
+"A performance appraisal includes negative feedback from a call that was disputed, and it’s being used in arbitration or a hearing.": {
+    "articles": ["Article 12 Section 9", "5 CFR § 432.104", "5 U.S.C. § 4302", "5 U.S.C. § 552a"],
+    "argument": "Despite the unresolved nature of the dispute, the employer has failed to confirm whether the recording of the disputed call and associated calls were retained in accordance with contract"
+    """ requirements. The disputed call recordation is still being used as evidence in [the arbitration/hearing/performance process], contrary to contract provisions. Under Article 12 Section 9B(1) “Recordings of"""
+    " contacts that remain in dispute after rebuttal and discussion, along with any other recorded contacts that were reviewed on the same day as the disputed recordation, will be retained by the Employer... If"
+    """ a copy of the recorded contacts... was not retained, and there is an unresolved disagreement, the recordation with which the Employer found fault may not be used by the Employer.”  The Employer’s use of"""
+    " this evaluative recordation—despite unresolved disagreement and unclear retention of related materials—violates both the collective bargaining agreement and the following federal laws/regulations: 5 U.S.C."
+    " § 4302- Requires fair and transparent performance appraisal systems, 5 U.S.C. § 552a (Privacy Act): Grants rights to access and amend records used in personnel decisions, 5 CFR § 432.104: Mandates accurate"
+    " and equitable use of performance-related records. "
+},
+"Manager uses a disputed recordation after failing to retain other relevant recordings from the same day. ": {
+    "articles": ["Article 12 Section 9"],
+    "argument": "Using a disputed call recording as the sole basis for evaluation without preserving other calls from the same shift is improper and demonstrates a lack of due diligence. The employee cannot"
+    " defend themselves fully without the broader context of their performance that day. Failing to retain comparable recordings gives the appearance of bias and removes the ability to compare that one disputed"
+    " call against others that may have demonstrated proficiency. This not only distorts the assessment but damages the integrity of the rating process. Management’s obligation is to ensure fair and representative"
+    " evaluation, not selective scrutiny. The employee’s full body of work must be accessible for proper assessment. Failure to retain other calls compromises this standard and violates contractual and policy"
+    " expectations. "
+},
+"Employee request to listen to a recording is denied or ignored. ": {
+    "articles": ["Article 12 Section 9"],
+    "argument": "Employees must be allowed to hear the recordings that management uses in performance reviews, especially if they disagree with the assessment. Ignoring or denying such requests creates an"
+    " imbalanced and opaque appraisal system. Without access to the recording, the employee cannot provide meaningful rebuttal or context, which is essential to a fair process. Denial of access also goes"
+    " against the principles of transparency and mutual accountability in performance management. The ability to review one's own evaluated work is a basic right in any credible system. A process that"
+    " restricts this access is inherently flawed. Employees deserve the ability to advocate for themselves using the same evidence management relies on. "
+},
+"Employee was not informed promptly when they gave a taxpayer incorrect information.": {
+    "articles": ["Article 12 Section 9", "5 U.S.C. § 4302", "5 CFR § 432.104"],
+    "argument": """This delay violates the contractual obligation in Article 12 Section 9B(2) to inform the employee “as soon as possible.”  In cases involving incorrect taxpayer information, timely notification"""
+    " is critical to ensure the employee is aware of the issue, to allow for immediate corrective actions or training, and to provide the employee a fair opportunity to respond and preserve recall of the"
+    " interaction. Because this notification was not made promptly, the employee’s ability to recall and respond meaningfully was diminished. Any opportunity to correct or clarify the matter with the taxpayer"
+    " was lost and the employer’s delayed action may unfairly affect the employee appraisal or disciplinary exposure. The failure to inform the employee in a timely manner undermines not only the intent of"
+    " the contract but also fair labor practices under 5 U.S.C. § 4302 – Requiring transparent, fair, and accurate performance management and 5 CFR § 432.104 – Requiring agencies to provide timely notice of"
+    " unacceptable performance and opportunity to improve. "
+},
+"A call is used in an employee’s evaluation, but the employee was never notified about the call and never received any feedback. ": {
+    "articles": ["Article 12 Section 9", "5 U.S.C. § 4302", "5 CFR § 432.104", "5 CFR § 293.104", "5 CFR § 293.404"],
+    "argument": "The employee was never made aware of, never notified about, and never received written feedback or an opportunity to rebut, as explicitly required by the 2022 National Agreement. According"
+    """ to Article 12 Section 9B(2) “The evaluative recordation will be shared with the employee within fifteen (15) workdays of when the call was received by the IRS or the contact was made with the"""
+    """ IRS.” Additionally in Article 12 Section 9A: “Any material which may have an adverse effect on an employee’s appraisal, the maintenance of which is not required by the IRM and which is not shared with"""
+    """ the employee, shall be removed and destroyed.”  The Employer’s failure to provide timely notice, feedback, or an opportunity to respond violates both the letter and spirit of the contract. The use"""
+    "of this undisclosed call also conflicts with applicable regulations: 5 U.S.C. § 4302 – Requires performance appraisal systems to be fair, transparent, and based on communicated standards, 5 CFR § 293.104"
+    " and § 293.404 – Mandate proper handling and disclosure of evaluative records and 5 CFR § 432.104 – Requires prompt communication of unacceptable performance and opportunity to improve. "
+},
+"An employee received negative feedback and requested administrative time to respond. The manager scheduled the administrative time for more than 3 days later. ": {
+    "articles": ["Article 12 Section 9", "5 U.S.C. § 4302", "5 CFR § 432.104"],
+    "argument": "Article 12 Section 9C(1) of our collective bargaining agreement, which guarantees employees a reasonable amount of administrative time to prepare written comments in response to any evaluative"
+    """ recordation or review document. The contract further specifies “This time will be scheduled no later than three (3) workdays after the receipt of the request for administrative time.”  This scheduling"""
+    " delay is a clear violation of the contract and has interfered with the employee’s ability to prepare a timely and effective rebuttal, ensure that the employee’s comments are considered before the"
+    " evaluation is used, and exercise representational and procedural rights under the collective bargaining agreement. In addition to violating our CBA, this delay conflicts with 5 U.S.C. § 4302, which"
+    " requires a fair and transparent performance management process, and 5 CFR § 432.104, which mandates reasonable notice and opportunity for response before performance-based actions. "
+},
+"An employee was instructed by the manager to write a review rebuttal on their own time and was not given administrative time to complete the rebuttal actions. ": {
+    "articles": ["Article 12 Section 9", "5 U.S.C. § 4302", "5 CFR § 432.104"],
+    "argument": """Pursuant to Article 12 Section 9C(1) of our collective bargaining agreement, “The Employer has determined that it will grant the employee a reasonable amount of administrative time to make"""
+    """ written comments concerning any disagreement with an evaluative recordation or other review document at any time prior to its use in a performance appraisal or personnel action.”  This is a direct"""
+    " violation of the contract, which clearly provides that administrative time must be granted for rebuttals, the supervisor must schedule that time based on workload, and It must be scheduled no later than"
+    " three (3) workdays from the employee’s request. By denying administrative time and instructing the employee to complete the rebuttal off-the-clock, the Employer has violated the employee’s contractual right"
+    " to respond to negative evaluations, undermined the integrity of the performance management process, and compromised the fairness and transparency required by federal regulations, including 5 U.S.C."
+    " § 4302 – Mandating fair and participatory performance appraisal systems; 5 CFR § 432.104 – Requiring reasonable opportunity for employees to improve performance and respond to concerns. "
+},
+"An employee wrote and submitted comments on a review, but the rebuttal wasn’t included with the evaluative document. ": {
+    "articles": ["Article 12 Section 9", "5 U.S.C. § 4302", "5 CFR § 432.104"],
+    "argument": "Pursuant to Article 12 Section 9C(1) of the collective bargaining agreement, which guarantees the right of employees to submit written comments in response to evaluative recordations and"
+    """ mandates that those comments become part of the official record. The contract clearly states “Such comments will be attached to and become a part of the evaluative recordation or other review"""
+    """ document.” If that record is used — or has already been used — in a performance appraisal or personnel action without the employee’s rebuttal attached, it constitutes a further violation of the"""
+    " contract and potentially undermines the fairness and completeness of any related decision. This failure also violates federal personnel principles, including 5 U.S.C. § 4302, which mandates fair and"
+    " participatory performance evaluation procedures; and 5 CFR § 293.404, requiring that employee comments on records be preserved as part of the official file. "
+},
+"In other cases, evaluative recordation is shared more than 15 workdays after the call/contact was received. ": {
+    "articles": [""Article 12 Section 9""],
+    "argument": "Evaluative recordings must be shared with employees within 15 workdays of receipt to ensure timeliness and relevancy. Delayed sharing undermines the employee’s ability to accurately recall"
+    " the call and respond with meaningful context. Performance feedback loses value when it's untimely, especially when it may be used for appraisal purposes. It also prevents the employee from using recent"
+    " feedback to make immediate improvements. The longer the delay, the greater the disconnect between performance and evaluation. Timely communication of evaluative material is not just procedural—it’s"
+    " essential for effective and fair performance management. Failure to meet these timelines puts both the process and outcome into question. "
+},
+"Employee is denied a reasonable amount of administrative time to prepare a written rebuttal.": {
+    "articles": [""Article 12 Section 9""],
+    "argument": "Employees have the right to administrative time to prepare responses to performance evaluations or disciplinary issues. Denying this time hampers their ability to engage in the process"
+    " effectively and raises concerns about procedural fairness. Without sufficient time, rebuttals may lack completeness or necessary documentation. This puts employees at a disadvantage when trying to defend"
+    " their work or clarify context. Proper engagement requires more than just opportunity—it requires adequate time and access. Management’s refusal to provide this time shows a disregard for the employee’s"
+    " voice in their own evaluation. Fair performance systems must allow for equal participation from both sides. "
+},
+"Administrative time is not scheduled within 3 workdays of the request for rebuttal or review preparation. ": {
+    "articles": [""Article 12 Section 9""],
+    "argument": "Per agreement, employees should receive scheduled administrative time within three workdays of their request for rebuttal or review preparation. Delays beyond this timeline can affect the"
+    " employee’s ability to respond promptly and effectively. It can also push the rebuttal outside the allowed timeframe, through no fault of the employee. This undermines the rebuttal process and may"
+    " discourage employees from participating in their own defense. Prompt scheduling of administrative time is crucial for fairness and accessibility. The timeline ensures that employees are not left waiting"
+    " while a rating or disciplinary action proceeds unchallenged. Delaying this support weakens employee rights and disrupts the integrity of the process. "
+},
+"Employer uses a formal evaluative recordation without giving the employee the opportunity to rebut or indicate disagreement, even though recordings are still available. ": {
+    "articles": ["Article 12 Section 9"],
+    "argument": "When a recorded contact is used formally in an evaluation, employees must be allowed to review and rebut it before the rating is finalized. Failing to provide this opportunity violates the"
+    " principles of fair notice and response. The recordings themselves are not enough—employees must be given a real chance to respond before they are judged. When the recordings are still available, there is"
+    " no excuse for denying access or rebuttal time. This omission creates a one-sided evaluation that doesn’t consider the employee’s perspective or defense. It damages trust in the appraisal process and"
+    " opens the door to grievances. The right to rebut is a cornerstone of fair evaluation and must be protected. "
+},
+"The employee filed a rebuttal or grievance on an evaluative review from a phone call, but the recording is deleted after the 40 days. ": {
+    "articles": ["Article 12 Section 9", "5 U.S.C. § 4302", "5 CFR § 432.104"],
+    "argument": "Pursuant to Article 12 Section 9C(1-4) of the collective bargaining agreement. The contract clearly states recordings of contacts that remain in dispute after rebuttal and discussion, along"
+    " with any other recorded contacts that were reviewed on the same day as the disputed recordation, will be retained by the Employer until the performance appraisal is issued and any resulting litigation"
+    " is resolved. This is a direct violation of the contract, which requires that disputed recordings be preserved beyond the 40-day period until the performance appraisal is finalized, and any related"
+    " grievances or litigation are fully resolved. The Employer’s failure to retain this recording has denied the employee access to material evidence needed to support their rebuttal, compromised the"
+    " fairness of the performance review process, and violated both the collective bargaining agreement and relevant federal standards. Which include 5 U.S.C. § 4302 requiring fair and participatory evaluation"
+    " procedures, and 5 CFR § 432.104 requiring agencies to provide employees an opportunity to respond before taking any adverse actions. "
+},
+"Supervisor fails to inform the employee that recordings are normally deleted after 40 days and may still be used if the employee doesn’t rebut in time. ": {
+    "articles": ["Article 12 Section 9"],
+    "argument": "Employees have a right to understand the policies that impact their performance records. When a supervisor fails to disclose that evaluative recordings are automatically deleted after 40"
+    " days, the employee may lose the opportunity to preserve or rebut critical evidence. This lack of transparency undermines the employee's ability to respond meaningfully and timely. It creates an unfair"
+    " disadvantage, especially if the recording is later used in a negative context. Proper notice is essential to ensure due process and maintain fairness in evaluations. "
+},
+"Evaluative recordation is used outside of an annual rating or in a way that disadvantages the employee (e.g., denial of overtime, AWS, or telework) without allowing a grievance. ": {
+    "articles": ["Article 12 Section 9"],
+    "argument": "Evaluative records should be limited to formal appraisal processes unless otherwise agreed upon. When a recording is used to deny benefits such as overtime or telework outside of the rating"
+    " cycle, it sidesteps the grievance protections built into performance management. This undermines the employee’s right to challenge adverse impacts and erodes trust in the evaluation process. Using"
+    " performance documentation for punitive decisions without recourse is fundamentally unfair. Employees must be allowed to grieve such actions to preserve their rights and the integrity of the system. "
+},
+"Higher-level supervisor conducts performance review with negative feedback but does not follow the same procedural requirements from subsections 9A–9C.": {
+    "articles": ["Article 12 Section 9"],
+    "argument": "All supervisors, including higher-level officials, must follow the same procedural safeguards when providing performance feedback. Skipping required steps such as documentation, review"
+    " timelines, or discussion opportunities creates an uneven and arbitrary process. Employees should not be subjected to differing standards simply because feedback comes from a higher level. This"
+    " inconsistency can create confusion and reduce accountability. Uniform procedures ensure fairness, clarity, and proper employee engagement in performance matters. "
+},
+"A higher-level manager’s feedback was used to justify Personnel Actions(e.g., denial of promotion, telework, or discipline)) without being given a rebuttal opportunity. ": {
+    "articles": ["Article 12 Section 9", "5 U.S.C. § 4302"],
+    "argument": """In accordance with Article 12 Section 9D “When a review of a particular employee’s work performance is specifically made by a supervisor above the employee’s immediate (or first line)"""
+    " supervisor, and that review produces any negative feedback... the procedural requirements set forth in subsections 9A, 9B, and 9C apply. Wherever possible, the employee will be given the opportunity"
+    """ to meet and/or discuss the matter with the higher–level supervisor who provided the evaluative comments.”  This undermines the fairness and transparency required by 5 U.S.C. § 4302. The employee was"""
+    " not given formal notice of the higher-level feedback, was not offered an opportunity to rebut the feedback or meet with the higher-level supervisor, and the feedback was still used to justify a personnel"
+    " action that negatively impacted me. This is a violation of the employee’s procedural rights under the contract. The required steps under Sections 9A–9D (including timely notification, call recording"
+    " access, rebuttal rights, and the 15-workday deadline) were not followed. "
+},
+"Employee is not given an opportunity to meet or discuss feedback with the higher-level supervisor. ": {
+    "articles": ["Article 12 Section 9"],
+    "argument": "An essential part of the performance process is the opportunity for employees to engage in dialogue about their feedback. When a higher-level supervisor provides criticism without allowing the"
+    " employee to respond or seek clarification, it creates a one-sided and incomplete evaluation. Feedback should be a two-way conversation, especially when it affects the employee’s standing or morale."
+    " Denying that conversation removes the chance for improvement or dispute. All employees deserve a fair and open exchange with the individual providing performance input. "
 }
 }
