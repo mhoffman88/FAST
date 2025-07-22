@@ -140,8 +140,8 @@ measured_checkboxes = {
 }
 
 unmeasured_checkboxes = {
-"Issuing a "measured appraisal" when the systemically computed rating is not valid and indicative of the employee’s performance. * Contractual violation would occur if the supervisor fails to override an"
-" invalid measured rating with an "unmeasured" rating, as required. ": {
+"""Issuing a "measured appraisal" when the systemically computed rating is not valid and indicative of the employee’s performance. * Contractual violation would occur if the supervisor fails to override an"""
+""" invalid measured rating with an "unmeasured" rating, as required. """: {
     "articles": ["Article 12 Section 13"],
     "argument": "Measured appraisals are intended to reflect objective performance data, but when that data is flawed or incomplete, the results do not accurately reflect employee contributions. If a supervisor"
     " fails to override an invalid measured rating with an unmeasured one, it results in a performance record that may unfairly disadvantage the employee. This undermines employee trust in the evaluation system"
