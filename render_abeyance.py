@@ -51,7 +51,7 @@ def render_abeyance():
         # All fields for the cover sheet (in order)
         form_data = {
             "Step": filing_step,
-            "Case Number": case_id,
+            "Case ID": case_id,
             "Manager Denied": manager,
             "Issue Description": issue_description,
             "Date Received": str(st.session_state["date_received"]),
