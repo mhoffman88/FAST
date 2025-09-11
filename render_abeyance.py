@@ -65,7 +65,7 @@ def render_abeyance():
         pdf_data = {k: form_data[k] for k in pdf_fields if k in form_data}
 
         grievance_type = st.session_state.get("grievance_type", "EO Abeyance")
-        cover_sheet_buffer = create_cover_sheet(form_data, grievance_type)  # Returns BytesIO
+        cover_sheet_buffer = create_abeyance_sheet(form_data, grievance_type)  # Returns BytesIO
 
         # --- Merge PDFs: cover sheet first ---
         merger = PdfMerger()
