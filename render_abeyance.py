@@ -66,12 +66,10 @@ def render_abeyance():
 
         grievance_type = st.session_state.get("grievance_type", "EO Abeyance")
         cover_sheet_buffer = create_cover_sheet(form_data, grievance_type)  # Returns BytesIO
-        base_pdf_buffer = generate_pdf(pdf_data, full_argument)            # Returns BytesIO
 
         # --- Merge PDFs: cover sheet first ---
         merger = PdfMerger()
         merger.append(cover_sheet_buffer)
-        merger.append(base_pdf_buffer)
 
         for file in uploaded_files:
             if file is not None:
