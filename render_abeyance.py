@@ -7,7 +7,7 @@ from io import BytesIO
 from PyPDF2 import PdfMerger
 from util import wrap_text_to_width, draw_wrapped_section, generate_pdf, convert_to_pdf, calculate_fbd, create_cover_sheet
 
-def render_abey():
+def render_abeyance():
     # --- Date and FBD input/display together ---
     if "date_received" not in st.session_state:
         st.session_state["date_received"] = datetime.date.today()
