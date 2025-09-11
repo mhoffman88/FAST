@@ -16,10 +16,10 @@ def render_abeyance():
     date_col, fbd_col = st.columns([1, 1])
     with date_col:
         date_received = st.date_input(
-            "Date Received",
+            "Date Denied",
             value=st.session_state["date_received"],
             key="date_received",
-            help="Date the appraisal was given to grievant."
+            help="Date of the implementation of EO abeyance."
         )
     with fbd_col:
         fbd = calculate_fbd(st.session_state["date_received"])
