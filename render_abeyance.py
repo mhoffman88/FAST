@@ -59,8 +59,8 @@ def render_abeyance():
 
         # Only the fields you want in the main PDF, in order
         pdf_fields = {
-            "Grievant": grievant,
             "Steward": steward,
+            "Manager Denied": manager
         }
         pdf_data = {k: form_data[k] for k in pdf_fields if k in form_data}
 
