@@ -94,7 +94,7 @@ def render_abeyance():
                 except Exception as e:
                     st.warning(f"⚠️ Skipped {filename} due to error: {e}")
 
-        output_name = f"{manager.replace(' ', '_')}_{appraisal_year}_EO_Abeyance.pdf"
+        output_name = f"{manager.replace(' ', '_')}_EO_Abeyance.pdf"
         final_path = os.path.join(tempfile.gettempdir(), output_name)
         with open(final_path, "wb") as f:
             merger.write(f)
