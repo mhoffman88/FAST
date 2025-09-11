@@ -18,7 +18,7 @@ st.subheader("📌 Select Grievance Type")
 
 grievance_type = st.radio(
     "Choose the type of grievance you'd like to file:",
-    ["Annual Appraisal", "AWOL - Annual/Sick Leave", "Telework (Coming Soon)", "AWS (Coming Soon)", "Work Schedule/ Hours of Work (Coming Soon)"],
+    ["Annual Appraisal", "AWOL - Annual/Sick Leave", "Telework (Coming Soon)", "AWS (Coming Soon)", "Work Schedule/ Hours of Work (Coming Soon)", "EO Abeyance"],
     index=0
 )
 
@@ -27,3 +27,6 @@ if grievance_type == "Annual Appraisal":
 
 if grievance_type == "AWOL - Annual/Sick Leave":
     render_awol()
+
+if grievance_type == "EO Abeyance":
+    render_abeyance()
