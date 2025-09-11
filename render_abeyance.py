@@ -22,6 +22,7 @@ def render_abeyance():
 
     with st.form("grievance_form"):
         steward = st.text_input("Steward’s Name", key="Steward")
+        case_id = st.text_input("Case ID")
         workarea = st.text_input("Work Area/ Operation")
         manager = st.text_input("Manager Denied")
         issue_description = st.text_area("Summary of Abeyance", key="issue_description")
