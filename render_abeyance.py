@@ -27,8 +27,6 @@ def render_abeyance():
 
     with st.form("grievance_form"):
         steward = st.text_input("Steward’s Name", key="Steward")
-        grievant = st.text_input("Grievant’s Name", key="Grievant")
-        case_id = st.text_input("Case Number")
         workarea = st.text_input("Work Area/ Operation")
         manager = st.text_input("Manager Denied")
         issue_description = st.text_area("Summary of Abeyance", key="issue_description")
@@ -52,13 +50,10 @@ def render_abeyance():
         # All fields for the cover sheet (in order)
         form_data = {
             "Step": filing_step,
-            "Grievant": grievant,
             "Manager Denied": manager,
             "Issue Description": issue_description,
-            "Desired Outcome": desired_outcome,
             "Date Received": str(st.session_state["date_received"]),
             "Steward": steward,
-            "Case ID": case_id,
             "Operation": workarea
         }
 
