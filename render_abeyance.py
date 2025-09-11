@@ -13,21 +13,15 @@ def render_abeyance():
         st.session_state["date_received"] = datetime.date.today()
 
     st.header("Executive Order Abeyance Tracker")
-    date_col, fbd_col = st.columns([1, 1])
-    with date_col:
-        date_received = st.date_input(
-            "Date Denied",
-            value=st.session_state["date_received"],
-            key="date_received",
-            help="Date of the implementation of EO abeyance."
-        )
-    with fbd_col:
-        fbd = calculate_fbd(st.session_state["date_received"])
-        st.info(f"🗕️ File By Date (15 business days): {fbd}")
+    date_received = st.date_input(
+        "Date Received",
+        value=st.session_state["date_received"],
+        key="date_received",
+        help="Date the appraisal was given to grievant."
+    )
 
     with st.form("grievance_form"):
         steward = st.text_input("Steward’s Name", key="Steward")
-        case_id = st.text_input("Case Number")
         workarea = st.text_input("Work Area/ Operation")
         manager = st.text_input("Manager Denied")
         issue_description = st.text_area("Summary of Abeyance", key="issue_description")
