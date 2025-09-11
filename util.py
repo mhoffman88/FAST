@@ -303,7 +303,7 @@ def create_abeyance_sheet(form_data, grievance_type):
         ("Denying Manager", form_data.get("Manager Denied", "")),
         ("Operation", form_data.get("Operation", "")),
         ("Steward", form_data.get("Steward", "")),
-        ("Issue Description", form_data.get("Issue Description", "")),
+        ("Summary of Abeyance", form_data.get("Issue Description", "")),
     ]
 
     value_max_width = width - label_x - margin
