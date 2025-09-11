@@ -251,6 +251,83 @@ def merge_pdfs(cover_buffer, main_buffer):
         writer.add_page(page)
 
     output_buffer = BytesIO()
+
+def create_abeyance_sheet(form_data, grievance_type):
+    from io import BytesIO
+    from reportlab.pdfgen import canvas
+    from reportlab.lib.pagesizes import LETTER
+    import datetime
+
+    buffer = BytesIO()
+    c = canvas.Canvas(buffer, pagesize=LETTER)
+    width, height = LETTER
+
+    # Title
+    c.setFont("Helvetica-Bold", 22)
+    c.drawCentredString(width / 2, height - 72, f"{grievance_type} Filing Form - NTEU")
+
+    # Case Number in upper right under title
+    c.setFont("Helvetica-Bold", 12)
+    case_number = form_data.get("Case ID", "N/A")
+    case_label = f"Case Number: {case_number}"
+    margin = 72  # 1 inch
+    c.drawRightString(width - margin, height - 100, case_label)
+
+    # Start form fields below
+    c.setFont("Helvetica", 12)
+    y = height - 150
+    line_height = 24
+    label_x = margin
+
+    # Helper for text wrapping values that are too long
+    def wrap_label_value(label, value, font_name, font_size, max_width):
+        from reportlab.pdfbase.pdfmetrics import stringWidth
+        prefix = f"{label}: "
+        lines = []
+        current_line = prefix
+        words = value.split()
+        for word in words:
+            test_line = current_line + (word if current_line == prefix else " " + word)
+            if stringWidth(test_line, font_name, font_size) > max_width:
+                lines.append(current_line)
+                current_line = " " * len(prefix) + word  # Indent subsequent lines
+            else:
+                current_line = test_line
+        lines.append(current_line)
+        return lines
+
+    # Fields to display (excluding Case ID, already at top)
+    fields = [
+        ("Date of Filing", datetime.datetime.now().strftime("%Y-%m-%d")),
+        ("Step", form_data.get("Step", "")),
+        ("Denying Manager", form_data.get("Manager Denied", "")),
+        ("Operation", form_data.get("Operation", "")),
+        ("Steward", form_data.get("Steward", "")),
+        ("Issue Description", form_data.get("Issue Description", "")),
+    ]
+
+    value_max_width = width - label_x - margin
+
+    for label, value in fields:
+        # Wrap label and value together, so it stays on one line unless too long
+        for line in wrap_label_value(label, str(value), "Helvetica", 12, value_max_width):
+            c.drawString(label_x, y, line)
+            y -= line_height
+            if y < margin + line_height:
+                c.showPage()
+                y = height - margin
+                c.setFont("Helvetica", 12)
+
+    img_path = "NTEU-logo.png"
+    img_width, img_height = 360, 144
+    img_x = (width - img_width) / 2
+    img_y = 28
+    c.drawImage(img_path, img_x, img_y, width=img_width, height=img_height, mask='auto')
+
+    # DO NOT call c.showPage() here!
+    c.save()
+    buffer.seek(0)
+    return buffer
     writer.write(output_buffer)
     output_buffer.seek(0)
     return output_buffer
