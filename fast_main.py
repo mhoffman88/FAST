@@ -32,6 +32,3 @@ if grievance_type == "AWOL - Annual/Sick Leave":
 
 if grievance_type == "EO Abeyance":
     render_abeyance()
-
-if grievance_type == "Audio Clips - Podcast for Stewards":
-    render_audio_podcast()
