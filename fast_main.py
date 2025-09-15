@@ -11,6 +11,7 @@ from docx import Document as DocxDocument
 from render_awol_issue import render_awol
 from render_annual_issue import render_annual
 from render_abeyance import render_abeyance
+from render_audio import render_audio_podcast
 from util import wrap_text_to_width,draw_wrapped_section, generate_pdf, convert_to_pdf, calculate_fbd
 
 st.title("Federal Advocacy Support Toolkit \n FAST - Provided by NTEU CH. 66")
@@ -19,7 +20,7 @@ st.subheader("📌 Select Grievance Type")
 
 grievance_type = st.radio(
     "Choose the type of grievance you'd like to file:",
-    ["Annual Appraisal", "AWOL - Annual/Sick Leave", "Telework (Coming Soon)", "AWS (Coming Soon)", "Work Schedule/ Hours of Work (Coming Soon)", "EO Abeyance"],
+    ["Annual Appraisal", "AWOL - Annual/Sick Leave", "Telework (Coming Soon)", "AWS (Coming Soon)", "Work Schedule/ Hours of Work (Coming Soon)", "Audio Clips - Podcast for Stewards", "EO Abeyance"],
     index=0
 )
 
@@ -31,3 +32,6 @@ if grievance_type == "AWOL - Annual/Sick Leave":
 
 if grievance_type == "EO Abeyance":
     render_abeyance()
+
+if grievance_type == "Audio Clips - Podcast for Stewards":
+    render_audio_podcast()
