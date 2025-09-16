@@ -14,9 +14,12 @@ def render_audio_podcast():
         st.info("No audio clips found. Please add MP3 files to the audio/podcast_for_stewards directory.")
         return
 
-    selected_mp3 = st.selectbox("Choose an audio clip to play:", mp3_files, index=0)
+    with st.form("audio_load_form"):
+        selected_mp3 = st.selectbox("Choose an audio clip to play:", mp3_files, index=0)
+        load = st.form_submit_button("Load")
 
-    audio_path = os.path.join(audio_dir, selected_mp3)
-    with open(audio_path, "rb") as audio_file:
-        audio_bytes = audio_file.read()
-    st.audio(audio_bytes, format='audio/mp3')
+    if load:
+        audio_path = os.path.join(audio_dir, selected_mp3)
+        with open(audio_path, "rb") as audio_file:
+            audio_bytes = audio_file.read()
+        st.audio(audio_bytes, format='audio/mp3')
