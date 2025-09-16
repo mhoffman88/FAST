@@ -11,13 +11,12 @@ def render_audio_podcast():
 
     mp3_files = [f for f in os.listdir(audio_dir) if f.lower().endswith('.mp3')]
     if not mp3_files:
-        st.info("No audio clips found. Please add MP3 files to the audio_clips directory.")
+        st.info("No audio clips found. Please add MP3 files to the audio/podcast_for_stewards directory.")
         return
 
-    selected_mp3 = st.selectbox("Choose an audio clip to play:", mp3_files)
+    selected_mp3 = st.selectbox("Choose an audio clip to play:", mp3_files, index=0)
 
-    if selected_mp3:
-        audio_path = os.path.join(audio_dir, selected_mp3)
-        with open(audio_path, "rb") as audio_file:
-            audio_bytes = audio_file.read()
-        st.audio(audio_bytes, format='audio/mp3')
+    audio_path = os.path.join(audio_dir, selected_mp3)
+    with open(audio_path, "rb") as audio_file:
+        audio_bytes = audio_file.read()
+    st.audio(audio_bytes, format='audio/mp3')
