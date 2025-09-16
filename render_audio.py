@@ -10,6 +10,8 @@ def render_audio_podcast():
         return
 
     mp3_files = [f for f in os.listdir(audio_dir) if f.lower().endswith('.mp3')]
+    mp3_files.sort()
+    
     if not mp3_files:
         st.info("No audio clips found. Please add MP3 files to the audio/podcast_for_stewards directory.")
         return
