@@ -298,7 +298,7 @@ def create_abeyance_sheet(form_data, grievance_type):
 
     # Fields to display (excluding Case ID, already at top)
     fields = [
-        ("Date of Denial", datetime.datetime.now().strftime("%Y-%m-%d")),
+        ("Date of Denial", form_data.get("Date Received", "")),
         ("Step", form_data.get("Step", "")),
         ("Denying Manager", form_data.get("Manager Denied", "")),
         ("Operation", form_data.get("Operation", "")),
