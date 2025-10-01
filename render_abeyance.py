@@ -15,7 +15,7 @@ def render_abeyance():
     st.header("Executive Order Abeyance Tracker")
     date_received = st.date_input(
         "Date Denied",
-        value="date_received",
+        value=st.session_state["date_received"],
         key="date_received",
         help="Date the appraisal was given to grievant."
     )
