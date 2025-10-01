@@ -49,7 +49,7 @@ def render_abeyance():
             "Case ID": case_id,
             "Manager Denied": manager,
             "Issue Description": issue_description,
-            "Date Received": str(st.session_state["date_received"]),
+            "Date Received": str(date_received),
             "Steward": steward,
             "Operation": workarea
         }
