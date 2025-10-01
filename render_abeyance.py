@@ -16,7 +16,7 @@ def render_abeyance():
     date_received = st.date_input(
         "Date Denied",
         value="date_received",
-        key="date_received",
+        key=st.session.date("date_received"),
         help="Date the appraisal was given to grievant."
     )
 
