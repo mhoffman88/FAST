@@ -47,19 +47,18 @@ def render_furlough():
 
     # Define Furlough statements
     furlough_checkbox_descriptions = {
-        "Annual Leave denied but no statement of reasoning provided after requested by the employee.": {
-            "articles": ["Article 32 Section 1(A)(1)"],
-            "argument": "It is a violation of the negotiated rights under the National Agreement to deny an employee’s request for annual leave without providing a clear and timely explanation"
-                        " for the denial. The National Agreement outlines that, while management retains the right to approve or disapprove leave, such decisions must not be arbitrary or capricious and must be based on legitimate"
-                        " operational needs. When a leave request is denied, the employee has the right to understand the basis for that decision. \n\n Failure to provide the reason(s) for denial upon request"
-                        " undermines transparency and accountability and prevents the employee from exercising their right to challenge the denial through appropriate channels, such as the grievance process. This"
-                        " lack of justification also hampers the union’s ability to determine whether the denial was consistent with past practices, equitable treatment, and the principles of fair and reasonable"
-                        " application of leave policies. \n\n In this case, management did not offer a statement of reasons for denying the annual leave, even after being requested to do so. This omission"
-                        " constitutes a violation of the National Agreement, which implicitly and through past interpretive guidance, expects management to act in good faith and provide supporting rationale for decisions that impact"
-                        " bargaining unit employees’ rights. \n\n"
+        "Failure to Follow EOD‑Based Recall Order.": {
+            "articles": ["National Agreement Article 48, Section 1(B), 5 CFR Part 752"],
+            "argument": "Article 48 of the National Agreement requires that when the Agency recalls employees to excepted duty during a shutdown, it must do so in inverse seniority using"
+            " each employee’s Enter-on-Duty (EOD) date and, if there is a tie, the Service Computation Date or the lowest social-security digit. Management’s decision to bypass this"
+            " formula and recall employees out of order violates the contractual requirement and undermines the negotiated protections that ensure fairness and prevent favoritism in"
+            " furlough recalls. The recall procedures in 5 CFR Part 752 treat furloughs of 30 days or less as adverse actions and require agencies to follow established procedures;"
+            " ignoring the National Agreement’s recall order violates those procedures. Employees who were not recalled according to their EOD date suffered lost pay and disruption of"
+            " seniority rights, constituting harm that should be remedied. To correct this violation, the Agency should rescind improper recall selections, apply the EOD-based inverse"
+            " seniority rule, make affected employees whole for lost pay and benefits, and post a notice affirming its obligation to follow Article 48 in future recalls. \n\n"
         },
-        "Issues with utilzing 15-min increments.": {
-            "articles": ["Article 32 Section 1(A)(2)"],
+        "Furloughing Employees for Using Annual or Sick Leave.": {
+            "articles": ["31 U.S.C. § 1341(c)(2)-(3), OPM Shutdown Furlough Guidance, 5 CFR Part 752"],
             "argument": "It is a violation of an employee’s rights under the National Agreement to restrict or deny the use of earned annual leave in increments other than those expressly outlined in"
                         " the contract. The National Agreement clearly provides that employees may request and use annual leave in 15-minute increments, and any attempt by management to enforce a different standard—such as requiring"
                         " leave to be taken in larger blocks is inconsistent with the negotiated language. \n\n Employees earn annual leave as a benefit of federal service, and once accrued, they have the right to use"
@@ -67,6 +66,27 @@ def render_furlough():
                         " contractual basis violates the principles of fairness, consistency, and negotiated rights. \n\n In this case, management's decision to either refuse an employee’s request for annual leave in"
                         " a 15-minute increment or to charge the employee leave in a greater amount than requested exceeds their authority under the National Agreement. Such action not only infringes on the employee’s rights but also"
                         " establishes a concerning precedent that undermines contractually guaranteed flexibilities afforded to bargaining unit employees. \n"
+        },
+        "Furloughing Employees Based on FMLA-Protected Medical Leave.": {
+            "articles": ["Family and Medical Leave Act, 5 U.S.C. § 6381‑6387 (Title 5 FMLA), 29 U.S.C. § 2615, 5 U.S.C. § 6385, OPM Shutdown Furlough Guidance, 5 CFR Part 630, Subpart L"],
+            "argument": "Title 5 and Title 29 of the FMLA prohibit employers from interfering with, restraining or discriminating against employees for exercising FMLA rights and bar"
+            " reprisals such as depriving them of pay or benefits. OPM’s shutdown guidance specifies that when a lapse in appropriations occurs, any scheduled paid leave substituted for"
+            " FMLA leave must be canceled and converted to furlough or leave‑without‑pay, and the time does not count against the 12‑week FMLA entitlement. Management’s decision to"
+            " furlough employees because they were on FMLA leave—rather than simply canceling leave and placing them in furlough status like others—constitutes a discriminatory act that"
+            " interfered with their statutory rights. Such a practice chills the exercise of FMLA leave and violates 5 U.S.C. § 6385 and 29 U.S.C. § 2615. Employees affected were deprived"
+            " of equal treatment and risked losing medical benefits; the remedy should include back pay, restoration of leave balances, removal of any adverse records, and affirmation"
+            " that FMLA use will not be a basis for furlough selection in future shutdowns. \n\n"
+        },
+        "Furloughing Employees for Requesting a Reasonable Accommodation.": {
+            "articles": ["Rehabilitation Act of 1973 (29 U.S.C. § 791), IRM 1.20.2.1.1, IRM 1.20.2.2.4, 29 C.F.R. § 1614.203"],
+            "argument": "The Rehabilitation Act obligates federal employers to provide reasonable accommodations to qualified employees with disabilities unless doing so would impose an"
+            " undue hardship, and it prohibits discrimination based on disability. IRS procedures in IRM 1.20.2 require managers to engage in an interactive process promptly and, absent"
+            " extenuating circumstances, process reasonable‑accommodation requests within 20 workdays; delaying or denying an accommodation when one can be provided promptly may violate"
+            " the Rehabilitation Act. Furloughing employees because they requested a reasonable accommodation is discriminatory and retaliatory: it punishes individuals for exercising"
+            " their right to accommodation instead of evaluating the request on its merits. Such conduct not only violates the Rehabilitation Act but also contravenes IRM policy"
+            " requiring accommodation requests to be handled expeditiously. The appropriate remedy is to remove any adverse action taken against the employees, provide them back pay and"
+            " benefits, process their accommodation requests in good faith, and reaffirm that requesting reasonable accommodation will not be grounds for furlough or other adverse"
+            " treatment. \n\n"
         }
     }
 
