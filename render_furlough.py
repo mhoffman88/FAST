@@ -81,7 +81,7 @@ def render_furlough():
             selected_articles.extend(info["articles"])
             selected_arguments.append(info["argument"])
 
-    if st.button("Generate AWOL Grievance PDF"):
+    if st.button("Generate Furlough Grievance PDF"):
         st.session_state.final_packet_buffer = None
         st.session_state.final_packet_name = None
         if not steward or not grievant:
@@ -166,7 +166,7 @@ def render_furlough():
         and st.session_state.final_packet_name
     ):
         st.download_button(
-            "📄 Download AWOL Grievance PDF",
+            "📄 Download Furlough Grievance PDF",
             st.session_state.final_packet_buffer.getvalue(),
             file_name=st.session_state.final_packet_name
         )
