@@ -17,8 +17,9 @@ def sanitize_text(text: str) -> str:
     when using standard PostScript fonts (Helvetica). Replace en-dash, em-dash, curly
     quotes, ellipsis, etc. with plain ASCII equivalents.
 
-    This is a pragmatic fix: a more complete solution is to register and use a
-    Unicode TTF (for example DejaVuSans) that contains the glyphs you need.
+    Additionally, remove control characters and 'other symbol' characters (commonly
+    emoji) which standard PostScript fonts do not contain. If you want to preserve
+    emoji/unicode symbols, register and use a Unicode TTF (e.g., DejaVuSans) instead.
     """
     if not isinstance(text, str):
         try:
@@ -47,6 +48,17 @@ def sanitize_text(text: str) -> str:
     for k, v in replacements.items():
         if k in text:
             text = text.replace(k, v)
+
+    # Remove control characters and 'Other Symbol' (So) characters (emoji, etc.)
+    filtered_chars = []
+    for ch in text:
+        cat = unicodedata.category(ch)
+        # Skip control characters (Cc) and other/formatting (Cf), and symbols of type 'So'
+        if cat.startswith("C") or cat == "So":
+            continue
+        filtered_chars.append(ch)
+
+    text = "".join(filtered_chars)
 
     return text
 
@@ -78,6 +90,7 @@ def draw_wrapped_section(c, title, text, x, y, width, height, line_height):
     usable_width = width - 2 * x
 
     # Sanitize entire block to avoid glyph issues
+    title = sanitize_text(title)
     text = sanitize_text(text)
 
     # Draw section title
@@ -116,8 +129,9 @@ def generate_pdf(data, argument):
     x, y = 50, height - 50
     line_height = 16
 
+    # Header sanitized (removed emoji to avoid missing glyphs in Helvetica)
     c.setFont("Helvetica-Bold", 16)
-    c.drawString(x, y, "📄 Grievance Summary")
+    c.drawString(x, y, sanitize_text("Grievance Summary"))
     y -= line_height * 2
 
     # Normalize the exclude_keys to lower case and strip spaces
@@ -226,14 +240,14 @@ def create_cover_sheet(form_data, grievance_type):
 
     # Title
     c.setFont("Helvetica-Bold", 22)
-    c.drawCentredString(width / 2, height - 72, f"{grievance_type} Filing Form - NTEU")
+    c.drawCentredString(width / 2, height - 72, sanitize_text(f"{grievance_type} Filing Form - NTEU"))
 
     # Case Number in upper right under title
     c.setFont("Helvetica-Bold", 12)
     case_number = form_data.get("Case ID", "N/A")
     case_label = f"Case Number: {case_number}"
     margin = 72  # 1 inch
-    c.drawRightString(width - margin, height - 100, case_label)
+    c.drawRightString(width - margin, height - 100, sanitize_text(case_label))
 
     # Start form fields below
     c.setFont("Helvetica", 12)
@@ -290,7 +304,12 @@ def create_cover_sheet(form_data, grievance_type):
     img_width, img_height = 360, 144
     img_x = (width - img_width) / 2
     img_y = 28
-    c.drawImage(img_path, img_x, img_y, width=img_width, height=img_height, mask='auto')
+    # If image missing, ReportLab will raise — consider checking os.path.exists(img_path)
+    try:
+        c.drawImage(img_path, img_x, img_y, width=img_width, height=img_height, mask='auto')
+    except Exception:
+        # ignore missing logo for robustness
+        pass
 
     # DO NOT call c.showPage() here!
     c.save()
@@ -304,11 +323,16 @@ def merge_pdfs(cover_buffer, main_buffer):
     main_reader = PdfReader(main_buffer)
     writer = PdfWriter()
 
-    writer.add_page(cover_reader.pages[0])
+    # Add the first page from cover, then all pages from the main
+    if len(cover_reader.pages) > 0:
+        writer.add_page(cover_reader.pages[0])
     for page in main_reader.pages:
         writer.add_page(page)
 
     output_buffer = BytesIO()
+    writer.write(output_buffer)
+    output_buffer.seek(0)
+    return output_buffer
 
 def create_abeyance_sheet(form_data, grievance_type):
     from io import BytesIO
@@ -322,14 +346,14 @@ def create_abeyance_sheet(form_data, grievance_type):
 
     # Title
     c.setFont("Helvetica-Bold", 22)
-    c.drawCentredString(width / 2, height - 72, f"{grievance_type} Filing Form - NTEU")
+    c.drawCentredString(width / 2, height - 72, sanitize_text(f"{grievance_type} Filing Form - NTEU"))
 
     # Case Number in upper right under title
     c.setFont("Helvetica-Bold", 12)
     case_number = form_data.get("Case ID", "N/A")
     case_label = f"Case Number: {case_number}"
     margin = 72  # 1 inch
-    c.drawRightString(width - margin, height - 100, case_label)
+    c.drawRightString(width - margin, height - 100, sanitize_text(case_label))
 
     # Start form fields below
     c.setFont("Helvetica", 12)
@@ -381,12 +405,12 @@ def create_abeyance_sheet(form_data, grievance_type):
     img_width, img_height = 360, 144
     img_x = (width - img_width) / 2
     img_y = 28
-    c.drawImage(img_path, img_x, img_y, width=img_width, height=img_height, mask='auto')
+    try:
+        c.drawImage(img_path, img_x, img_y, width=img_width, height=img_height, mask='auto')
+    except Exception:
+        pass
 
     # DO NOT call c.showPage() here!
     c.save()
     buffer.seek(0)
     return buffer
-    writer.write(output_buffer)
-    output_buffer.seek(0)
-    return output_buffer
