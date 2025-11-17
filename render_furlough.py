@@ -47,7 +47,7 @@ def render_furlough():
 
     # Define Furlough statements
     furlough_checkbox_descriptions = {
-        "Failure to Follow EOD‑Based Recall Order.": {
+        "The Agency failed to follow EOD order for furloughed employees.": {
             "articles": ["National Agreement Article 48, Section 1(B), 5 CFR Part 752"],
             "argument": "Article 48 of the National Agreement requires that when the Agency recalls employees to excepted duty during a shutdown, it must do so in inverse seniority using"
             " each employee’s Enter-on-Duty (EOD) date and, if there is a tie, the Service Computation Date or the lowest social-security digit. Management’s decision to bypass this"
@@ -57,7 +57,7 @@ def render_furlough():
             " seniority rights, constituting harm that should be remedied. To correct this violation, the Agency should rescind improper recall selections, apply the EOD-based inverse"
             " seniority rule, make affected employees whole for lost pay and benefits, and post a notice affirming its obligation to follow Article 48 in future recalls. \n\n"
         },
-        "Furloughing Employees for Using Annual or Sick Leave.": {
+        "Employees were furloughed for utilization of annual or sick leave during the shutdown.": {
             "articles": ["31 U.S.C. § 1341(c)(2)-(3), OPM Shutdown Furlough Guidance, 5 CFR Part 752"],
             "argument": "It is a violation of an employee’s rights under the National Agreement to restrict or deny the use of earned annual leave in increments other than those expressly outlined in"
                         " the contract. The National Agreement clearly provides that employees may request and use annual leave in 15-minute increments, and any attempt by management to enforce a different standard—such as requiring"
@@ -67,7 +67,7 @@ def render_furlough():
                         " a 15-minute increment or to charge the employee leave in a greater amount than requested exceeds their authority under the National Agreement. Such action not only infringes on the employee’s rights but also"
                         " establishes a concerning precedent that undermines contractually guaranteed flexibilities afforded to bargaining unit employees. \n"
         },
-        "Furloughing Employees Based on FMLA-Protected Medical Leave.": {
+        "Employees were furloughed based on medical discrimination through the use of FMLA.": {
             "articles": ["Family and Medical Leave Act, 5 U.S.C. § 6381‑6387 (Title 5 FMLA), 29 U.S.C. § 2615, 5 U.S.C. § 6385, OPM Shutdown Furlough Guidance, 5 CFR Part 630, Subpart L"],
             "argument": "Title 5 and Title 29 of the FMLA prohibit employers from interfering with, restraining or discriminating against employees for exercising FMLA rights and bar"
             " reprisals such as depriving them of pay or benefits. OPM’s shutdown guidance specifies that when a lapse in appropriations occurs, any scheduled paid leave substituted for"
@@ -77,7 +77,7 @@ def render_furlough():
             " of equal treatment and risked losing medical benefits; the remedy should include back pay, restoration of leave balances, removal of any adverse records, and affirmation"
             " that FMLA use will not be a basis for furlough selection in future shutdowns. \n\n"
         },
-        "Furloughing Employees for Requesting a Reasonable Accommodation.": {
+        "Employees were furloughed for requesting a Reasonable Accommodation.": {
             "articles": ["Rehabilitation Act of 1973 (29 U.S.C. § 791), IRM 1.20.2.1.1, IRM 1.20.2.2.4, 29 C.F.R. § 1614.203"],
             "argument": "The Rehabilitation Act obligates federal employers to provide reasonable accommodations to qualified employees with disabilities unless doing so would impose an"
             " undue hardship, and it prohibits discrimination based on disability. IRS procedures in IRM 1.20.2 require managers to engage in an interactive process promptly and, absent"
