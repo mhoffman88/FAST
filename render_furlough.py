@@ -63,7 +63,7 @@ def render_furlough():
             " employees must either perform excepted work or be placed in furlough status without being charged leave. Under the Government Employee Fair Treatment Act"
             " (31 U.S.C. § 1341(c)(2)-(3)) employees furloughed because of a lapse in appropriations are entitled to retroactive pay, and excepted employees may use leave under chapter"
             " 63 after the lapse. By targeting employees who had scheduled leave—either annual or sick—and placing them on furlough “for using leave,” the agency violated these"
-            " provisions; it should have simply cancelled the leave and treated them like all other non‑excepted employees. This action deprived employees of income and suggested that"
+            " provisions; it should have simply cancelled the leave and treated them like all other nonexcepted employees. This action deprived employees of income and suggested that"
             " taking approved leave would subject them to adverse treatment, contrary to federal leave laws. The appropriate remedy is to rescind any discipline or unequal treatment tied"
             " to leave use, provide back pay and benefits for the furlough period, and affirm that employees will not be singled out for exercising their statutory right to annual and"
             " sick leave. \n\n"
