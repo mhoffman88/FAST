@@ -71,7 +71,7 @@ def render_furlough():
             "articles": ["Family and Medical Leave Act, 5 U.S.C. § 6381-6387 (Title 5 FMLA), 29 U.S.C. § 2615, 5 U.S.C. § 6385, OPM Shutdown Furlough Guidance, 5 CFR Part 630, Subpart L"],
             "argument": "Title 5 and Title 29 of the FMLA prohibit employers from interfering with, restraining or discriminating against employees for exercising FMLA rights and bar"
             " reprisals such as depriving them of pay or benefits. OPM’s shutdown guidance specifies that when a lapse in appropriations occurs, any scheduled paid leave substituted for"
-            " FMLA leave must be canceled and converted to furlough or leave‑without‑pay, and the time does not count against the 12‑week FMLA entitlement. Management’s decision to"
+            " FMLA leave must be canceled and converted to furlough or leave without pay, and the time does not count against the 12 week FMLA entitlement. Management’s decision to"
             " furlough employees because they were on FMLA leave—rather than simply canceling leave and placing them in furlough status like others—constitutes a discriminatory act that"
             " interfered with their statutory rights. Such a practice chills the exercise of FMLA leave and violates 5 U.S.C. § 6385 and 29 U.S.C. § 2615. Employees affected were deprived"
             " of equal treatment and risked losing medical benefits; the remedy should include back pay, restoration of leave balances, removal of any adverse records, and affirmation"
@@ -81,7 +81,7 @@ def render_furlough():
             "articles": ["Rehabilitation Act of 1973 (29 U.S.C. § 791), IRM 1.20.2.1.1, IRM 1.20.2.2.4, 29 C.F.R. § 1614.203"],
             "argument": "The Rehabilitation Act obligates federal employers to provide reasonable accommodations to qualified employees with disabilities unless doing so would impose an"
             " undue hardship, and it prohibits discrimination based on disability. IRS procedures in IRM 1.20.2 require managers to engage in an interactive process promptly and, absent"
-            " extenuating circumstances, process reasonable‑accommodation requests within 20 workdays; delaying or denying an accommodation when one can be provided promptly may violate"
+            " extenuating circumstances, process reasonable accommodation requests within 20 workdays; delaying or denying an accommodation when one can be provided promptly may violate"
             " the Rehabilitation Act. Furloughing employees because they requested a reasonable accommodation is discriminatory and retaliatory: it punishes individuals for exercising"
             " their right to accommodation instead of evaluating the request on its merits. Such conduct not only violates the Rehabilitation Act but also contravenes IRM policy"
             " requiring accommodation requests to be handled expeditiously. The appropriate remedy is to remove any adverse action taken against the employees, provide them back pay and"
