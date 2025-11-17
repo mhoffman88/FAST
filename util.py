@@ -9,11 +9,52 @@ from reportlab.lib.pagesizes import LETTER
 from PyPDF2 import PdfMerger, PdfReader, PdfWriter
 from docx import Document as DocxDocument
 from reportlab.pdfbase.pdfmetrics import stringWidth
+import unicodedata
+
+def sanitize_text(text: str) -> str:
+    """
+    Normalize and replace characters that commonly cause missing-glyph boxes in PDFs
+    when using standard PostScript fonts (Helvetica). Replace en-dash, em-dash, curly
+    quotes, ellipsis, etc. with plain ASCII equivalents.
+
+    This is a pragmatic fix: a more complete solution is to register and use a
+    Unicode TTF (for example DejaVuSans) that contains the glyphs you need.
+    """
+    if not isinstance(text, str):
+        try:
+            text = str(text)
+        except Exception:
+            return ""
+
+    # Normalize to NFC
+    text = unicodedata.normalize("NFC", text)
+
+    # Mapping of problematic punctuation to ASCII equivalents
+    replacements = {
+        "\u2013": "-",  # en dash
+        "\u2014": "-",  # em dash
+        "\u2018": "'",  # left single quote
+        "\u2019": "'",  # right single quote
+        "\u201C": '"',  # left double quote
+        "\u201D": '"',  # right double quote
+        "\u2026": "...",  # ellipsis
+        "\u2010": "-",  # hyphen
+        "\u2212": "-",  # minus sign
+        "\u00A0": " ",  # non-breaking space
+    }
+
+    # Translate the replacements
+    for k, v in replacements.items():
+        if k in text:
+            text = text.replace(k, v)
+
+    return text
 
 def wrap_text_to_width(text, font_name, font_size, max_width):
     """
     Wrap a string so each line fits within max_width points.
     """
+    text = sanitize_text(text)
     words = text.split()
     lines = []
     current_line = ""
@@ -35,6 +76,9 @@ def draw_wrapped_section(c, title, text, x, y, width, height, line_height):
     body_font = "Helvetica"
     body_size = 10
     usable_width = width - 2 * x
+
+    # Sanitize entire block to avoid glyph issues
+    text = sanitize_text(text)
 
     # Draw section title
     c.setFont(title_font, title_size)
@@ -80,10 +124,12 @@ def generate_pdf(data, argument):
     exclude_keys = {"department manager", "frontline manager", "position", "operation"}
     for key, value in data.items():
         if key.strip().lower() not in exclude_keys:
+            # draw_wrapped_section sanitizes the text internally
             y = draw_wrapped_section(c, f"{key}:", str(value), x, y, width, height, line_height)
 
     if argument:
-        y = draw_wrapped_section(c, "Argument:", argument, x, y, width, height, line_height)
+        # sanitize argument before passing
+        y = draw_wrapped_section(c, "Argument:", sanitize_text(argument), x, y, width, height, line_height)
 
     c.save()
     buffer.seek(0)
@@ -103,8 +149,18 @@ def convert_to_pdf(file, filename):
 
     try:
         if ext == ".txt":
-            content = file.read().decode("utf-8").splitlines()
-            for line in content:
+            raw = file.read()
+            # try to decode safely
+            if isinstance(raw, bytes):
+                try:
+                    content_lines = raw.decode("utf-8").splitlines()
+                except UnicodeDecodeError:
+                    content_lines = raw.decode("latin-1").splitlines()
+            else:
+                content_lines = str(raw).splitlines()
+
+            for line in content_lines:
+                line = sanitize_text(line)
                 wrapped_lines = wrap_text_to_width(line, body_font, body_size, usable_width)
                 for wrapped in wrapped_lines:
                     if y < 50:
@@ -120,7 +176,8 @@ def convert_to_pdf(file, filename):
                 tmp_path = tmp.name
             doc = DocxDocument(tmp_path)
             for para in doc.paragraphs:
-                wrapped_lines = wrap_text_to_width(para.text, body_font, body_size, usable_width)
+                text = sanitize_text(para.text)
+                wrapped_lines = wrap_text_to_width(text, body_font, body_size, usable_width)
                 for wrapped in wrapped_lines:
                     if y < 50:
                         c.showPage()
@@ -219,8 +276,9 @@ def create_cover_sheet(form_data, grievance_type):
     value_max_width = width - label_x - margin
 
     for label, value in fields:
+        safe_value = sanitize_text(str(value))
         # Wrap label and value together, so it stays on one line unless too long
-        for line in wrap_label_value(label, str(value), "Helvetica", 12, value_max_width):
+        for line in wrap_label_value(label, safe_value, "Helvetica", 12, value_max_width):
             c.drawString(label_x, y, line)
             y -= line_height
             if y < margin + line_height:
@@ -309,8 +367,9 @@ def create_abeyance_sheet(form_data, grievance_type):
     value_max_width = width - label_x - margin
 
     for label, value in fields:
+        safe_value = sanitize_text(str(value))
         # Wrap label and value together, so it stays on one line unless too long
-        for line in wrap_label_value(label, str(value), "Helvetica", 12, value_max_width):
+        for line in wrap_label_value(label, safe_value, "Helvetica", 12, value_max_width):
             c.drawString(label_x, y, line)
             y -= line_height
             if y < margin + line_height:
