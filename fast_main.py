@@ -12,6 +12,7 @@ from render_awol_issue import render_awol
 from render_annual_issue import render_annual
 from render_abeyance import render_abeyance
 from render_audio import render_audio_podcast
+from render_furlough import render_furlough
 from util import wrap_text_to_width,draw_wrapped_section, generate_pdf, convert_to_pdf, calculate_fbd
 
 st.title("Federal Advocacy Support Toolkit \n FAST - Provided by NTEU CH. 66")
