@@ -59,13 +59,14 @@ def render_furlough():
         },
         "Employees were furloughed for utilization of annual or sick leave during the shutdown.": {
             "articles": ["31 U.S.C. § 1341(c)(2)-(3), OPM Shutdown Furlough Guidance, 5 CFR Part 752"],
-            "argument": "It is a violation of an employee’s rights under the National Agreement to restrict or deny the use of earned annual leave in increments other than those expressly outlined in"
-                        " the contract. The National Agreement clearly provides that employees may request and use annual leave in 15-minute increments, and any attempt by management to enforce a different standard—such as requiring"
-                        " leave to be taken in larger blocks is inconsistent with the negotiated language. \n\n Employees earn annual leave as a benefit of federal service, and once accrued, they have the right to use"
-                        " that leave subject to approval consistent with operational needs—not arbitrary restrictions on increment size. Denying or charging leave in increments larger than 15 minutes without a valid"
-                        " contractual basis violates the principles of fairness, consistency, and negotiated rights. \n\n In this case, management's decision to either refuse an employee’s request for annual leave in"
-                        " a 15-minute increment or to charge the employee leave in a greater amount than requested exceeds their authority under the National Agreement. Such action not only infringes on the employee’s rights but also"
-                        " establishes a concerning precedent that undermines contractually guaranteed flexibilities afforded to bargaining unit employees. \n"
+            "argument": "OPM’s guidance on shutdown furloughs explains that any approved annual or sick leave occurring during a lapse in appropriations is canceled and that affected"
+            " employees must either perform excepted work or be placed in furlough status without being charged leave. Under the Government Employee Fair Treatment Act"
+            " (31 U.S.C. § 1341(c)(2)-(3)) employees furloughed because of a lapse in appropriations are entitled to retroactive pay, and excepted employees may use leave under chapter"
+            " 63 after the lapse. By targeting employees who had scheduled leave—either annual or sick—and placing them on furlough “for using leave,” the agency violated these"
+            " provisions; it should have simply cancelled the leave and treated them like all other non‑excepted employees. This action deprived employees of income and suggested that"
+            " taking approved leave would subject them to adverse treatment, contrary to federal leave laws. The appropriate remedy is to rescind any discipline or unequal treatment tied"
+            " to leave use, provide back pay and benefits for the furlough period, and affirm that employees will not be singled out for exercising their statutory right to annual and"
+            " sick leave. \n\n"
         },
         "Employees were furloughed based on medical discrimination through the use of FMLA.": {
             "articles": ["Family and Medical Leave Act, 5 U.S.C. § 6381-6387 (Title 5 FMLA), 29 U.S.C. § 2615, 5 U.S.C. § 6385, OPM Shutdown Furlough Guidance, 5 CFR Part 630, Subpart L"],
