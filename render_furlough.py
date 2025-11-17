@@ -68,7 +68,7 @@ def render_furlough():
                         " establishes a concerning precedent that undermines contractually guaranteed flexibilities afforded to bargaining unit employees. \n"
         },
         "Employees were furloughed based on medical discrimination through the use of FMLA.": {
-            "articles": ["Family and Medical Leave Act, 5 U.S.C. § 6381‑6387 (Title 5 FMLA), 29 U.S.C. § 2615, 5 U.S.C. § 6385, OPM Shutdown Furlough Guidance, 5 CFR Part 630, Subpart L"],
+            "articles": ["Family and Medical Leave Act, 5 U.S.C. § 6381-6387 (Title 5 FMLA), 29 U.S.C. § 2615, 5 U.S.C. § 6385, OPM Shutdown Furlough Guidance, 5 CFR Part 630, Subpart L"],
             "argument": "Title 5 and Title 29 of the FMLA prohibit employers from interfering with, restraining or discriminating against employees for exercising FMLA rights and bar"
             " reprisals such as depriving them of pay or benefits. OPM’s shutdown guidance specifies that when a lapse in appropriations occurs, any scheduled paid leave substituted for"
             " FMLA leave must be canceled and converted to furlough or leave‑without‑pay, and the time does not count against the 12‑week FMLA entitlement. Management’s decision to"
