@@ -1,6 +1,6 @@
 # FAST — Federal Advocacy Support Toolkit
 
-FAST (Federal Advocacy Support Toolkit) is a lightweight Python toolkit for generating and rendering advocacy materials (arguments, issue renders, audio rendering helpers, and related workflows). The repository contains scripts and utilities for building outputs for different federal advocacy scenarios.
+FAST (Federal Advocacy Support Toolkit) is a lightweight Python toolkit for generating and rendering advocacy materials (arguments, issue renders, audio rendering helpers, and related workflows). The repository contains scripts and utilities for building outputs for different federal advocacy scenarios. The tool is tailored to NTEU/IRS grievance.
 
 Status
 - Public repo
@@ -21,7 +21,6 @@ Table of Contents
   - Linting and formatting
 - Packaging and distribution
 - Files and assets
-- Contributing
 - Security
 - License
 - Contact
