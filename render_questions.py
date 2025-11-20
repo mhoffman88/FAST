@@ -389,7 +389,7 @@ if "quiz_questions" not in st.session_state:
 # START QUIZ
 # -------------------------
 
-st.title("FAST: Steward Training Quiz")
+st.title("FAST: Test Your Knowledge")
 
 if not st.session_state.quiz_started:
     st.write("Press start when you're ready. Questions will be randomly selected.")
