@@ -3,11 +3,14 @@
 import random
 from render_questions import QUESTIONS
 
-def get_randomized_questions():
-    """Return a randomized copy of the full question bank."""
+def get_randomized_questions(num_questions=18):
+    """
+    Returns a randomized subset of questions.
+    Default: 18 questions.
+    """
     q_copy = QUESTIONS.copy()
     random.shuffle(q_copy)
-    return q_copy
+    return q_copy[:num_questions]
 
 
 def grade_quiz(answers):
