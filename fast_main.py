@@ -13,6 +13,7 @@ from render_annual_issue import render_annual
 from render_abeyance import render_abeyance
 from render_audio import render_audio_podcast
 from render_furlough import render_furlough
+from render_questions import get_randomized_questions
 from util import wrap_text_to_width,draw_wrapped_section, generate_pdf, convert_to_pdf, calculate_fbd
 
 st.title("Federal Advocacy Support Toolkit \n FAST - Provided by NTEU CH. 66")
@@ -21,7 +22,7 @@ st.subheader("📌 Select Grievance Type")
 
 grievance_type = st.radio(
     "Choose the type of grievance you'd like to file:",
-    ["Annual Appraisal", "AWOL - Annual/Sick Leave", "EO Abeyance", "Furlough", "Audio Clips - Podcast for Stewards"],
+    ["Annual Appraisal", "AWOL - Annual/Sick Leave", "EO Abeyance", "Furlough", "Test Your Knowledge", "Audio Clips - Podcast for Stewards"],
     index=0
 )
 
@@ -39,3 +40,6 @@ if grievance_type == "EO Abeyance":
 
 if grievance_type == "Audio Clips - Podcast for Stewards":
     render_audio_podcast()
+
+if grievance_type == "Test Your Knowledge":
+    get_randomized_questions()
