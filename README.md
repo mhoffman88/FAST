@@ -33,6 +33,7 @@ Features
 - Rendering scripts for several issue types (awol, furlough, abeyance, annual)
 - Audio helper utilities and an audio directory for samples/assets
 - A devcontainer to streamline onboarding in VS Code
+- A quiz to test the knowledge over the National Agreement.
 
 Quick Start
 
@@ -94,6 +95,9 @@ Project structure (top-level)
 - util.py — shared utility functions used by render and argument scripts
 - audio/ — audio assets (samples)
 - requirements.txt — Python dependencies
+- render_questions - Generated questions to select from.
+- render_quiz_engine - Quiz engine structure.
+- render_quiz - Utilizes render_questions and render_quiz_engine to render a randomized quiz to test skill sets.
 
 Development
 
