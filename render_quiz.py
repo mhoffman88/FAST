@@ -7,7 +7,7 @@ from render_quiz_engine import get_randomized_questions, grade_quiz
 
 def run_quiz():
 
-    st.title("FAST: Steward Training Quiz")
+    st.title("FAST: Test Your Knowledge")
 
     # -------------------------
     # SESSION STATE INIT
