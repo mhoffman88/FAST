@@ -1,7 +1,7 @@
 # quiz/quiz_engine.py
 
 import random
-from quiz.question_bank import QUESTIONS
+from render_questions import QUESTIONS
 
 def get_randomized_questions():
     """Return a randomized copy of the full question bank."""
