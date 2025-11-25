@@ -357,6 +357,206 @@ QUESTIONS = [
             "The denial of a performance award."
         ],
         "answer": "The separation of a probationary employee."
+    },
+    {
+    "question": "Under Article 9, when a steward is using official time, what is the steward required to do before leaving their workstation?",
+    "options": [
+        "Notify their immediate supervisor of the expected duration.",
+        "Submit a written request at least 24 hours in advance.",
+        "Log their departure using Form 3081.",
+        "Obtain approval from the Union Chapter President."
+    ],
+    "answer": "Notify their immediate supervisor of the expected duration."
+    },
+    {
+        "question": "According to Article 5, what happens to an employee's grievance timelines if they are unavailable due to approved leave?",
+        "options": [
+            "Timelines automatically pause until the employee returns.",
+            "Timelines continue unless the parties mutually agree to extend them.",
+            "Timelines are extended by the number of days of leave.",
+            "Timelines restart upon the employee's return."
+        ],
+        "answer": "Timelines continue unless the parties mutually agree to extend them."
+    },
+    {
+        "question": "Under Article 34, after how many consecutive workdays of sick leave may the Employer require medical certification?",
+        "options": [
+            "Three (3) consecutive workdays.",
+            "Five (5) consecutive workdays.",
+            "Two (2) consecutive workdays.",
+            "One (1) day of absence."
+        ],
+        "answer": "Three (3) consecutive workdays."
+    },
+    {
+        "question": "Per Article 14, how much advance notice must the Employer provide before changing an employee's tour of duty?",
+        "options": [
+            "At least 24 hours.",
+            "At least seven (7) calendar days.",
+            "At least two (2) workdays.",
+            "At least 48 hours."
+        ],
+        "answer": "At least seven (7) calendar days."
+    },
+    {
+        "question": "Under Article 23, what is the normal maximum number of credit hours a full-time employee may carry over from one pay period to the next?",
+        "options": [
+            "One (1) hour.",
+            "Twenty-four (24) hours.",
+            "Ten (10) hours.",
+            "Sixteen (16) hours."
+        ],
+        "answer": "Twenty-four (24) hours."
+    },
+    {
+        "question": "According to Article 39, what is the minimum advance notice the Employer must give an employee before conducting a desk audit?",
+        "options": [
+            "Five (5) workdays.",
+            "No advance notice is required.",
+            "Twenty-four (24) hours.",
+            "Seven (7) calendar days."
+        ],
+        "answer": "No advance notice is required."
+    },
+    {
+        "question": "Per Article 37, what is the maximum number of days an employee has to appeal a performance rating of record through the negotiated grievance procedure?",
+        "options": [
+            "Seven (7) workdays.",
+            "Fifteen (15) workdays.",
+            "Thirty (30) calendar days.",
+            "Ten (10) calendar days."
+        ],
+        "answer": "Fifteen (15) workdays."
+    },
+    {
+        "question": "Under Article 11, which of the following must be provided to the Union when the Employer proposes to relocate employees?",
+        "options": [
+            "A list of employees being relocated and the impact analysis.",
+            "Notice at least 5 days prior to the relocation.",
+            "A copy of the new office floor plan and implementation schedule.",
+            "An opportunity to select which employees will be moved."
+        ],
+        "answer": "A copy of the new office floor plan and implementation schedule."
+    },
+    {
+        "question": "According to Article 47, which type of leave must the Employer grant for bone marrow donation?",
+        "options": [
+            "Sick leave only.",
+            "Administrative leave.",
+            "Leave without pay.",
+            "Annual leave only."
+        ],
+        "answer": "Administrative leave."
+    },
+    {
+        "question": "Under Article 20, what is the minimum amount of notice the Employer must normally provide before implementing a furlough of 30 calendar days or less?",
+        "options": [
+            "30 calendar days.",
+            "45 calendar days.",
+            "14 calendar days.",
+            "7 calendar days."
+        ],
+        "answer": "30 calendar days."
+    },
+    {
+        "question": "According to Article 49, how often must an employee's performance plan be reviewed with them during the appraisal year?",
+        "options": [
+            "At least twice per year.",
+            "At mid-year and at the end of the year.",
+            "Only at the beginning of the year.",
+            "Quarterly reviews are required."
+        ],
+        "answer": "At mid-year and at the end of the year."
+    },
+    {
+        "question": "Per Article 13, when using selective placement factors for a vacancy, what must the Employer ensure?",
+        "options": [
+            "That the Union approves the factor.",
+            "That the factor is directly related to the duties of the position.",
+            "That employees may appeal the factor to OPM.",
+            "That the factor only applies to external candidates."
+        ],
+        "answer": "That the factor is directly related to the duties of the position."
+    },
+    {
+        "question": "Under Article 9, when management denies official time for representational activities due to workload, what must occur?",
+        "options": [
+            "The steward must resubmit the request the next day.",
+            "The denial must be placed in writing and provided to the Union.",
+            "Official time must be granted as soon as practicable.",
+            "The steward must take annual leave instead."
+        ],
+        "answer": "Official time must be granted as soon as practicable."
+    },
+    {
+        "question": "According to Article 18, how long does a written reprimand remain in the employee’s Official Personnel Folder (OPF)?",
+        "options": [
+            "Six (6) months.",
+            "Two (2) years.",
+            "One (1) year.",
+            "Three (3) years."
+        ],
+        "answer": "Two (2) years."
+    },
+    {
+        "question": "Per Article 25, what is the Employer required to provide regarding reasonable accommodation requests?",
+        "options": [
+            "A decision within five (5) workdays.",
+            "A written explanation of any denial.",
+            "A full medical diagnosis for all accepted cases.",
+            "Union notification before any decision is made."
+        ],
+        "answer": "A written explanation of any denial."
+    },
+    {
+        "question": "Under Article 34, when may the Employer request a fitness-for-duty examination?",
+        "options": [
+            "Only after three consecutive absences.",
+            "Whenever it has reasonable cause to question an employee’s ability to perform safely and efficiently.",
+            "Only if the employee volunteers to participate.",
+            "Only after a PIP has begun."
+        ],
+        "answer": "Whenever it has reasonable cause to question an employee’s ability to perform safely and efficiently."
+    },
+    {
+        "question": "According to Article 48, what is the determining factor for establishing inverse seniority for recall during shutdown operations?",
+        "options": [
+            "SCD.",
+            "Grade level.",
+            "IRS Entry on Duty (EOD) date.",
+            "SSN last four digits."
+        ],
+        "answer": "IRS Entry on Duty (EOD) date."
+    },
+    {
+        "question": "Per Article 8, which of the following constitutes a formal discussion requiring Union notification?",
+        "options": [
+            "A meeting to discuss general workflow updates.",
+            "Any discussion between one employee and their supervisor.",
+            "A discussion concerning grievances, personnel policies, or general conditions of employment.",
+            "A casual conversation about attendance."
+        ],
+        "answer": "A discussion concerning grievances, personnel policies, or general conditions of employment."
+    },
+    {
+        "question": "Under Article 50, what may the Employer require of a teleworking employee when the employee’s equipment fails but the POD is open?",
+        "options": [
+            "The employee must take LWOP.",
+            "The employee must troubleshoot the issue at home.",
+            "The employee must report to the POD or request leave.",
+            "The employee is automatically granted administrative leave."
+        ],
+        "answer": "The employee must report to the POD or request leave."
+    },
+    {
+        "question": "According to Article 39, when must the Employer notify the Union and impacted employees of a classification appeal decision?",
+        "options": [
+            "Within ten (10) workdays.",
+            "Within a reasonable period after the decision is issued.",
+            "Immediately upon receipt.",
+            "Within thirty (30) calendar days."
+        ],
+        "answer": "Within a reasonable period after the decision is issued."
     }
 ]
 
