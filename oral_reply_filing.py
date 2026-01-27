@@ -158,13 +158,14 @@ def render_orfiling():
         story.append(Paragraph("<b>ORAL REPLY REQUEST</b>", center_bold))
 
         # Date line
+        story.append(Spacer(1, 10))
         today_str = datetime.date.today().strftime("%B %d, %Y")
         story.append(Paragraph(f"Date: {today_str}", styles["Normal"]))
-        story.append(Spacer(1, 6))
+        story.append(Spacer(1, 10))
 
         # To: Official Above Proposing
         story.append(Paragraph(f"To: {official}", styles["Normal"]))
-        story.append(Spacer(1, 12))
+        story.append(Spacer(1, 18))
 
         # Statement paragraph
         statement = (
@@ -173,21 +174,21 @@ def render_orfiling():
             "is being requested for the following:"
         )
         story.append(Paragraph(statement, styles["Normal"]))
-        story.append(Spacer(1, 12))
+        story.append(Spacer(1, 20))
 
         # Details lines: grievant, NTEU Case Number, Alerts Number
         story.append(Paragraph(f"Grievant: {grievant}", styles["Normal"]))
-        story.append(Spacer(1, 6))
+        story.append(Spacer(1, 8))
         story.append(Paragraph(f"NTEU Case Number: {nteu_case}", styles["Normal"]))
-        story.append(Spacer(1, 6))
+        story.append(Spacer(1, 8))
         story.append(Paragraph(f"Alerts Number: {alerts_number}", styles["Normal"]))
-        story.append(Spacer(1, 24))
+        story.append(Spacer(1, 32))
 
         # Union Representation block at bottom
         story.append(Paragraph("<b>Union Representation:</b>", styles["Normal"]))
-        story.append(Spacer(1, 6))
-        story.append(Paragraph("NTEU Chapter 66, 816-499-4496", styles["Normal"]))
-        story.append(Spacer(1, 6))
+        story.append(Spacer(1, 8))
+        story.append(Paragraph("NTEU Chapter 66, 816-499-4496, nteu.chapter.66.oral.replies@irs.gov", styles["Normal"]))
+        story.append(Spacer(1, 8))
         # three blank lines (if you want space for additional sigs/info)
         story.append(Paragraph("<br/><br/><br/>", styles["Normal"]))
         story.append(Paragraph("NTEU Chapter 66", styles["Normal"]))
