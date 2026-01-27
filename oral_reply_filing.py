@@ -8,7 +8,9 @@ from PyPDF2 import PdfMerger
 from util import wrap_text_to_width, draw_wrapped_section, generate_pdf, convert_to_pdf, calculate_fbd, create_cover_sheet, calculate_orfbd
 from reportlab.lib.pagesizes import LETTER
 from reportlab.lib.styles import getSampleStyleSheet
-from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer
+from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, Image
+from reportlab.lib.units import inch
+from reportlab.lib.utils import ImageReader
 
 def render_orfiling():
     # initialise proposal date state
@@ -91,6 +93,27 @@ def render_orfiling():
         doc = SimpleDocTemplate(buffer, pagesize=LETTER)
         styles = getSampleStyleSheet()
         story = []
+
+        # --- Insert centered logo (if available) ---
+        try:
+            # assume the logo is in the same directory as this script
+            logo_path = os.path.join(os.path.dirname(__file__), "NTEU-logo.png")
+            if os.path.exists(logo_path):
+                reader = ImageReader(logo_path)
+                iw, ih = reader.getSize()
+                max_width = 3 * inch  # adjust max width as needed
+                scale = min(1.0, max_width / float(iw))
+                img_w = iw * scale
+                img_h = ih * scale
+                logo = Image(logo_path, width=img_w, height=img_h)
+                logo.hAlign = "CENTER"
+                story.append(logo)
+                story.append(Spacer(1, 12))
+        except Exception:
+            # if anything goes wrong loading/scaling the image, continue without it
+            pass
+        # --- end logo insertion ---
+
         # body text
         story.append(Paragraph(auth_text.replace("\n", "<br/>"), styles["Normal"]))
         story.append(Spacer(1, 18))
