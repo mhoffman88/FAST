@@ -96,11 +96,13 @@ def render_orfiling():
         story.append(Spacer(1, 18))
         # signature lines
         story.append(Paragraph(f"{grievant}", styles["Normal"]))
-        story.append(Paragraph("\n\n\n                    ______________________________", styles["Normal"]))
+        story.append(Spacer(1, 18))
+        story.append(Paragraph(______________________________", styles["Normal"]))
         story.append(Paragraph("Grievant Signature", styles["Normal"]))
         story.append(Spacer(1, 12))
         story.append(Paragraph(f"{steward}", styles["Normal"]))
-        story.append(Paragraph("\n\n\n                    ______________________________", styles["Normal"]))
+        story.append(Spacer(1, 18))
+        story.append(Paragraph(______________________________", styles["Normal"]))
         story.append(Paragraph("Steward Signature", styles["Normal"]))
         # optional SSN line for tax case
         if tax_case:
