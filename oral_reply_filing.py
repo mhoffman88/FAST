@@ -201,9 +201,9 @@ def render_orfiling():
         buffer.seek(0)
 
         # provide download button
-        file_name = f"{grievant.replace(' ', '_')}_Authorization.pdf"
+        file_name = f"{grievant.replace(' ', '_')}_OR_POA_and_Filing_Form.pdf"
         st.download_button(
-            label="Download Authorization Form",
+            label="Download POA/Info Form",
             data=buffer.getvalue(),
             file_name=file_name,
             mime="application/pdf"
