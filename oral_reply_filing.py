@@ -30,8 +30,8 @@ def render_orfiling():
         )
     with fbd_col:
         # reuse your existing 15‑business‑day function
-        fbd = calculate_fbd(st.session_state["date_received"])
-        st.info(f"🗕️ File By Date (15 business days): {fbd}")
+        fbd = calculate_orfbd(st.session_state["date_received"])
+        st.info(f"🗕️ File By Date (7 days): {fbd}")
 
     # begin new authorization form
     with st.form("oral_reply_form"):
