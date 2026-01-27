@@ -11,8 +11,7 @@ from reportlab.lib.styles import getSampleStyleSheet
 from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer
 
 def render_orfiling():
-    # initialise proposal date state
-    if "proposal_date" not in st.session_state:
+   if "proposal_date" not in st.session_state:
         st.session_state["proposal_date"] = datetime.date.today()
     if "date_received" not in st.session_state:
         st.session_state["date_received"] = datetime.date.today()
@@ -97,12 +96,12 @@ def render_orfiling():
         # signature lines
         story.append(Paragraph(f"{grievant}", styles["Normal"]))
         story.append(Spacer(1, 18))
-        story.append(Paragraph(______________________________", styles["Normal"]))
+        story.append(Paragraph("______________________________", styles["Normal"]))
         story.append(Paragraph("Grievant Signature", styles["Normal"]))
         story.append(Spacer(1, 12))
         story.append(Paragraph(f"{steward}", styles["Normal"]))
         story.append(Spacer(1, 18))
-        story.append(Paragraph(______________________________", styles["Normal"]))
+        story.append(Paragraph("______________________________", styles["Normal"]))
         story.append(Paragraph("Steward Signature", styles["Normal"]))
         # optional SSN line for tax case
         if tax_case:
@@ -119,7 +118,7 @@ def render_orfiling():
         file_name = f"{grievant.replace(' ', '_')}_Authorization.pdf"
         st.download_button(
             label="Download Authorization Form",
-            data=buffer,
+            data=buffer.getvalue(),
             file_name=file_name,
             mime="application/pdf"
         )
