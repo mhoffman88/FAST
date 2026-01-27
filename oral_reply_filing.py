@@ -11,7 +11,8 @@ from reportlab.lib.styles import getSampleStyleSheet
 from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer
 
 def render_orfiling():
-   if "proposal_date" not in st.session_state:
+    # initialise proposal date state
+    if "proposal_date" not in st.session_state:
         st.session_state["proposal_date"] = datetime.date.today()
     if "date_received" not in st.session_state:
         st.session_state["date_received"] = datetime.date.today()
