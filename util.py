@@ -234,6 +234,16 @@ def calculate_fbd(start_date):
             business_days += 1
     return current_date
 
+def calculate_orfbd(start_date):
+    us_holidays = holidays.US()
+    current_date = start_date
+    counted_days = 0
+    while counted_days < 7:
+        current_date += datetime.timedelta(days=1)
+        if current_date not in us_holidays:
+            counted_days += 1
+    return current_date
+
 def create_cover_sheet(form_data, grievance_type):
     from io import BytesIO
     from reportlab.pdfgen import canvas
