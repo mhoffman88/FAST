@@ -35,7 +35,7 @@ def render_annual():
         grievant = st.text_input("Grievant’s Name", key="Grievant")
         years_list = [str(y) for y in range(2023, datetime.date.today().year + 2)]
         appraisal_year = st.selectbox("Appraisal Year", years_list, index=len(years_list)-1, key="appraisal_year")
-        ratings = [f"{x:.1f}" for x in [i * 0.1 for i in range(10, 51)]]
+        ratings = [f"{x:.1f}" for x in [i * 0.1 for i in range(0, 51)]]
         col1, col2 = st.columns(2)
         with col1:
             rating_received = st.selectbox("Current Rating", ratings, index=0, key="rating_received")
