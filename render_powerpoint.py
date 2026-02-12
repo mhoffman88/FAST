@@ -11,7 +11,7 @@ def render_powerpoint():
     
     st.subheader("📊 PowerPoint Presentations")
     
-    pptx_dir = "powerpoints"
+    pptx_dir = "PowerPoints"
     
     if not os.path.exists(pptx_dir):
         st.warning(f"No PowerPoint directory found at '{pptx_dir}'")
