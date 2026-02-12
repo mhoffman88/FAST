@@ -11,10 +11,8 @@ def render_powerpoint():
     
     st.subheader("📊 PowerPoint Presentations")
     
-    # Directory containing PowerPoint files
-    pptx_dir = "powerpoints"  # Change this to your directory
+    pptx_dir = "powerpoints"
     
-    # Get list of PowerPoint files
     if not os.path.exists(pptx_dir):
         st.warning(f"No PowerPoint directory found at '{pptx_dir}'")
         return
@@ -24,8 +22,7 @@ def render_powerpoint():
     if not pptx_files:
         st.warning("No PowerPoint files found in the directory.")
         return
-    
-    # User selects which presentation to view
+
     selected_file = st.selectbox(
         "Select a presentation:",
         pptx_files,
