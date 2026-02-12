@@ -9,3 +9,4 @@ fpdf
 pillow
 python-pptx
 pdf2image
+libreoffice
