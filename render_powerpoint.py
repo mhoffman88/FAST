@@ -4,7 +4,7 @@ from pdf2image import convert_from_bytes
 import subprocess
 import os
 
-def render_powerpoint_with_pdf():
+def render_powerpoint():
     """
     Render PowerPoint presentations using PDF conversion for better quality.
     """
