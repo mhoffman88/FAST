@@ -3,8 +3,9 @@ from pptx import Presentation
 from pdf2image import convert_from_bytes
 import subprocess
 import os
+import shutil
 
-def render_powerpoint():
+def render_powerpoint():    
     """
     Render PowerPoint presentations using PDF conversion for better quality.
     """
@@ -101,7 +102,7 @@ def convert_pptx_to_pdf(pptx_path):
     
     try:
         subprocess.run([
-            'libreoffice',
+            'soffice',
             '--headless',
             '--convert-to', 'pdf',
             '--outdir', os.path.dirname(pptx_path),
