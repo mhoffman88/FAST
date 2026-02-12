@@ -5,11 +5,6 @@ import subprocess
 import os
 
 def render_powerpoint():
-
-    import shutil
-    st.write("libreoffice path:", shutil.which("libreoffice"))
-    st.write("soffice path:", shutil.which("soffice"))
-    
     """
     Render PowerPoint presentations using PDF conversion for better quality.
     """
