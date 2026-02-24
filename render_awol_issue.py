@@ -1,16 +1,15 @@
 import streamlit as st
 import datetime
-import holidays
 import os
 from io import BytesIO
 from PyPDF2 import PdfMerger
-from util import wrap_text_to_width, draw_wrapped_section, generate_pdf, convert_to_pdf, calculate_fbd, create_cover_sheet, merge_pdfs
+from util import generate_pdf, convert_to_pdf, calculate_fbd, create_cover_sheet
 
 def render_awol():
     st.header("AWOL - Annual or Sick Leave Grievance Intake")
     date_col, fbd_col = st.columns([1, 1])
     with date_col:
-        date_received = st.date_input(
+        st.date_input(
             "Date Received",
             value=datetime.date.today(),
             key="date_received",
