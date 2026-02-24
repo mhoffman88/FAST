@@ -1,7 +1,6 @@
 import streamlit as st
 import datetime
 import holidays
-import tempfile
 import os
 from io import BytesIO
 from reportlab.pdfgen import canvas
@@ -156,9 +155,9 @@ def generate_pdf(data, argument):
     return buffer
     
 def convert_to_pdf(file, filename):
-    temp_pdf_path = os.path.join(tempfile.gettempdir(), f"converted_{filename}.pdf")
     ext = os.path.splitext(filename)[1].lower()
-    c = canvas.Canvas(temp_pdf_path, pagesize=LETTER)
+    buffer = BytesIO()
+    c = canvas.Canvas(buffer, pagesize=LETTER)
     width, height = LETTER
     x, y = 50, height - 50
     line_height = 16
@@ -170,7 +169,6 @@ def convert_to_pdf(file, filename):
     try:
         if ext == ".txt":
             raw = file.read()
-            # try to decode safely
             if isinstance(raw, bytes):
                 try:
                     content_lines = raw.decode("utf-8").splitlines()
@@ -190,11 +188,7 @@ def convert_to_pdf(file, filename):
                     c.drawString(x, y, wrapped)
                     y -= line_height
         elif ext == ".docx":
-            from docx import Document as DocxDocument
-            with tempfile.NamedTemporaryFile(delete=False, suffix=".docx") as tmp:
-                tmp.write(file.read())
-                tmp_path = tmp.name
-            doc = DocxDocument(tmp_path)
+            doc = DocxDocument(file)
             for para in doc.paragraphs:
                 text = sanitize_text(para.text)
                 wrapped_lines = wrap_text_to_width(text, body_font, body_size, usable_width)
@@ -206,24 +200,21 @@ def convert_to_pdf(file, filename):
                     c.drawString(x, y, wrapped)
                     y -= line_height
         elif ext in [".jpg", ".jpeg", ".png"]:
-            img_path = os.path.join(tempfile.gettempdir(), filename)
-            with open(img_path, "wb") as f:
-                f.write(file.read())
-            c.drawImage(img_path, x, y - 400, width=400, height=400)
+            from reportlab.lib.utils import ImageReader
+            image_data = file.read()
+            image = ImageReader(BytesIO(image_data))
+            c.drawImage(image, x, y - 400, width=400, height=400)
             y -= 420
         else:
             return None
 
         c.save()
-        # Return as BytesIO for consistency
-        with open(temp_pdf_path, "rb") as pdf_file:
-            buffer = BytesIO(pdf_file.read())
         buffer.seek(0)
         return buffer
     except Exception as e:
         st.warning(f"⚠️ Failed to convert {filename}: {e}")
         return None
-        
+
 def calculate_fbd(start_date):
     us_holidays = holidays.US()
     current_date = start_date

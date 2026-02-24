@@ -1,7 +1,6 @@
 import streamlit as st
 import datetime
 import holidays
-import tempfile
 import os
 from io import BytesIO
 from PyPDF2 import PdfMerger
@@ -154,20 +153,12 @@ def render_furlough():
                     ext = os.path.splitext(filename)[1].lower()
                     try:
                         if ext == ".pdf":
-                            with tempfile.NamedTemporaryFile(delete=False, suffix=".pdf") as tmp:
-                                tmp.write(file.read())
-                                tmp.flush()
-                            with open(tmp.name, "rb") as f:
-                                merger.append(f)
+                            merger.append(BytesIO(file.read()))
                         else:
                             converted_path = convert_to_pdf(file, filename)
                             if converted_path:
-                                if isinstance(converted_path, BytesIO):
-                                    converted_path.seek(0)
-                                    merger.append(converted_path)
-                                else:
-                                    with open(converted_path, "rb") as f:
-                                        merger.append(f)
+                                converted_path.seek(0)
+                                merger.append(converted_path)
                     except Exception as e:
                         st.warning(f"⚠️ Skipped {filename} due to error: {e}")
 
