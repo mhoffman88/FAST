@@ -1,7 +1,6 @@
 import streamlit as st
 import datetime
 import holidays
-import tempfile
 import os
 from io import BytesIO
 from PyPDF2 import PdfMerger
@@ -74,33 +73,28 @@ def render_abeyance():
                 ext = os.path.splitext(filename)[1].lower()
                 try:
                     if ext == ".pdf":
-                        with tempfile.NamedTemporaryFile(delete=False, suffix=".pdf") as tmp:
-                            tmp.write(file.read())
-                            tmp.flush()
-                        with open(tmp.name, "rb") as f:
-                            merger.append(f)
+                        merger.append(BytesIO(file.read()))
                     else:
                         converted_path = convert_to_pdf(file, filename)
                         if converted_path:
-                                if isinstance(converted_path, BytesIO):
-                                    converted_path.seek(0)
-                                    merger.append(converted_path)
-                                else:
-                                    with open(converted_path, "rb") as f:
-                                        merger.append(f)
+                            converted_path.seek(0)
+                            merger.append(converted_path)
                 except Exception as e:
                     st.warning(f"⚠️ Skipped {filename} due to error: {e}")
 
         output_name = f"{workarea.replace(' ', '_')}_{manager.replace(' ', '_')}_EO_Abeyance.pdf"
-        final_path = os.path.join(tempfile.gettempdir(), output_name)
-        with open(final_path, "wb") as f:
-            merger.write(f)
+        merged_buffer = BytesIO()
+        merger.write(merged_buffer)
         merger.close()
+        merged_buffer.seek(0)
 
-        st.session_state.final_packet_path = final_path
+        st.session_state.final_packet_buffer = merged_buffer
         st.session_state.final_packet_name = output_name
 
     # --- Download button ---
-    if "final_packet_path" in st.session_state and st.session_state.final_packet_path:
-        with open(st.session_state.final_packet_path, "rb") as f:
-            st.download_button("📅 Download Completed EO Abeyance Packet", f, file_name=st.session_state.final_packet_name)
+    if "final_packet_buffer" in st.session_state and st.session_state.final_packet_buffer is not None:
+        st.download_button(
+            "📅 Download Completed EO Abeyance Packet",
+            st.session_state.final_packet_buffer.getvalue(),
+            file_name=st.session_state.final_packet_name
+        )
