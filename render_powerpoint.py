@@ -3,7 +3,6 @@ from pptx import Presentation
 from pdf2image import convert_from_bytes
 import subprocess
 import os
-import shutil
 
 def render_powerpoint():    
     """

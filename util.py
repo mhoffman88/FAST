@@ -5,7 +5,7 @@ import os
 from io import BytesIO
 from reportlab.pdfgen import canvas
 from reportlab.lib.pagesizes import LETTER
-from PyPDF2 import PdfMerger, PdfReader, PdfWriter
+from PyPDF2 import PdfReader, PdfWriter
 from docx import Document as DocxDocument
 from reportlab.pdfbase.pdfmetrics import stringWidth
 import unicodedata
@@ -345,7 +345,6 @@ def create_abeyance_sheet(form_data, grievance_type):
     from io import BytesIO
     from reportlab.pdfgen import canvas
     from reportlab.lib.pagesizes import LETTER
-    import datetime
 
     buffer = BytesIO()
     c = canvas.Canvas(buffer, pagesize=LETTER)

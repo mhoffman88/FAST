@@ -1,10 +1,9 @@
 import streamlit as st
 import datetime
-import holidays
 import os
 from io import BytesIO
 from PyPDF2 import PdfMerger
-from util import wrap_text_to_width, draw_wrapped_section, generate_pdf, convert_to_pdf, calculate_fbd, create_cover_sheet, create_abeyance_sheet
+from util import convert_to_pdf, create_abeyance_sheet
 
 def render_abeyance():
     # --- Date and FBD input/display together ---
@@ -52,13 +51,6 @@ def render_abeyance():
             "Steward": steward,
             "Operation": workarea
         }
-
-        # Only the fields you want in the main PDF, in order
-        pdf_fields = {
-            "Steward": steward,
-            "Manager Denied": manager
-        }
-        pdf_data = {k: form_data[k] for k in pdf_fields if k in form_data}
 
         grievance_type = st.session_state.get("grievance_type", "EO Abeyance")
         cover_sheet_buffer = create_abeyance_sheet(form_data, grievance_type)  # Returns BytesIO

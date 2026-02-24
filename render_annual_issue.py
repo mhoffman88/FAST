@@ -1,10 +1,9 @@
 import streamlit as st
 import datetime
-import holidays
 import os
 from io import BytesIO
 from PyPDF2 import PdfMerger
-from util import wrap_text_to_width, draw_wrapped_section, generate_pdf, convert_to_pdf, calculate_fbd, create_cover_sheet
+from util import generate_pdf, convert_to_pdf, calculate_fbd, create_cover_sheet
 from meas_unmeas_arguments import measured_checkboxes, unmeasured_checkboxes
 from annual_arguments import annual_checkboxes
 
@@ -16,7 +15,7 @@ def render_annual():
     st.header("Appraisal Grievance Intake")
     date_col, fbd_col = st.columns([1, 1])
     with date_col:
-        date_received = st.date_input(
+        st.date_input(
             "Date Received",
             value=st.session_state["date_received"],
             key="date_received",

@@ -1,11 +1,8 @@
 import streamlit as st
 import datetime
-import holidays
-import tempfile
 import os
 from io import BytesIO
-from PyPDF2 import PdfMerger
-from util import wrap_text_to_width, draw_wrapped_section, generate_pdf, convert_to_pdf, calculate_fbd, create_cover_sheet, calculate_orfbd
+from util import calculate_orfbd
 from reportlab.lib.pagesizes import LETTER
 from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
 from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, Image, PageBreak
@@ -25,7 +22,7 @@ def render_orfiling():
     # show proposal received / file‑by‑date side‑by‑side
     date_col, fbd_col = st.columns([1, 1])
     with date_col:
-        date_received = st.date_input(
+        st.date_input(
             "Proposal Received",
             value=st.session_state["date_received"],
             key="date_received",
