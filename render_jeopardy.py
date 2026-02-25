@@ -7,9 +7,7 @@ from render_jeopardy_questions import get_randomized_jeopardy_board
 def _normalize(text: str) -> str:
     """Normalize answers for forgiving comparisons."""
     lowered = text.strip().lower()
-    stripped = re.sub(r"^(what|who)\s+is\s+", "", lowered)
-    stripped = re.sub(r"^what\s+are\s+", "", stripped)
-    return re.sub(r"[^a-z0-9]+", "", stripped)
+    return re.sub(r"[^a-z0-9]+", "", lowered)
 
 
 def _initialize_state() -> None:
