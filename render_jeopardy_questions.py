@@ -250,6 +250,10 @@ JEOPARDY_QUESTION_BANK = [
                 {"question": "Officials in non-eligible positions may perform union duties on recurring telework only if they meet subsections 2A, 2B, 2C, 2D and 2H of Article 50.", "answer": "What is Article 50 compliance?"},
                 {"question": "The union must submit the names of training attendees 60 days in advance to receive employer reimbursement.", "answer": "What is the advance notice requirement?"},
                 {"question": "For reimbursement, the steward must attend the nearest session or a cheaper alternate location; only one steward per chapter is reimbursed per year.", "answer": "What is the reimbursement rule?"},
+            ],
+        },
+    },
+    {
         "category": "Steward Rights",
         "clues_by_value": {
             100: [
