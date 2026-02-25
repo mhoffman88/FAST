@@ -10,6 +10,7 @@ def _normalize(text: str) -> str:
     stripped = re.sub(r"^(what|who)\s+is\s+", "", lowered)
     stripped = re.sub(r"^what\s+are\s+", "", stripped)
     return re.sub(r"[^a-z0-9]+", "", stripped)
+    return re.sub(r"[^a-z0-9]+", "", lowered)
 
 
 def _initialize_state() -> None:
@@ -53,6 +54,10 @@ def run_jeopardy_game() -> None:
     board = st.session_state.jeopardy_board
     feedback = st.session_state.jeopardy_feedback
     feedback_pending = feedback is not None
+    st.caption("Pick a clue value, answer it, and build your score. Board resets with random categories and random clues each game.")
+
+    _initialize_state()
+    board = st.session_state.jeopardy_board
 
     top_left, top_right = st.columns([2, 1])
     with top_left:
@@ -63,9 +68,7 @@ def run_jeopardy_game() -> None:
             st.rerun()
 
     if feedback_pending:
-        st.warning(
-            "Finish the current clue by clicking Move Forward before choosing another clue."
-        )
+        st.warning("Finish the current clue by clicking Move Forward before choosing another clue.")
 
     board_cols = st.columns(len(board))
     for cat_i, category in enumerate(board):
@@ -79,6 +82,7 @@ def run_jeopardy_game() -> None:
                     label,
                     key=f"clue_{cat_i}_{clue_i}",
                     disabled=already_used or feedback_pending,
+                    disabled=already_used,
                     use_container_width=True,
                 ):
                     st.session_state.jeopardy_active = (cat_i, clue_i)
@@ -147,3 +151,23 @@ def run_jeopardy_game() -> None:
             st.session_state.jeopardy_active = None
             st.session_state.jeopardy_feedback = None
             st.rerun()
+    response = st.text_input("Your answer", key=f"response_{cat_i}_{clue_i}")
+
+    check_col, reveal_col = st.columns(2)
+    with check_col:
+        if st.button("Check Answer", key=f"check_{cat_i}_{clue_i}"):
+            is_correct = _normalize(response) == _normalize(clue["answer"])
+            if is_correct:
+                st.success(f"Correct! +{clue['value']} points")
+                st.session_state.jeopardy_score += clue["value"]
+            else:
+                st.error(f"Not quite. Correct answer: {clue['answer']}")
+                st.session_state.jeopardy_score -= clue["value"]
+
+            st.session_state.jeopardy_revealed[(cat_i, clue_i)] = True
+            st.session_state.jeopardy_active = None
+            st.rerun()
+
+    with reveal_col:
+        if st.button("Reveal Answer", key=f"reveal_{cat_i}_{clue_i}"):
+            st.info(f"Answer: {clue['answer']}")

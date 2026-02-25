@@ -9,9 +9,9 @@ from render_jeopardy_questions import (
 
 def test_normalize_accepts_jeopardy_phrasing():
     assert _normalize("What is Form 9142?") == _normalize("form 9142")
-    assert _normalize(
-        "Who is bargaining-unit employees and IRS retirees?"
-    ) == _normalize("bargaining unit employees and irs retirees")
+    assert _normalize("Who is bargaining-unit employees and IRS retirees?") == _normalize(
+        "bargaining unit employees and irs retirees"
+    )
     assert _normalize("What are credit hours?") == _normalize("credit hours")
 
 
