@@ -34,3 +34,22 @@ def test_random_board_categories_are_unique_per_game():
     board = get_randomized_jeopardy_board()
     categories = [category["category"] for category in board]
     assert len(categories) == len(set(categories))
+
+
+def test_question_bank_contains_expected_training_categories():
+    categories = {entry["category"] for entry in JEOPARDY_QUESTION_BANK}
+    expected = {
+        "Interview & Investigation Rights",
+        "Designation of Stewards",
+        "Official Time Activities",
+        "Bank Time & Steward Categories",
+        "Performance-Appraisal Definitions",
+        "Prohibited Personnel Practices & Merit System",
+        "Travel & Per Diem",
+        "Telework & Training for Stewards",
+    }
+    assert expected.issubset(categories)
+
+
+def test_normalize_preserves_plain_answers_too():
+    assert _normalize("Substantial evidence") == "substantialevidence"
