@@ -7,6 +7,7 @@ from render_furlough import render_furlough
 from render_quiz import run_quiz
 from render_powerpoint import render_powerpoint
 from oral_reply_filing import render_orfiling
+from render_jeopardy import run_jeopardy_game
 
 st.title("Federal Advocacy Support Toolkit \n FAST - Provided by NTEU CH. 66")
 
@@ -14,8 +15,18 @@ st.subheader("📌 Select Grievance Type")
 
 grievance_type = st.radio(
     "Choose the type of grievance you'd like to file:",
-    ["Annual Appraisal", "AWOL - Annual/Sick Leave", "EO Abeyance", "Furlough", "Test Your Knowledge", "Audio Clips - Podcast for Stewards", "Oral Reply Filing Form/POA", "PowerPoint Presentations"],
-    index=0
+    [
+        "Annual Appraisal",
+        "AWOL - Annual/Sick Leave",
+        "EO Abeyance",
+        "Furlough",
+        "Test Your Knowledge",
+        "Steward Jeopardy",
+        "Audio Clips - Podcast for Stewards",
+        "Oral Reply Filing Form/POA",
+        "PowerPoint Presentations",
+    ],
+    index=0,
 )
 
 if grievance_type == "Annual Appraisal":
@@ -41,3 +52,6 @@ if grievance_type == "PowerPoint Presentations":
 
 if grievance_type == "Oral Reply Filing Form/POA":
     render_orfiling()
+
+if grievance_type == "Steward Jeopardy":
+    run_jeopardy_game()
